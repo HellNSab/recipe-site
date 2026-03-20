@@ -1,0 +1,37 @@
+{
+  "slug": "moms-chicken-soup",
+  "title": "Mom's Chicken Soup",
+  "description": "A comforting, hearty chicken soup that's perfect for cold days or when you're feeling under the weather. Made with love and fresh vegetables.",
+  "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
+  "tags": ["soup", "comfort food", "healthy", "dinner", "chicken"],
+  "prepTime": "20",
+  "cookTime": "45",
+  "servings": "6",
+  "ingredients": [
+    "1 whole chicken (about 4 lbs) or 2 lbs chicken pieces",
+    "10 cups water",
+    "3 carrots, peeled and sliced",
+    "3 celery stalks, sliced",
+    "1 large onion, diced",
+    "4 cloves garlic, minced",
+    "2 bay leaves",
+    "1 tsp dried thyme",
+    "1 tsp dried parsley",
+    "2 cups egg noodles",
+    "Salt and pepper to taste",
+    "Fresh dill for garnish (optional)"
+  ],
+  "instructions": [
+    "Place the chicken in a large pot and cover with water. Bring to a boil over high heat, then reduce to a simmer.",
+    "Skim off any foam that rises to the surface. Add the bay leaves, thyme, and parsley. Simmer for 30-40 minutes until the chicken is cooked through.",
+    "Remove the chicken from the pot and set aside to cool. Keep the broth simmering.",
+    "Add the onion, carrots, celery, and garlic to the broth. Simmer for 15 minutes until vegetables are tender.",
+    "While the vegetables cook, shred the chicken meat, discarding the skin and bones.",
+    "Add the egg noodles to the soup and cook according to package directions, usually about 8 minutes.",
+    "Return the shredded chicken to the pot. Season generously with salt and pepper.",
+    "Remove the bay leaves. Ladle into bowls and garnish with fresh dill if desired."
+  ],
+  "notes": "This soup tastes even better the next day after the flavors have had time to meld. You can substitute the egg noodles with rice or leave them out entirely for a lighter soup. Freeze in portions for up to 3 months.",
+  "createdAt": "2024-01-20T14:00:00.000Z",
+  "updatedAt": "2024-01-20T14:00:00.000Z"
+}

@@ -1,0 +1,162 @@
+/* Custom font imports - must be before Tailwind */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+/* Tailwind v4 theme configuration */
+@theme {
+  /* Custom colors */
+  --color-cream: #fff8f0;
+
+  --color-sage-50: #f4f7f4;
+  --color-sage-100: #e6ebe6;
+  --color-sage-200: #cdd8cd;
+  --color-sage-300: #a8bda8;
+  --color-sage-400: #7d9b7d;
+  --color-sage-500: #5c805c;
+  --color-sage-600: #476647;
+  --color-sage-700: #3a523a;
+  --color-sage-800: #314431;
+  --color-sage-900: #2a392a;
+
+  --color-terracotta-50: #fdf6f3;
+  --color-terracotta-100: #fceae4;
+  --color-terracotta-200: #fad7cc;
+  --color-terracotta-300: #f5bba8;
+  --color-terracotta-400: #ee9476;
+  --color-terracotta-500: #e4724d;
+  --color-terracotta-600: #d15a35;
+  --color-terracotta-700: #af4829;
+  --color-terracotta-800: #903e26;
+  --color-terracotta-900: #773825;
+
+  /* Custom fonts */
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+}
+
+/* Base styles */
+body {
+  @apply bg-cream text-gray-800 font-sans antialiased;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-sage-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-sage-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-sage-500;
+}
+
+/* Recipe card hover effects */
+.recipe-card {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.recipe-card:hover {
+  @apply transform -translate-y-1 shadow-lg;
+}
+
+/* Tag pill styles */
+.tag-pill {
+  @apply inline-block px-3 py-1 text-sm rounded-full bg-sage-100 text-sage-700
+         hover:bg-sage-200 transition-colors cursor-pointer;
+}
+
+.tag-pill.active {
+  @apply bg-terracotta-500 text-white hover:bg-terracotta-600;
+}
+
+/* Form input styles */
+.form-input {
+  @apply w-full px-4 py-2 border border-sage-300 rounded-lg
+         focus:outline-none focus:ring-2 focus:ring-sage-400 focus:border-transparent
+         bg-white transition-all;
+}
+
+.form-textarea {
+  @apply w-full px-4 py-2 border border-sage-300 rounded-lg
+         focus:outline-none focus:ring-2 focus:ring-sage-400 focus:border-transparent
+         bg-white transition-all resize-y min-h-32;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply px-6 py-2 bg-terracotta-500 text-white rounded-lg font-medium
+         hover:bg-terracotta-600 active:bg-terracotta-700
+         transition-colors focus:outline-none focus:ring-2 focus:ring-terracotta-400;
+}
+
+.btn-secondary {
+  @apply px-6 py-2 bg-sage-500 text-white rounded-lg font-medium
+         hover:bg-sage-600 active:bg-sage-700
+         transition-colors focus:outline-none focus:ring-2 focus:ring-sage-400;
+}
+
+.btn-outline {
+  @apply px-6 py-2 border-2 border-sage-400 text-sage-600 rounded-lg font-medium
+         hover:bg-sage-50 active:bg-sage-100
+         transition-colors focus:outline-none focus:ring-2 focus:ring-sage-400;
+}
+
+/* Loading spinner */
+.spinner {
+  @apply w-8 h-8 border-4 border-sage-200 border-t-terracotta-500 rounded-full animate-spin;
+}
+
+/* Image upload area */
+.upload-zone {
+  @apply border-2 border-dashed border-sage-300 rounded-lg p-8 text-center
+         hover:border-sage-400 hover:bg-sage-50 transition-all cursor-pointer;
+}
+
+.upload-zone.dragover {
+  @apply border-terracotta-400 bg-terracotta-50;
+}
+
+/* Ingredient list styling */
+.ingredient-list li {
+  @apply flex items-start gap-2 py-1;
+}
+
+.ingredient-list li::before {
+  content: "•";
+  @apply text-terracotta-500 font-bold;
+}
+
+/* Instructions styling */
+.instructions-list {
+  counter-reset: step-counter;
+}
+
+.instructions-list li {
+  @apply relative pl-10 pb-4;
+  counter-increment: step-counter;
+}
+
+.instructions-list li::before {
+  content: counter(step-counter);
+  @apply absolute left-0 w-7 h-7 rounded-full bg-terracotta-500 text-white
+         flex items-center justify-center text-sm font-medium;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    @apply bg-white text-black;
+  }
+}

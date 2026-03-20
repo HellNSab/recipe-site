@@ -1,0 +1,35 @@
+{
+  "slug": "grandmas-chocolate-chip-cookies",
+  "title": "Grandma's Chocolate Chip Cookies",
+  "description": "The classic family recipe that everyone asks for. Crispy edges, chewy centers, and loaded with chocolate chips.",
+  "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=800&q=80",
+  "tags": ["dessert", "cookies", "family favorite", "easy"],
+  "prepTime": "15",
+  "cookTime": "12",
+  "servings": "24 cookies",
+  "ingredients": [
+    "2 1/4 cups all-purpose flour",
+    "1 tsp baking soda",
+    "1 tsp salt",
+    "1 cup butter, softened",
+    "3/4 cup granulated sugar",
+    "3/4 cup packed brown sugar",
+    "2 large eggs",
+    "2 tsp vanilla extract",
+    "2 cups chocolate chips"
+  ],
+  "instructions": [
+    "Preheat your oven to 375°F (190°C). Line baking sheets with parchment paper.",
+    "In a medium bowl, whisk together the flour, baking soda, and salt. Set aside.",
+    "In a large bowl, beat the softened butter with both sugars until light and fluffy, about 3 minutes.",
+    "Add the eggs one at a time, beating well after each addition. Mix in the vanilla extract.",
+    "Gradually add the flour mixture to the wet ingredients, mixing on low speed until just combined. Don't overmix!",
+    "Fold in the chocolate chips with a spatula or wooden spoon.",
+    "Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about 2 inches apart.",
+    "Bake for 10-12 minutes, or until the edges are golden brown but the centers still look slightly underdone.",
+    "Let the cookies cool on the baking sheet for 5 minutes before transferring to a wire rack."
+  ],
+  "notes": "For extra chewy cookies, chill the dough for 30 minutes before baking. You can also use a mix of milk and dark chocolate chips for more depth of flavor. The dough freezes well for up to 3 months!",
+  "createdAt": "2024-01-15T10:30:00.000Z",
+  "updatedAt": "2024-01-15T10:30:00.000Z"
+}

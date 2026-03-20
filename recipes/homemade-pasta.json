@@ -1,0 +1,31 @@
+{
+  "slug": "homemade-pasta",
+  "title": "Homemade Fresh Pasta",
+  "description": "Nothing beats the taste and texture of fresh, homemade pasta. Simpler than you think and absolutely worth the effort.",
+  "image": "https://images.unsplash.com/photo-1556761223-4c4282c73f77?w=800&q=80",
+  "tags": ["italian", "pasta", "dinner", "from scratch"],
+  "prepTime": "45",
+  "cookTime": "3",
+  "servings": "4",
+  "ingredients": [
+    "2 cups all-purpose flour (or '00' flour)",
+    "3 large eggs",
+    "1 tbsp olive oil",
+    "1/2 tsp salt",
+    "Semolina flour for dusting"
+  ],
+  "instructions": [
+    "Mound the flour on a clean work surface and create a well in the center. Crack the eggs into the well and add the olive oil and salt.",
+    "Using a fork, gently beat the eggs while gradually incorporating flour from the inner edges of the well. Continue until a shaggy dough forms.",
+    "Knead the dough for 8-10 minutes until smooth and elastic. The dough should bounce back when poked. If it's too sticky, add a little more flour.",
+    "Wrap the dough tightly in plastic wrap and let it rest at room temperature for 30 minutes. This relaxes the gluten and makes rolling easier.",
+    "Divide the rested dough into 4 equal pieces. Keep unused portions covered to prevent drying.",
+    "Using a pasta machine or rolling pin, roll each piece into thin sheets. For fettuccine, roll to about 1/16 inch thick.",
+    "Dust the sheets lightly with semolina flour, then cut into your desired shape — fettuccine, tagliatelle, or pappardelle.",
+    "To cook, bring a large pot of salted water to a rolling boil. Fresh pasta cooks quickly — only 2-3 minutes! It's done when it floats to the top.",
+    "Drain and toss immediately with your favorite sauce. Fresh pasta absorbs sauce beautifully."
+  ],
+  "notes": "The dough can be refrigerated for up to 24 hours or frozen for up to a month. Let it come to room temperature before rolling. For colored pasta, add 2 tbsp tomato paste (red), 2 tbsp spinach puree (green), or 1 tbsp squid ink (black) to the eggs.",
+  "createdAt": "2024-01-16T14:00:00.000Z",
+  "updatedAt": "2024-01-16T14:00:00.000Z"
+}
