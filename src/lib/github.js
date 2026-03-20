@@ -5,7 +5,7 @@ const GITHUB_API_BASE = "https://api.github.com";
 
 // These will be configured by the user
 // IMPORTANT: Replace these with your actual values
-const REPO_OWNER = "YOUR_GITHUB_USERNAME"; // ← Replace with your GitHub username
+const REPO_OWNER = "HellNSab"; // ← Replace with your GitHub username
 const REPO_NAME = "recipe-site"; // ← Replace with your repository name (must match exactly)
 const RECIPES_PATH = "recipes"; // Folder where recipes are stored
 const IMAGES_PATH = "images"; // Folder where images are stored
