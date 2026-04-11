@@ -2,9 +2,11 @@ import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { fetchRecipes } from "../lib/github";
 import { searchAndFilter, getAllTags, initializeSearch } from "../lib/search";
+import { isAuthenticated, logout } from "../lib/auth";
 import SearchBar from "../components/SearchBar";
 import TagFilter from "../components/TagFilter";
 import RecipeCard from "../components/RecipeCard";
+import AdminLoginModal from "../components/AdminLoginModal";
 
 /**
  * Home page component
@@ -16,6 +18,8 @@ export default function Home() {
   const [error, setError] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeTag, setActiveTag] = useState("all");
+  const [isAdmin, setIsAdmin] = useState(isAuthenticated);
+  const [showLoginModal, setShowLoginModal] = useState(false);
 
   // Fetch recipes on mount
   useEffect(() => {
@@ -68,26 +72,34 @@ export default function Home() {
                 Le Livre de Recettes
               </h1>
             </Link>
-            <Link
-              to="/admin"
-              className="text-sage-600 hover:text-sage-800 transition-colors flex items-center gap-2"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 4v16m8-8H4"
-                />
-              </svg>
-              <span className="hidden sm:inline">Ajouter une recette</span>
-            </Link>
+            <div className="flex items-center gap-3">
+              {isAdmin && (
+                <Link
+                  to="/admin"
+                  className="text-sage-600 hover:text-sage-800 transition-colors flex items-center gap-2"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                  </svg>
+                  <span className="hidden sm:inline">Ajouter une recette</span>
+                </Link>
+              )}
+              {isAdmin ? (
+                <button
+                  onClick={() => { logout(); setIsAdmin(false); }}
+                  className="text-sm text-terracotta-600 hover:text-terracotta-800 transition-colors"
+                >
+                  Se déconnecter
+                </button>
+              ) : (
+                <button
+                  onClick={() => setShowLoginModal(true)}
+                  className="text-sm text-sage-600 hover:text-sage-800 transition-colors"
+                >
+                  Connexion
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </header>
@@ -159,9 +171,11 @@ export default function Home() {
             <p className="text-gray-600 mb-4">
               Soyez la première à ajouter une recette !
             </p>
-            <Link to="/admin" className="btn-primary inline-block">
-              Ajouter une recette
-            </Link>
+            {isAdmin && (
+              <Link to="/admin" className="btn-primary inline-block">
+                Ajouter une recette
+              </Link>
+            )}
           </div>
         )}
 
@@ -216,6 +230,13 @@ export default function Home() {
           </p>
         </div>
       </footer>
+
+      {showLoginModal && (
+        <AdminLoginModal
+          onSuccess={() => { setIsAdmin(true); setShowLoginModal(false); }}
+          onClose={() => setShowLoginModal(false)}
+        />
+      )}
     </div>
   );
 }
