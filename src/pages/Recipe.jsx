@@ -125,7 +125,7 @@ export default function Recipe() {
     cookTime,
     servings,
     ingredients = [],
-    instructions = [],
+    instructions = "",
     notes,
     createdAt,
     updatedAt,
@@ -385,13 +385,7 @@ export default function Recipe() {
               Instructions
             </h2>
 
-            <ol className="instructions-list space-y-4">
-              {instructions.map((instruction, index) => (
-                <li key={index} className="text-gray-700 leading-relaxed">
-                  {instruction}
-                </li>
-              ))}
-            </ol>
+            <p className="text-gray-700 leading-relaxed">{instructions}</p>
 
             {/* Notes */}
             {notes && (

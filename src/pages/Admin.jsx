@@ -77,7 +77,7 @@ export default function Admin() {
             cookTime: recipe.cookTime || "",
             servings: recipe.servings || "",
             ingredients: recipe.ingredients?.join("\n") || "",
-            instructions: recipe.instructions?.join("\n\n") || "",
+            instructions: recipe.instructions || "",
             notes: recipe.notes || "",
           });
           setImagePreview(recipe.image || "");
@@ -259,10 +259,7 @@ export default function Admin() {
           .split("\n")
           .map((i) => i.trim())
           .filter((i) => i),
-        instructions: formData.instructions
-          .split("\n\n")
-          .map((i) => i.trim())
-          .filter((i) => i),
+        instructions: formData.instructions.trim(),
         notes: formData.notes.trim(),
       };
 
