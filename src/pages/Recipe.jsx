@@ -74,30 +74,6 @@ export default function Recipe() {
     }
   };
 
-  // Handle print
-  const handlePrint = () => {
-    window.print();
-  };
-
-  // Handle share
-  const handleShare = async () => {
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: recipe.title,
-          text: recipe.description,
-          url: window.location.href,
-        });
-      } catch {
-        console.log("Share cancelled or failed");
-      }
-    } else {
-      // Fallback: copy URL to clipboard
-      navigator.clipboard.writeText(window.location.href);
-      alert("Link copied to clipboard!");
-    }
-  };
-
   // Loading state
   if (loading) {
     return (
@@ -153,7 +129,7 @@ export default function Recipe() {
   return (
     <div className="min-h-screen bg-cream">
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-10 no-print">
+      <header className="bg-white shadow-sm sticky top-0 z-10">
         <div className="max-w-4xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link
@@ -209,46 +185,6 @@ export default function Recipe() {
                   Connexion
                 </button>
               )}
-              <button
-                onClick={handleShare}
-                className="p-2 text-sage-600 hover:text-sage-800 hover:bg-sage-100 rounded-full transition-colors"
-                aria-label="Partager la recette"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
-                  />
-                </svg>
-              </button>
-              <button
-                onClick={handlePrint}
-                className="p-2 text-sage-600 hover:text-sage-800 hover:bg-sage-100 rounded-full transition-colors"
-                aria-label="Imprimer la recette"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
-                  />
-                </svg>
-              </button>
             </div>
           </div>
         </div>
@@ -378,7 +314,7 @@ export default function Recipe() {
                 </h2>
                 {/* Servings Adjuster */}
                 {servings && (
-                  <div className="flex items-center gap-1 no-print">
+                  <div className="flex items-center gap-1">
                     <button
                       onClick={() =>
                         setServingsMultiplier(Math.max(0.5, servingsMultiplier - 0.5))
@@ -458,7 +394,7 @@ export default function Recipe() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-sage-200 py-8 mt-12 no-print">
+      <footer className="bg-white border-t border-sage-200 py-8 mt-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <Link to="/" className="text-sage-600 hover:text-sage-800">
             ← Toutes les recettes
