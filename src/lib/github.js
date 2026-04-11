@@ -118,8 +118,13 @@ export async function fetchRecipe(slug) {
     }
 
     const data = await response.json();
-    // Content is base64 encoded
-    const content = atob(data.content);
+    // Content is base64 encoded — decode via TextDecoder to preserve UTF-8
+    const binary = atob(data.content.replace(/\n/g, ""));
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) {
+      bytes[i] = binary.charCodeAt(i);
+    }
+    const content = new TextDecoder("utf-8").decode(bytes);
     const recipe = JSON.parse(content);
     recipe.slug = slug;
     recipe._sha = data.sha; // Store SHA for updates
