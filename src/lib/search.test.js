@@ -32,9 +32,18 @@ const recipes = [
 ];
 
 describe("getAllTags", () => {
-  it("retourne tous les tags uniques triés alphabétiquement", () => {
+  it("retourne tous les tags uniques triés par fréquence décroissante", () => {
     const tags = getAllTags(recipes);
-    expect(tags).toEqual(["chocolat", "dessert", "fruit", "plat", "viande"]);
+    // "dessert" apparaît 2 fois, les autres 1 fois
+    expect(tags[0]).toBe("dessert");
+    expect(tags).toContain("chocolat");
+    expect(tags).toContain("fruit");
+  });
+
+  it("trie alphabétiquement en cas d'égalité de fréquence", () => {
+    const tags = getAllTags(recipes);
+    const afterDessert = tags.slice(1);
+    expect(afterDessert).toEqual([...afterDessert].sort((a, b) => a.localeCompare(b)));
   });
 
   it("retourne un tableau vide si aucune recette", () => {

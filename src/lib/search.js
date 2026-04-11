@@ -83,20 +83,25 @@ export function filterByTag(recipes, tag) {
 }
 
 /**
- * Get all unique tags from recipes
+ * Get all unique tags from recipes, sorted by frequency descending.
  * @param {Array} recipes - Array of recipe objects
- * @returns {Array} Array of unique tag strings, sorted alphabetically
+ * @returns {Array} Array of unique tag strings, most used first
  */
 export function getAllTags(recipes) {
-  const tagSet = new Set();
+  const tagCount = {};
 
   recipes.forEach((recipe) => {
     if (recipe.tags && Array.isArray(recipe.tags)) {
-      recipe.tags.forEach((tag) => tagSet.add(tag.toLowerCase()));
+      recipe.tags.forEach((tag) => {
+        const t = tag.toLowerCase();
+        tagCount[t] = (tagCount[t] || 0) + 1;
+      });
     }
   });
 
-  return Array.from(tagSet).sort();
+  return Object.entries(tagCount)
+    .sort(([a, countA], [b, countB]) => countB - countA || a.localeCompare(b))
+    .map(([tag]) => tag);
 }
 
 /**
