@@ -106,7 +106,7 @@ export async function login(token) {
   try {
     localStorage.setItem(AUTH_KEY, JSON.stringify(authData));
     return { success: true, username: validation.username };
-  } catch (error) {
+  } catch {
     return { success: false, error: "Failed to save authentication" };
   }
 }
