@@ -8,13 +8,7 @@ import {
   generateSlug,
   deleteRecipe,
 } from "../lib/github";
-import {
-  isAuthenticated,
-  login,
-  logout,
-  getToken,
-  getUsername,
-} from "../lib/auth";
+import { isAuthenticated, logout, getToken } from "../lib/auth";
 
 /**
  * Admin page component
@@ -25,11 +19,12 @@ export default function Admin() {
   const [searchParams] = useSearchParams();
   const editSlug = searchParams.get("edit");
 
-  // Auth state
-  const [authenticated, setAuthenticated] = useState(isAuthenticated());
-  const [token, setToken] = useState("");
-  const [authError, setAuthError] = useState("");
-  const [authLoading, setAuthLoading] = useState(false);
+  // Redirect if not authenticated
+  useEffect(() => {
+    if (!isAuthenticated()) {
+      navigate("/");
+    }
+  }, [navigate]);
 
   // Form state
   const [formData, setFormData] = useState({
@@ -59,7 +54,7 @@ export default function Admin() {
   // Load existing recipe if editing
   useEffect(() => {
     async function loadRecipe() {
-      if (!editSlug || !authenticated) return;
+      if (!editSlug || !isAuthenticated()) return;
 
       try {
         setLoading(true);
@@ -93,46 +88,12 @@ export default function Admin() {
     }
 
     loadRecipe();
-  }, [editSlug, authenticated]);
-
-  // Handle login
-  const handleLogin = async (e) => {
-    e.preventDefault();
-    setAuthError("");
-    setAuthLoading(true);
-
-    try {
-      const result = await login(token);
-      if (result.success) {
-        setAuthenticated(true);
-        setToken("");
-      } else {
-        setAuthError(result.error || "Authentication failed");
-      }
-    } catch {
-      setAuthError("An unexpected error occurred");
-    } finally {
-      setAuthLoading(false);
-    }
-  };
+  }, [editSlug]);
 
   // Handle logout
   const handleLogout = () => {
     logout();
-    setAuthenticated(false);
-    setFormData({
-      title: "",
-      description: "",
-      image: "",
-      tags: "",
-      prepTime: "",
-      cookTime: "",
-      servings: "",
-      ingredients: "",
-      instructions: "",
-      notes: "",
-    });
-    setExistingRecipe(null);
+    navigate("/");
   };
 
   // Handle form input changes
@@ -224,7 +185,7 @@ export default function Admin() {
       const authToken = getToken();
       if (!authToken) {
         setError("Session expirée. Veuillez vous reconnecter.");
-        setAuthenticated(false);
+        navigate("/");
         return;
       }
 
@@ -309,7 +270,7 @@ export default function Admin() {
       const authToken = getToken();
       if (!authToken) {
         setError("Session expirée. Veuillez vous reconnecter.");
-        setAuthenticated(false);
+        navigate("/");
         return;
       }
 
@@ -333,93 +294,6 @@ export default function Admin() {
     setImagePreview("");
     setFormData((prev) => ({ ...prev, image: "" }));
   };
-
-  // Login form
-  if (!authenticated) {
-    return (
-      <div className="min-h-screen bg-cream flex items-center justify-center px-4">
-        <div className="max-w-md w-full">
-          <div className="bg-white rounded-2xl shadow-lg p-8">
-            <div className="text-center mb-8">
-              <div className="text-5xl mb-4">🔐</div>
-              <h1 className="font-serif text-2xl font-bold text-gray-800 mb-2">
-                Accès administrateur
-              </h1>
-              <p className="text-gray-600">
-                Entrez votre token GitHub pour gérer les recettes
-              </p>
-            </div>
-
-            <form onSubmit={handleLogin}>
-              <div className="mb-4">
-                <label
-                  htmlFor="token"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  GitHub Token
-                </label>
-                <input
-                  type="password"
-                  id="token"
-                  value={token}
-                  onChange={(e) => setToken(e.target.value)}
-                  placeholder="ghp_xxxxxxxxxxxx"
-                  className="form-input"
-                  required
-                />
-                <p className="text-xs text-gray-500 mt-1">
-                  Le token doit avoir le scope « repo »
-                </p>
-              </div>
-
-              {authError && (
-                <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
-                  {authError}
-                </div>
-              )}
-
-              <button
-                type="submit"
-                disabled={authLoading || !token.trim()}
-                className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {authLoading ? (
-                  <span className="flex items-center justify-center gap-2">
-                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                    Vérification...
-                  </span>
-                ) : (
-                  "Se connecter"
-                )}
-              </button>
-            </form>
-
-            <div className="mt-6 pt-6 border-t border-gray-200">
-              <Link
-                to="/"
-                className="block text-center text-sage-600 hover:text-sage-800 transition-colors"
-              >
-                ← Retour aux recettes
-              </Link>
-            </div>
-          </div>
-
-          {/* Help text */}
-          <div className="mt-6 text-center text-sm text-gray-500">
-            <p className="mb-2">Besoin d'un token ?</p>
-            <a
-              href="https://github.com/settings/tokens/new?scopes=repo&description=Recipe%20Site"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sage-600 hover:text-sage-800 underline"
-            >
-              Créer un token GitHub
-            </a>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   // Loading state
   if (loading) {
@@ -458,20 +332,15 @@ export default function Admin() {
                   d="M10 19l-7-7m0 0l7-7m-7 7h18"
                 />
               </svg>
-              <span>Back</span>
+              <span>Retour</span>
             </Link>
 
-            <div className="flex items-center gap-4">
-              <span className="text-sm text-sage-600">
-                Connecté en tant que <strong>{getUsername()}</strong>
-              </span>
-              <button
-                onClick={handleLogout}
-                className="text-sm text-terracotta-600 hover:text-terracotta-800 transition-colors"
-              >
-                Se déconnecter
-              </button>
-            </div>
+            <button
+              onClick={handleLogout}
+              className="text-sm text-terracotta-600 hover:text-terracotta-800 transition-colors"
+            >
+              Se déconnecter
+            </button>
           </div>
         </div>
       </header>

@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
-import { fetchRecipe } from "../lib/github";
+import { useParams, Link, useNavigate } from "react-router-dom";
+import { fetchRecipe, deleteRecipe } from "../lib/github";
+import { isAuthenticated, logout, getToken } from "../lib/auth";
+import AdminLoginModal from "../components/AdminLoginModal";
 
 /**
  * Recipe detail page component
@@ -8,10 +10,13 @@ import { fetchRecipe } from "../lib/github";
  */
 export default function Recipe() {
   const { slug } = useParams();
+  const navigate = useNavigate();
   const [recipe, setRecipe] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [servingsMultiplier, setServingsMultiplier] = useState(1);
+  const [isAdmin, setIsAdmin] = useState(isAuthenticated);
+  const [showLoginModal, setShowLoginModal] = useState(false);
 
   // Fetch recipe on mount
   useEffect(() => {
@@ -57,6 +62,16 @@ export default function Recipe() {
       };
     }
     return { quantity: null, rest: ingredient };
+  };
+
+  const handleDelete = async () => {
+    if (!window.confirm(`Supprimer "${recipe.title}" ? Cette action est irréversible.`)) return;
+    try {
+      await deleteRecipe(recipe.slug, getToken(), recipe._sha);
+      navigate("/");
+    } catch (err) {
+      console.error("Failed to delete recipe:", err);
+    }
   };
 
   // Handle print
@@ -163,6 +178,37 @@ export default function Recipe() {
             </Link>
 
             <div className="flex items-center gap-2">
+              {isAdmin && recipe && (
+                <>
+                  <Link
+                    to={`/admin?edit=${recipe.slug}`}
+                    className="text-sm text-sage-600 hover:text-sage-800 transition-colors px-2 py-1 rounded hover:bg-sage-100"
+                  >
+                    Modifier
+                  </Link>
+                  <button
+                    onClick={handleDelete}
+                    className="text-sm text-red-500 hover:text-red-700 transition-colors px-2 py-1 rounded hover:bg-red-50"
+                  >
+                    Supprimer
+                  </button>
+                </>
+              )}
+              {isAdmin ? (
+                <button
+                  onClick={() => { logout(); setIsAdmin(false); }}
+                  className="text-sm text-terracotta-600 hover:text-terracotta-800 transition-colors px-2 py-1"
+                >
+                  Se déconnecter
+                </button>
+              ) : (
+                <button
+                  onClick={() => setShowLoginModal(true)}
+                  className="text-sm text-sage-500 hover:text-sage-700 transition-colors px-2 py-1"
+                >
+                  Connexion
+                </button>
+              )}
               <button
                 onClick={handleShare}
                 className="p-2 text-sage-600 hover:text-sage-800 hover:bg-sage-100 rounded-full transition-colors"
@@ -419,6 +465,13 @@ export default function Recipe() {
           </Link>
         </div>
       </footer>
+
+      {showLoginModal && (
+        <AdminLoginModal
+          onSuccess={() => { setIsAdmin(true); setShowLoginModal(false); }}
+          onClose={() => setShowLoginModal(false)}
+        />
+      )}
     </div>
   );
 }
