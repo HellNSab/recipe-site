@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { fetchRecipe } from "../lib/github";
 
 /**
@@ -8,7 +8,6 @@ import { fetchRecipe } from "../lib/github";
  */
 export default function Recipe() {
   const { slug } = useParams();
-  const navigate = useNavigate();
   const [recipe, setRecipe] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -74,7 +73,7 @@ export default function Recipe() {
           text: recipe.description,
           url: window.location.href,
         });
-      } catch (err) {
+      } catch {
         console.log("Share cancelled or failed");
       }
     } else {

@@ -262,7 +262,7 @@ export async function uploadImage(filename, base64Data, token) {
     );
   }
 
-  const data = await response.json();
+  await response.json();
 
   // Return the raw GitHub URL for the image
   // Using jsdelivr CDN for better performance

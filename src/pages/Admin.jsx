@@ -109,7 +109,7 @@ export default function Admin() {
       } else {
         setAuthError(result.error || "Authentication failed");
       }
-    } catch (err) {
+    } catch {
       setAuthError("An unexpected error occurred");
     } finally {
       setAuthLoading(false);
