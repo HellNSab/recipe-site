@@ -30,7 +30,7 @@ export default function TagFilter({ tags, activeTag, onTagSelect }) {
         }`}
         aria-pressed={!activeTag || activeTag === "all"}
       >
-        All Recipes
+        Toutes
       </button>
 
       {/* Tag buttons */}
@@ -53,7 +53,7 @@ export default function TagFilter({ tags, activeTag, onTagSelect }) {
           onClick={() => setShowAll(!showAll)}
           className="text-sm text-sage-600 hover:text-sage-800 underline transition-colors"
         >
-          {showAll ? "Show less" : `+${tags.length - VISIBLE_COUNT} more`}
+          {showAll ? "Voir moins" : `+${tags.length - VISIBLE_COUNT} de plus`}
         </button>
       )}
     </div>
