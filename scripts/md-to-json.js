@@ -131,11 +131,11 @@ let errors = 0;
 
 for (const file of files) {
   try {
-    const content = readFileSync(join(inputDir, file), "utf8");
-    const filename = basename(file, ".md");
+    const content = readFileSync(join(inputDir, file), "utf8").normalize("NFC");
+    const filename = basename(file, ".md").normalize("NFC");
     const recipe = parseRecipe(content, filename);
     const outPath = join(outputDir, `${recipe.slug}.json`);
-    writeFileSync(outPath, JSON.stringify(recipe, null, 2), "utf8");
+    writeFileSync(outPath, JSON.stringify(recipe, null, 2).normalize("NFC"), "utf8");
     console.log(`✓ ${file} → ${recipe.slug}.json`);
     converted++;
   } catch (err) {
