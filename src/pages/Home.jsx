@@ -29,7 +29,7 @@ export default function Home() {
         initializeSearch(data);
       } catch (err) {
         console.error("Failed to load recipes:", err);
-        setError("Failed to load recipes. Please try again later.");
+        setError("Impossible de charger les recettes. Veuillez réessayer.");
       } finally {
         setLoading(false);
       }
@@ -65,7 +65,7 @@ export default function Home() {
             <Link to="/" className="flex items-center gap-3">
               <span className="text-3xl">🍳</span>
               <h1 className="font-serif text-2xl font-bold text-sage-700">
-                Mom's Recipe Book
+                Le Livre de Recettes
               </h1>
             </Link>
             <Link
@@ -86,7 +86,7 @@ export default function Home() {
                   d="M12 4v16m8-8H4"
                 />
               </svg>
-              <span className="hidden sm:inline">Add Recipe</span>
+              <span className="hidden sm:inline">Ajouter une recette</span>
             </Link>
           </div>
         </div>
@@ -96,18 +96,18 @@ export default function Home() {
       <section className="bg-gradient-to-b from-sage-100 to-cream py-12 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-sage-800 mb-4">
-            Family Recipes
+            Nos Recettes
           </h2>
           <p className="text-sage-600 text-lg mb-8 max-w-2xl mx-auto">
-            A collection of our favorite family recipes, passed down through generations
-            and lovingly preserved for everyone to enjoy.
+            Une collection de recettes familiales, transmises de génération en génération
+            et précieusement conservées pour tous.
           </p>
 
           {/* Search Bar */}
           <div className="flex justify-center mb-6">
             <SearchBar
               onSearch={handleSearch}
-              placeholder="Search by name, ingredient, or tag..."
+              placeholder="Rechercher par nom, ingrédient ou tag..."
             />
           </div>
 
@@ -128,7 +128,7 @@ export default function Home() {
         {loading && (
           <div className="flex flex-col items-center justify-center py-20">
             <div className="spinner mb-4"></div>
-            <p className="text-sage-600">Loading recipes...</p>
+            <p className="text-sage-600">Chargement des recettes...</p>
           </div>
         )}
 
@@ -137,14 +137,14 @@ export default function Home() {
           <div className="text-center py-20">
             <div className="text-6xl mb-4">😕</div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Oops! Something went wrong
+              Oups ! Une erreur est survenue
             </h3>
             <p className="text-gray-600 mb-4">{error}</p>
             <button
               onClick={() => window.location.reload()}
               className="btn-primary"
             >
-              Try Again
+              Réessayer
             </button>
           </div>
         )}
@@ -154,13 +154,13 @@ export default function Home() {
           <div className="text-center py-20">
             <div className="text-6xl mb-4">📝</div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              No recipes yet
+              Aucune recette pour l'instant
             </h3>
             <p className="text-gray-600 mb-4">
-              Be the first to add a family recipe!
+              Soyez la première à ajouter une recette !
             </p>
             <Link to="/admin" className="btn-primary inline-block">
-              Add First Recipe
+              Ajouter une recette
             </Link>
           </div>
         )}
@@ -170,10 +170,10 @@ export default function Home() {
           <div className="text-center py-20">
             <div className="text-6xl mb-4">🔍</div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              No recipes found
+              Aucune recette trouvée
             </h3>
             <p className="text-gray-600 mb-4">
-              Try adjusting your search or filter criteria
+              Essayez de modifier votre recherche ou vos filtres
             </p>
             <button
               onClick={() => {
@@ -182,7 +182,7 @@ export default function Home() {
               }}
               className="btn-outline"
             >
-              Clear Filters
+              Effacer les filtres
             </button>
           </div>
         )}
@@ -192,10 +192,10 @@ export default function Home() {
           <>
             {/* Results count */}
             <div className="mb-6 text-sage-600">
-              Showing {filteredRecipes.length} recipe
+              {filteredRecipes.length} recette
               {filteredRecipes.length !== 1 ? "s" : ""}
-              {activeTag !== "all" && ` tagged "${activeTag}"`}
-              {searchQuery && ` matching "${searchQuery}"`}
+              {activeTag !== "all" && ` · tag « ${activeTag} »`}
+              {searchQuery && ` · « ${searchQuery} »`}
             </div>
 
             {/* Grid */}
@@ -212,7 +212,7 @@ export default function Home() {
       <footer className="bg-white border-t border-sage-200 py-8 mt-12">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="text-sage-500 text-sm">
-            Made with ❤️ for the family • {new Date().getFullYear()}
+            Fait avec ❤️ pour la famille • {new Date().getFullYear()}
           </p>
         </div>
       </footer>

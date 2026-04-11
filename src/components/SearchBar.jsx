@@ -78,7 +78,7 @@ export default function SearchBar({
                      focus:outline-none focus:ring-2 focus:ring-sage-400 focus:border-transparent
                      transition-all duration-200
                      placeholder-sage-400 text-gray-800"
-          aria-label="Search recipes"
+          aria-label="Rechercher des recettes"
         />
 
         {/* Clear Button */}
@@ -88,7 +88,7 @@ export default function SearchBar({
             onClick={handleClear}
             className="absolute inset-y-0 right-0 pr-4 flex items-center
                        text-sage-400 hover:text-sage-600 transition-colors"
-            aria-label="Clear search"
+            aria-label="Effacer la recherche"
           >
             <svg
               className="w-5 h-5"

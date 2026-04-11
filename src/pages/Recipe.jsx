@@ -90,7 +90,7 @@ export default function Recipe() {
       <div className="min-h-screen bg-cream flex items-center justify-center">
         <div className="text-center">
           <div className="spinner mx-auto mb-4"></div>
-          <p className="text-sage-600">Loading recipe...</p>
+          <p className="text-sage-600">Chargement de la recette...</p>
         </div>
       </div>
     );
@@ -103,13 +103,13 @@ export default function Recipe() {
         <div className="text-center px-4">
           <div className="text-6xl mb-4">😕</div>
           <h2 className="text-2xl font-serif font-bold text-gray-800 mb-2">
-            {error || "Recipe not found"}
+            {error || "Recette introuvable"}
           </h2>
           <p className="text-gray-600 mb-6">
-            We couldn't find the recipe you're looking for.
+            Nous n'avons pas trouvé la recette que vous cherchez.
           </p>
           <Link to="/" className="btn-primary inline-block">
-            Back to Recipes
+            Retour aux recettes
           </Link>
         </div>
       </div>
@@ -160,14 +160,14 @@ export default function Recipe() {
                   d="M10 19l-7-7m0 0l7-7m-7 7h18"
                 />
               </svg>
-              <span>Back to Recipes</span>
+              <span>Retour aux recettes</span>
             </Link>
 
             <div className="flex items-center gap-2">
               <button
                 onClick={handleShare}
                 className="p-2 text-sage-600 hover:text-sage-800 hover:bg-sage-100 rounded-full transition-colors"
-                aria-label="Share recipe"
+                aria-label="Partager la recette"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -187,7 +187,7 @@ export default function Recipe() {
               <button
                 onClick={handlePrint}
                 className="p-2 text-sage-600 hover:text-sage-800 hover:bg-sage-100 rounded-full transition-colors"
-                aria-label="Print recipe"
+                aria-label="Imprimer la recette"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -266,7 +266,7 @@ export default function Recipe() {
                   />
                 </svg>
                 <span>
-                  <strong>Prep:</strong> {prepTime} min
+                  <strong>Prép. :</strong> {prepTime} min
                 </span>
               </div>
             )}
@@ -287,14 +287,14 @@ export default function Recipe() {
                   />
                 </svg>
                 <span>
-                  <strong>Cook:</strong> {cookTime} min
+                  <strong>Cuisson :</strong> {cookTime} min
                 </span>
               </div>
             )}
             {totalTime && (
               <div className="flex items-center gap-2 text-terracotta-600 font-medium">
                 <span>
-                  <strong>Total:</strong> {totalTime}
+                  <strong>Total :</strong> {totalTime}
                 </span>
               </div>
             )}
@@ -315,7 +315,7 @@ export default function Recipe() {
                   />
                 </svg>
                 <span>
-                  <strong>Servings:</strong> {servings}
+                  <strong>Portions :</strong> {servings}
                 </span>
               </div>
             )}
@@ -329,7 +329,7 @@ export default function Recipe() {
             <div className="bg-white rounded-xl p-6 shadow-md sticky top-24">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="font-serif text-2xl font-bold text-gray-800">
-                  Ingredients
+                  Ingrédients
                 </h2>
                 {/* Servings Adjuster */}
                 {servings && (
@@ -339,7 +339,7 @@ export default function Recipe() {
                         setServingsMultiplier(Math.max(0.5, servingsMultiplier - 0.5))
                       }
                       className="w-6 h-6 rounded-full bg-sage-100 text-sage-700 hover:bg-sage-200 flex items-center justify-center transition-colors"
-                      aria-label="Decrease servings"
+                      aria-label="Réduire les portions"
                     >
                       -
                     </button>
@@ -349,7 +349,7 @@ export default function Recipe() {
                     <button
                       onClick={() => setServingsMultiplier(servingsMultiplier + 0.5)}
                       className="w-6 h-6 rounded-full bg-sage-100 text-sage-700 hover:bg-sage-200 flex items-center justify-center transition-colors"
-                      aria-label="Increase servings"
+                      aria-label="Augmenter les portions"
                     >
                       +
                     </button>
@@ -382,7 +382,7 @@ export default function Recipe() {
           {/* Instructions */}
           <div className="md:col-span-2">
             <h2 className="font-serif text-2xl font-bold text-gray-800 mb-4">
-              Instructions
+              Préparation
             </h2>
 
             <p className="text-gray-700 leading-relaxed">{instructions}</p>
@@ -391,7 +391,7 @@ export default function Recipe() {
             {notes && (
               <div className="mt-8 p-4 bg-terracotta-50 rounded-xl border border-terracotta-200">
                 <h3 className="font-serif text-lg font-semibold text-terracotta-800 mb-2">
-                  📝 Notes
+                  📝 Notes & astuces
                 </h3>
                 <p className="text-terracotta-700">{notes}</p>
               </div>
@@ -401,10 +401,10 @@ export default function Recipe() {
             {(createdAt || updatedAt) && (
               <div className="mt-8 pt-4 border-t border-sage-200 text-sm text-sage-500">
                 {createdAt && (
-                  <p>Added: {new Date(createdAt).toLocaleDateString()}</p>
+                  <p>Ajoutée le {new Date(createdAt).toLocaleDateString("fr-FR")}</p>
                 )}
                 {updatedAt && updatedAt !== createdAt && (
-                  <p>Last updated: {new Date(updatedAt).toLocaleDateString()}</p>
+                  <p>Mise à jour le {new Date(updatedAt).toLocaleDateString("fr-FR")}</p>
                 )}
               </div>
             )}
@@ -416,7 +416,7 @@ export default function Recipe() {
       <footer className="bg-white border-t border-sage-200 py-8 mt-12 no-print">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <Link to="/" className="text-sage-600 hover:text-sage-800">
-            ← Back to all recipes
+            ← Toutes les recettes
           </Link>
         </div>
       </footer>

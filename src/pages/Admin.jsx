@@ -82,11 +82,11 @@ export default function Admin() {
           });
           setImagePreview(recipe.image || "");
         } else {
-          setError("Recipe not found");
+          setError("Recette introuvable");
         }
       } catch (err) {
         console.error("Failed to load recipe:", err);
-        setError("Failed to load recipe for editing");
+        setError("Impossible de charger la recette pour modification");
       } finally {
         setLoading(false);
       }
@@ -147,13 +147,13 @@ export default function Admin() {
 
     // Validate file type
     if (!file.type.startsWith("image/")) {
-      setError("Please select an image file");
+      setError("Veuillez sélectionner un fichier image");
       return;
     }
 
     // Validate file size (max 5MB)
     if (file.size > 5 * 1024 * 1024) {
-      setError("Image must be less than 5MB");
+      setError("La photo doit faire moins de 5 Mo");
       return;
     }
 
@@ -204,17 +204,17 @@ export default function Admin() {
 
     // Validate required fields
     if (!formData.title.trim()) {
-      setError("Title is required");
+      setError("Le titre est obligatoire");
       return;
     }
 
     if (!formData.ingredients.trim()) {
-      setError("Ingredients are required");
+      setError("Les ingrédients sont obligatoires");
       return;
     }
 
     if (!formData.instructions.trim()) {
-      setError("Instructions are required");
+      setError("La préparation est obligatoire");
       return;
     }
 
@@ -223,7 +223,7 @@ export default function Admin() {
     try {
       const authToken = getToken();
       if (!authToken) {
-        setError("Authentication expired. Please log in again.");
+        setError("Session expirée. Veuillez vous reconnecter.");
         setAuthenticated(false);
         return;
       }
@@ -237,7 +237,7 @@ export default function Admin() {
           imageUrl = await uploadImage(imageFile.name, base64, authToken);
         } catch (err) {
           console.error("Failed to upload image:", err);
-          setError("Failed to upload image. Recipe saved without image.");
+          setError("Échec de l'envoi de la photo. Recette enregistrée sans image.");
         } finally {
           setUploadingImage(false);
         }
@@ -276,8 +276,8 @@ export default function Admin() {
 
       setSuccess(
         existingRecipe
-          ? "Recipe updated successfully!"
-          : "Recipe created successfully!"
+          ? "Recette mise à jour !"
+          : "Recette créée avec succès !"
       );
 
       // Clear form and redirect after a short delay
@@ -286,7 +286,7 @@ export default function Admin() {
       }, 1500);
     } catch (err) {
       console.error("Failed to save recipe:", err);
-      setError(err.message || "Failed to save recipe. Please try again.");
+      setError(err.message || "Impossible d'enregistrer la recette. Veuillez réessayer.");
     } finally {
       setSaving(false);
     }
@@ -297,7 +297,7 @@ export default function Admin() {
     if (!existingRecipe) return;
 
     const confirmed = window.confirm(
-      `Are you sure you want to delete "${existingRecipe.title}"? This action cannot be undone.`
+      `Supprimer "${existingRecipe.title}" ? Cette action est irréversible.`
     );
 
     if (!confirmed) return;
@@ -308,20 +308,20 @@ export default function Admin() {
     try {
       const authToken = getToken();
       if (!authToken) {
-        setError("Authentication expired. Please log in again.");
+        setError("Session expirée. Veuillez vous reconnecter.");
         setAuthenticated(false);
         return;
       }
 
       await deleteRecipe(existingRecipe.slug, authToken, existingRecipe._sha);
-      setSuccess("Recipe deleted successfully!");
+      setSuccess("Recette supprimée avec succès !");
 
       setTimeout(() => {
         navigate("/");
       }, 1500);
     } catch (err) {
       console.error("Failed to delete recipe:", err);
-      setError(err.message || "Failed to delete recipe. Please try again.");
+      setError(err.message || "Impossible de supprimer la recette. Veuillez réessayer.");
     } finally {
       setSaving(false);
     }
@@ -343,10 +343,10 @@ export default function Admin() {
             <div className="text-center mb-8">
               <div className="text-5xl mb-4">🔐</div>
               <h1 className="font-serif text-2xl font-bold text-gray-800 mb-2">
-                Family Access
+                Accès administrateur
               </h1>
               <p className="text-gray-600">
-                Enter your GitHub Personal Access Token to manage recipes
+                Entrez votre token GitHub pour gérer les recettes
               </p>
             </div>
 
@@ -368,7 +368,7 @@ export default function Admin() {
                   required
                 />
                 <p className="text-xs text-gray-500 mt-1">
-                  Token needs repo scope for write access
+                  Le token doit avoir le scope « repo »
                 </p>
               </div>
 
@@ -386,10 +386,10 @@ export default function Admin() {
                 {authLoading ? (
                   <span className="flex items-center justify-center gap-2">
                     <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                    Verifying...
+                    Vérification...
                   </span>
                 ) : (
-                  "Sign In"
+                  "Se connecter"
                 )}
               </button>
             </form>
@@ -399,21 +399,21 @@ export default function Admin() {
                 to="/"
                 className="block text-center text-sage-600 hover:text-sage-800 transition-colors"
               >
-                ← Back to recipes
+                ← Retour aux recettes
               </Link>
             </div>
           </div>
 
           {/* Help text */}
           <div className="mt-6 text-center text-sm text-gray-500">
-            <p className="mb-2">Need a token?</p>
+            <p className="mb-2">Besoin d'un token ?</p>
             <a
               href="https://github.com/settings/tokens/new?scopes=repo&description=Recipe%20Site"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sage-600 hover:text-sage-800 underline"
             >
-              Create a GitHub Personal Access Token
+              Créer un token GitHub
             </a>
           </div>
         </div>
@@ -427,7 +427,7 @@ export default function Admin() {
       <div className="min-h-screen bg-cream flex items-center justify-center">
         <div className="text-center">
           <div className="spinner mx-auto mb-4"></div>
-          <p className="text-sage-600">Loading recipe...</p>
+          <p className="text-sage-600">Chargement de la recette...</p>
         </div>
       </div>
     );
@@ -463,13 +463,13 @@ export default function Admin() {
 
             <div className="flex items-center gap-4">
               <span className="text-sm text-sage-600">
-                Signed in as <strong>{getUsername()}</strong>
+                Connecté en tant que <strong>{getUsername()}</strong>
               </span>
               <button
                 onClick={handleLogout}
                 className="text-sm text-terracotta-600 hover:text-terracotta-800 transition-colors"
               >
-                Sign Out
+                Se déconnecter
               </button>
             </div>
           </div>
@@ -480,7 +480,7 @@ export default function Admin() {
       <main className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
           <h1 className="font-serif text-3xl font-bold text-gray-800 mb-6">
-            {existingRecipe ? "Edit Recipe" : "Add New Recipe"}
+            {existingRecipe ? "Modifier la recette" : "Ajouter une recette"}
           </h1>
 
           {/* Error message */}
@@ -504,7 +504,7 @@ export default function Admin() {
                 htmlFor="title"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
-                Recipe Title <span className="text-red-500">*</span>
+                Titre <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
@@ -512,7 +512,7 @@ export default function Admin() {
                 name="title"
                 value={formData.title}
                 onChange={handleChange}
-                placeholder="Grandma's Apple Pie"
+                placeholder="Tarte aux pommes de mamie"
                 className="form-input"
                 required
               />
@@ -531,7 +531,7 @@ export default function Admin() {
                 name="description"
                 value={formData.description}
                 onChange={handleChange}
-                placeholder="A brief description of the recipe..."
+                placeholder="Une courte description de la recette..."
                 className="form-textarea"
                 rows={3}
               />
@@ -540,7 +540,7 @@ export default function Admin() {
             {/* Image Upload */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Recipe Image
+                Photo
               </label>
 
               {imagePreview ? (
@@ -554,7 +554,7 @@ export default function Admin() {
                     type="button"
                     onClick={handleClearImage}
                     className="absolute top-2 right-2 p-2 bg-white/90 rounded-full text-gray-600 hover:text-red-600 transition-colors"
-                    aria-label="Remove image"
+                    aria-label="Supprimer la photo"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -595,10 +595,10 @@ export default function Admin() {
                     />
                   </svg>
                   <p className="text-sage-600 mb-1">
-                    Drag and drop an image here, or click to select
+                    Glissez-déposez une photo ici, ou cliquez pour en choisir une
                   </p>
                   <p className="text-sm text-sage-400">
-                    PNG, JPG, or WebP up to 5MB
+                    PNG, JPG ou WebP · 5 Mo max
                   </p>
                 </div>
               )}
@@ -626,11 +626,11 @@ export default function Admin() {
                 name="tags"
                 value={formData.tags}
                 onChange={handleChange}
-                placeholder="dessert, holiday, family favorite"
+                placeholder="dessert, fêtes, recette de famille"
                 className="form-input"
               />
               <p className="text-xs text-gray-500 mt-1">
-                Separate tags with commas
+                Séparer les tags par des virgules
               </p>
             </div>
 
@@ -641,7 +641,7 @@ export default function Admin() {
                   htmlFor="prepTime"
                   className="block text-sm font-medium text-gray-700 mb-1"
                 >
-                  Prep Time (min)
+                  Préparation (min)
                 </label>
                 <input
                   type="number"
@@ -659,7 +659,7 @@ export default function Admin() {
                   htmlFor="cookTime"
                   className="block text-sm font-medium text-gray-700 mb-1"
                 >
-                  Cook Time (min)
+                  Cuisson (min)
                 </label>
                 <input
                   type="number"
@@ -677,7 +677,7 @@ export default function Admin() {
                   htmlFor="servings"
                   className="block text-sm font-medium text-gray-700 mb-1"
                 >
-                  Servings
+                  Portions
                 </label>
                 <input
                   type="text"
@@ -697,23 +697,23 @@ export default function Admin() {
                 htmlFor="ingredients"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
-                Ingredients <span className="text-red-500">*</span>
+                Ingrédients <span className="text-red-500">*</span>
               </label>
               <textarea
                 id="ingredients"
                 name="ingredients"
                 value={formData.ingredients}
                 onChange={handleChange}
-                placeholder="2 cups all-purpose flour
-1 tsp salt
-1 cup butter, cold
+                placeholder="2 tasses de farine
+1 c. à café de sel
+1 tasse de beurre froid
 ..."
                 className="form-textarea font-mono text-sm"
                 rows={8}
                 required
               />
               <p className="text-xs text-gray-500 mt-1">
-                One ingredient per line
+                Un ingrédient par ligne
               </p>
             </div>
 
@@ -723,25 +723,20 @@ export default function Admin() {
                 htmlFor="instructions"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
-                Instructions <span className="text-red-500">*</span>
+                Préparation <span className="text-red-500">*</span>
               </label>
               <textarea
                 id="instructions"
                 name="instructions"
                 value={formData.instructions}
                 onChange={handleChange}
-                placeholder="Preheat oven to 375°F (190°C).
-
-Mix flour and salt in a large bowl.
-
-Cut in the cold butter until mixture resembles coarse crumbs.
-..."
+                placeholder="Préchauffez le four à 190 °C. Mélangez la farine et le sel dans un grand bol. Incorporez le beurre froid jusqu'à obtenir une texture sablée..."
                 className="form-textarea"
                 rows={12}
                 required
               />
               <p className="text-xs text-gray-500 mt-1">
-                Separate each step with a blank line
+                Rédigez la préparation en texte libre
               </p>
             </div>
 
@@ -758,7 +753,7 @@ Cut in the cold butter until mixture resembles coarse crumbs.
                 name="notes"
                 value={formData.notes}
                 onChange={handleChange}
-                placeholder="Tips, variations, or special instructions..."
+                placeholder="Conseils, variantes, astuces..."
                 className="form-textarea"
                 rows={3}
               />
@@ -774,12 +769,12 @@ Cut in the cold butter until mixture resembles coarse crumbs.
                 {saving || uploadingImage ? (
                   <span className="flex items-center justify-center gap-2">
                     <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                    {uploadingImage ? "Uploading image..." : "Saving..."}
+                    {uploadingImage ? "Envoi de la photo..." : "Enregistrement..."}
                   </span>
                 ) : existingRecipe ? (
-                  "Update Recipe"
+                  "Mettre à jour"
                 ) : (
-                  "Save Recipe"
+                  "Enregistrer"
                 )}
               </button>
 
@@ -793,12 +788,12 @@ Cut in the cold butter until mixture resembles coarse crumbs.
                            transition-colors focus:outline-none focus:ring-2 focus:ring-red-400
                            disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Delete Recipe
+                  Supprimer
                 </button>
               )}
 
               <Link to="/" className="btn-outline text-center">
-                Cancel
+                Annuler
               </Link>
             </div>
           </form>
@@ -809,7 +804,7 @@ Cut in the cold butter until mixture resembles coarse crumbs.
       <footer className="py-8 mt-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-sage-500 text-sm">
-            Changes will be saved to your GitHub repository
+            Les modifications seront enregistrées sur votre dépôt GitHub
           </p>
         </div>
       </footer>
