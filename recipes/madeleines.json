@@ -1,0 +1,16 @@
+{
+  "slug": "madeleines",
+  "title": "Madeleines",
+  "image": "Sans titre-1.jpg",
+  "tags": [],
+  "ingredients": [
+    "150 g de farine",
+    "100 g de beurre",
+    "150 g de sucre",
+    "3 oeufs",
+    "Sel et zeste de citron"
+  ],
+  "instructions": "Travailler au batteur les oeufs avec le sucre et le sel jusqu'à ce que le mélange double de volume. Incorporer peu à peu la farine, le beurre fondu et le zeste de citron Remplir chaque moule à madeleine à moitié. Cuire à feu doux pendant 15 minutes.",
+  "createdAt": "2026-04-11T07:25:41.899Z",
+  "updatedAt": "2026-04-11T07:25:41.899Z"
+}

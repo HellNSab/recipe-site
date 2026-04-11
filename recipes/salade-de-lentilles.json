@@ -1,0 +1,29 @@
+{
+  "slug": "salade-de-lentilles",
+  "title": "Salade de lentilles",
+  "image": "Pasted image 20241114193039.png",
+  "tags": [
+    "salade",
+    "lentilles",
+    "orange",
+    "céleri",
+    "poulet",
+    "canard",
+    "raisin"
+  ],
+  "ingredients": [
+    "250 gr de lentilles",
+    "1 bouquet garni",
+    "2 oranges",
+    "3 tiges de céleri",
+    "1 botte de ciboulette",
+    "1 botte de persil",
+    "Le jus d’un citron",
+    "6 cuillères à soupe d’huile d’olive",
+    "6 petits oignons blancs",
+    "Sel et poivre"
+  ],
+  "instructions": "Placez les lentilles et le bouquet garni dans une casserole et recouvrez d’eau froide. Portez alors à ébullition et faites cuire à feu doux pendant 40 minutes (15 mn en cocotte minute). Lorsque les lentilles sont cuites et bien tendres, égouttez les et retirez le bouquet garni. Coupez les oranges en lamelles, émincez le céleri et hachez la ciboulette et le persil. Dans un saladier, versez les lentilles, les tranches d’oranges, le céleri, la ciboulette, les petits oignons blancs épluchés, le jus de citron et l’huile d’olive. Salez, poivrez et mélangez délicatement.",
+  "createdAt": "2026-04-11T07:25:41.837Z",
+  "updatedAt": "2026-04-11T07:25:41.837Z"
+}
