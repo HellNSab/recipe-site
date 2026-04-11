@@ -149,14 +149,3 @@ body {
   @apply absolute left-0 w-7 h-7 rounded-full bg-terracotta-500 text-white
          flex items-center justify-center text-sm font-medium;
 }
-
-/* Print styles */
-@media print {
-  .no-print {
-    display: none !important;
-  }
-
-  body {
-    @apply bg-white text-black;
-  }
-}
