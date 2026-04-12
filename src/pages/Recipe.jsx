@@ -170,7 +170,7 @@ export default function Recipe() {
         {image && (
           <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden mb-8 shadow-lg">
             <img
-              src={image}
+              src={`${import.meta.env.BASE_URL}images/${encodeURIComponent(image)}`}
               alt={title}
               className="w-full h-full object-cover"
             />

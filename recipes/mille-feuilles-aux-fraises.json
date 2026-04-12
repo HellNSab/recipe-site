@@ -7,8 +7,16 @@
     "fraise",
     "crème-chantilly"
   ],
-  "ingredients": [],
-  "instructions": "Equeutez les fraises et coupez les en fines tranches Fouettez la crème pour obtenir une chantilly bien ferme Incorpore le sucre vanillé et réservez la réfrigérateur Découpez six rectangles dans chaque feuille filo Enduisez les de beurre et saupoudrez les de sucre glace Collez les deux par deux et enfournez les 7 minutes pour les faire dorer Dressez les 4 mille-feuilles en empilant feuilles filo, fraises et chantilly Servir aussitôt",
-  "createdAt": "2026-04-11T07:25:41.899Z",
-  "updatedAt": "2026-04-11T07:25:41.899Z"
+  "category": "sucré",
+  "ingredients": [
+    "4 feuillles de pâte filo",
+    "250 g de fraises",
+    "20 cl de crème liquide entière",
+    "1 sachet de sucre vanillé",
+    "30 g de beurre mou",
+    "1 cuillère à soupe de sucre glace"
+  ],
+  "instructions": "Equeutez les fraises et coupez les en fines tranches\nFouettez la crème pour obtenir une chantilly bien ferme\nIncorpore le sucre vanillé et réservez la réfrigérateur\nDécoupez six rectangles dans chaque feuille filo\nEnduisez les de beurre et saupoudrez les de sucre glace\nCollez les deux par deux et enfournez les 7 minutes pour les faire dorer\nDressez les 4 mille-feuilles en empilant feuilles filo, fraises et chantilly\nServir aussitôt",
+  "createdAt": "2026-04-12T10:19:50.321Z",
+  "updatedAt": "2026-04-12T10:19:50.321Z"
 }

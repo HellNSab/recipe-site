@@ -8,8 +8,22 @@
     "cardamome",
     "Iran"
   ],
-  "ingredients": [],
-  "instructions": "Mélanger la farine et la levure chimique. Dans un autre récipient, mélanger le yaourt, l'huile et les jaunes d'oeufs, puis ajouter peu à peu la farine mélangée à la levure, en remuant jusqu'à obtention d'une pâte molle. La fraiser et la mettre dans un sac plastique hermétique (ou bien l'enrober de film plastique en deux épaisseurs) et laisser reposer à la température ambiante 2 heures. Hacher finement les pistaches et les mélanger au sucre glace et à la cardamome (attention à ne pas les réduire en pâte si vous utilisez un moulin électrique). Dans une petite casserole, amener l'eau et le sucre à ébullition en remuant puis ajouter ce sirop au mélange de pistaches et bien l'incorporer. Préchauffer le four à 350°F (180°C). Diviser la pâte en deux. Garder une des moitiés bien enveloppée (en effet cette pâte se dessèche très vite, ce qui la rend difficile à travailler). Étaler une des moitiés sur une surface farinée pour former un cercle d'environ 15\" (environ 40 cm) de diamètre et le plus finement possible. Avec un emporte-pièce d'environ 2 3/4\" (7-8 cm), découper autant des ronds de pâte que vous pourrez. Ajouter les chutes de pâte à l'autre moitié de la pâte pour la rouler à son tour et découper à nouveau des cercles. Déposer 1 c. à café de farce à la pistache au milieu de chaque cercle, en humecter le bord et replier pour former une demi-lune. Bien pincer les bords pour les sceller solidement. Cuire les croissants sur des plaques tapissées de papier cuisson, 18 à 20 minutes (un peu moins dans mon four...) jusqu'à ce qu'ils commencent à prendre couleur. Transférer les croissants sur le papier cuisson sur des volettes et quand les croissants ont assez refroidi pour être manipulés, les rouler dans le sucre glace avant de finir le refroidissement sur des grilles",
-  "createdAt": "2026-04-11T07:25:41.897Z",
-  "updatedAt": "2026-04-11T07:25:41.897Z"
+  "category": "sucré",
+  "ingredients": [
+    "Pour la pâte :",
+    "1/2 tasse (165 g) de farine",
+    "1 c. à café de levure chimique",
+    "1/3 de tasse (10 cl) de yaourt nature",
+    "1/3 de tasse (10 cl) d'huile",
+    "2 gros jaunes d'œufs.",
+    "Pour l'intérieur :",
+    "1/2 tasse (220 g) de pistaches pesées après décorticage",
+    "3/4 de tasse (165 g) de sucre glace",
+    "2 c. à café de cardamome en poudre",
+    "1/4 de tasse (6 cl) d'eau",
+    "2 c. à soupe de sucre"
+  ],
+  "instructions": "Mélanger la farine et la levure chimique. Dans un autre récipient, mélanger le yaourt, l'huile et les jaunes d'oeufs, puis ajouter peu à peu la farine mélangée à la levure, en remuant jusqu'à obtention d'une pâte molle. La fraiser et la mettre dans un sac plastique hermétique (ou bien l'enrober de film plastique en deux épaisseurs) et laisser reposer à la température ambiante 2 heures.\n\nHacher finement les pistaches et les mélanger au sucre glace et à la cardamome (attention à ne pas les réduire en pâte si vous utilisez un moulin électrique).\n\nDans une petite casserole, amener l'eau et le sucre à ébullition en remuant puis ajouter ce sirop au mélange de pistaches et bien l'incorporer.\n\nPréchauffer le four à 350°F (180°C).\n\nDiviser la pâte en deux. Garder une des moitiés bien enveloppée (en effet cette pâte se dessèche très vite, ce qui la rend difficile à travailler). Étaler une des moitiés sur une surface farinée pour former un cercle d'environ 15\" (environ 40 cm) de diamètre et le plus finement possible. Avec un emporte-pièce d'environ 2 3/4\" (7-8 cm), découper autant des ronds de pâte que vous pourrez.\n\nAjouter les chutes de pâte à l'autre moitié de la pâte pour la rouler à son tour et découper à nouveau des cercles. Déposer 1 c. à café de farce à la pistache au milieu de chaque cercle, en humecter le bord et replier pour former une demi-lune. Bien pincer les bords pour les sceller solidement.\n\nCuire les croissants sur des plaques tapissées de papier cuisson, 18 à 20 minutes (un peu moins dans mon four...) jusqu'à ce qu'ils commencent à prendre couleur. Transférer les croissants sur le papier cuisson sur des volettes et quand les croissants ont assez refroidi pour être manipulés, les rouler dans le sucre glace avant de finir le refroidissement sur des grilles",
+  "createdAt": "2026-04-12T10:19:50.309Z",
+  "updatedAt": "2026-04-12T10:19:50.309Z"
 }

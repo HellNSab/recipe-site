@@ -9,6 +9,7 @@
     "parmesan",
     "mozzarella"
   ],
+  "category": "salé",
   "ingredients": [
     "Courgettes",
     "Persil",
@@ -19,7 +20,7 @@
     "Mozzarella",
     "Crème fraîche"
   ],
-  "instructions": "Couper les courgettes en rondelles fines et les faire revenir dans l'huile d'olive avec l'ail coupé grossièrement jusqu'à ce qu'elles ramollissent. Ecraser ou mixer le tout avec le persil et le basilic. Ajouter les 4 oeufs un à un, bien mélanger. Ajouter les biscottes écrasées, le parmesan et la mozzarella coupée en dés. Ajouter la crème fraîche bien mélanger. Mettre au four au bain marie à 180°C (thermostat 6) pendant environ une heure. Surveiller la cuisson et couvrir avec du papier aluminium si le dessus bruni trop.",
-  "createdAt": "2026-04-11T07:25:41.807Z",
-  "updatedAt": "2026-04-11T07:25:41.807Z"
+  "instructions": "Couper les courgettes en rondelles fines et les faire revenir dans l'huile d'olive avec l'ail coupé grossièrement jusqu'à ce qu'elles ramollissent.\nEcraser ou mixer le tout avec le persil et le basilic.\nAjouter les 4 oeufs un à un, bien mélanger.\nAjouter les biscottes écrasées, le parmesan et la mozzarella coupée en dés.\nAjouter la crème fraîche bien mélanger.\nMettre au four au bain marie à 180°C (thermostat 6) pendant environ une heure.\nSurveiller la cuisson et couvrir avec du papier aluminium si le dessus bruni trop.",
+  "createdAt": "2026-04-12T10:19:46.540Z",
+  "updatedAt": "2026-04-12T10:19:46.540Z"
 }

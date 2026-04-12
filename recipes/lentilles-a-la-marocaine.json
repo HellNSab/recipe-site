@@ -7,13 +7,14 @@
     "carotte",
     "tomate"
   ],
+  "category": "salé",
   "ingredients": [
     "Lentilles vertes",
     "Persil, coriandre",
     "Tomates",
     "Carottes"
   ],
-  "instructions": "Faire revenir dans l’huile de l’ail, du persil/coriandre, les épices (paprika, piment, cumin, sel poivre, une pointe de cannelle) Ajouter une carotte en petits morceaux, les lentilles Couvrir largement de sauce tomate ou d’eau + concentré de tomates Cuire en cocotte environ 20 mn ou en casserole couverte 30 mn Surveiller le niveau de liquide (ni trop sec ni trop liquide / cuisson des lentilles",
-  "createdAt": "2026-04-11T07:25:41.816Z",
-  "updatedAt": "2026-04-11T07:25:41.816Z"
+  "instructions": "Faire revenir dans l’huile de l’ail, du persil/coriandre, les épices (paprika, piment, cumin, sel poivre, une pointe de cannelle)\nAjouter une carotte en petits morceaux, les lentilles\nCouvrir largement de sauce tomate ou d’eau + concentré de tomates\nCuire en cocotte environ 20 mn ou en casserole couverte 30 mn\nSurveiller le niveau de liquide (ni trop sec ni trop liquide / cuisson des lentilles",
+  "createdAt": "2026-04-12T10:19:46.554Z",
+  "updatedAt": "2026-04-12T10:19:46.554Z"
 }

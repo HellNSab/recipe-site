@@ -3,8 +3,17 @@
   "title": "Gaufres liégeoises",
   "image": "IMG-20230726-WA0002.jpg",
   "tags": [],
-  "ingredients": [],
-  "instructions": "Délayer la levure dans le lait tiédi. Laisser reposer Mélanger la farine et le sucre puis verser le lait. Ajouter les oeufs puis le beurre. Pétrir 10 min. Couvrir d'un torchon et laisser pousser 30 min. Ajouter le sucre perlé et mélanger. Mettre le saladier au frais et laisser lever 2h minimum Cuire les gaufres",
-  "createdAt": "2026-04-11T07:25:41.895Z",
-  "updatedAt": "2026-04-11T07:25:41.895Z"
+  "category": "sucré",
+  "ingredients": [
+    "2 oeufs",
+    "200 g de beurre salé mou",
+    "12,5 cl de lait",
+    "310 g de farine",
+    "130 g de sucre perlé",
+    "60 g de sucre roux",
+    "25 g de levure de boulanger fraîche"
+  ],
+  "instructions": "Délayer la levure dans le lait tiédi. Laisser reposer\nMélanger la farine et le sucre puis verser le lait. Ajouter les oeufs puis le beurre.\nPétrir 10 min. Couvrir d'un torchon et laisser pousser 30 min.\nAjouter le sucre perlé et mélanger. Mettre le saladier au frais et laisser lever 2h minimum\nCuire les gaufres",
+  "createdAt": "2026-04-12T10:19:50.295Z",
+  "updatedAt": "2026-04-12T10:19:50.295Z"
 }

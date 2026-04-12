@@ -7,8 +7,17 @@
     "café",
     "biscuit-boudoir"
   ],
-  "ingredients": [],
-  "instructions": "Battre les jaunes avec le sucre, la mascarpone, (l'alcool). Ajouter les blancs en neige Tremper les biscuits dans la café Monter par couches la préparation Mettre au frigo au moins 4 heures Saupoudrer de cacao au moment se servir",
-  "createdAt": "2026-04-11T07:25:41.908Z",
-  "updatedAt": "2026-04-11T07:25:41.908Z"
+  "category": "sucré",
+  "ingredients": [
+    "3 oeufs",
+    "4 cuillères à soupe de sucre",
+    "250 g de mascarpone",
+    "Liqueur de café (facultatif)",
+    "biscuits boudoirs",
+    "2 tasses de café",
+    "cacao"
+  ],
+  "instructions": "Battre les jaunes avec le sucre, la mascarpone, (l'alcool).\nAjouter les blancs en neige\nTremper les biscuits dans la café\nMonter par couches la préparation\nMettre au frigo au moins 4 heures\nSaupoudrer de cacao au moment se servir",
+  "createdAt": "2026-04-12T10:19:50.356Z",
+  "updatedAt": "2026-04-12T10:19:50.356Z"
 }

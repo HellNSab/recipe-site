@@ -7,8 +7,19 @@
     "amande",
     "crème-fraîche"
   ],
-  "ingredients": [],
-  "instructions": "Préchauffez le four à 180°C (thermostat 8). Cassez le chocolat en morceaux et faites le fondre dans un bain-marie sans liquide. Mélangez les 2/3 du sucre glace (= 80g de sucre glace) avec la poudre d’amandes. Ajoutez le chocolat fondu en remuant bien. Battez les blancs en neige, avec une pincée de sel puis ajoutez le reste de sucre glace sans cesser de fouetter jusqu’à ce qu’ils deviennent lisses et brillants. Incorporez les délicatement au mélange précédent (vous obtiendrez une texture sableuse, ceci est normal). A l’aide d’une cuillère à café, déposez des petits tas de cette préparation sur la plaque du four préalablement recouverte d’une feuille de papier sulfurisé beurrée. Faites cuire 10 à 12 minutes. Décollez les macarons et laissez les refroidir sur une grille. Entre-temps, préparez la crème au beurre : dans un bol, travaillez le beurre à la fourchette en incorporant le chocolat en poudre. Mélangez soigneusement jusqu’à l’obtention d’une préparation homogène. Ajoutez la crème fraîche et remélangez le tout. Avant de les dégustez, tartinez un macaron de crème au beurre, puis recouvrez le d’un deuxième macaron. Répétez l’opération pour monter les autres macarons.",
-  "createdAt": "2026-04-11T07:25:41.898Z",
-  "updatedAt": "2026-04-11T07:25:41.898Z"
+  "category": "sucré",
+  "ingredients": [
+    "100g de chocolat;",
+    "120g de sucre glace;",
+    "60g de poudre d’amandes;",
+    "2 blancs d’œufs;",
+    "sel",
+    "Pour la crème au beurre :",
+    "100g de beurre mou",
+    "60g de chocolat en poudre (ou cacao)",
+    "1 cuillère à soupe de crème fraîche"
+  ],
+  "instructions": "Préchauffez le four à 180°C (thermostat 8). Cassez le chocolat en morceaux et faites le fondre dans un bain-marie sans liquide. Mélangez les 2/3 du sucre glace (= 80g de sucre glace) avec la poudre d’amandes. Ajoutez le chocolat fondu en remuant bien. Battez les blancs en neige, avec une pincée de sel puis ajoutez le reste de sucre glace sans cesser de fouetter jusqu’à ce qu’ils deviennent lisses et brillants. Incorporez les délicatement au mélange précédent (vous obtiendrez une texture sableuse, ceci est normal). A l’aide d’une cuillère à café, déposez des petits tas de cette préparation sur la plaque du four préalablement recouverte d’une feuille de papier sulfurisé beurrée. Faites cuire 10 à 12 minutes. Décollez les macarons et laissez les refroidir sur une grille. Entre-temps, préparez la crème au beurre : dans un bol, travaillez le beurre à la fourchette en incorporant le chocolat en poudre. Mélangez soigneusement jusqu’à l’obtention d’une préparation homogène. Ajoutez la crème fraîche et remélangez le tout. Avant de les dégustez, tartinez un macaron de crème au beurre, puis recouvrez le d’un deuxième macaron. Répétez l’opération pour monter les autres macarons.",
+  "createdAt": "2026-04-12T10:19:50.316Z",
+  "updatedAt": "2026-04-12T10:19:50.316Z"
 }

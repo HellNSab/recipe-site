@@ -6,8 +6,23 @@
     "noix",
     "chèvre"
   ],
-  "ingredients": [],
-  "instructions": "Emincez finement l’oignon et le faire revenir dans une poêle, anti-adhésive de préférence avec un peu d’huile. Lorsque les morceaux commencent à se colorer, saupoudrer de sucre et laisser cuire encore quelques instants pour qu'ils soient dorés. Réserver. Dans un saladier, verser les farines, la levure chimique, le poivre et le sel. Mélanger le tout. Faire un puits, y casser les œufs et remuer pour bien les incorporer. Ajouter peu à peu le lait tiède et l’huile, tout en remuant. Incorporer à la pâte l’emmental râpé, l’oignon et les noix. Terminer en ajoutant les dés de fromage de chèvre puis mélanger très délicatement. Verser la pâte dans un moule à cake, beurré et fariné ou chemisé de papier sulfurisé s’il n’est pas en silicone. Enfourner pour 1 heure à 180°c.",
-  "createdAt": "2026-04-11T07:25:41.798Z",
-  "updatedAt": "2026-04-11T07:25:41.798Z"
+  "category": "salé",
+  "ingredients": [
+    "110 g de farine blanche",
+    "40 g de farine de sarrazin",
+    "1 sachet de levure",
+    "150 ml de lait tiède",
+    "30 ml d'huile de noix",
+    "50 ml d'huile de tournesol",
+    "30 g de cerneaux de noix",
+    "250 g de fromage de chèvre en bûche",
+    "3 oeufs",
+    "1 oignon",
+    "30 g d'emmental râpé",
+    "Sel, poivre",
+    "1 cuillère à café de sucre"
+  ],
+  "instructions": "Emincez finement l’oignon et le faire revenir dans une poêle, anti-adhésive de préférence avec un peu d’huile. Lorsque les morceaux commencent à se colorer, saupoudrer de sucre et laisser cuire encore quelques instants pour qu'ils soient dorés. Réserver. Dans un saladier, verser les farines, la levure chimique, le poivre et le sel. Mélanger le tout.\nFaire un puits, y casser les œufs et remuer pour bien les incorporer. Ajouter peu à peu le lait tiède et l’huile, tout en remuant. Incorporer à la pâte l’emmental râpé, l’oignon et les noix. Terminer en ajoutant les dés de fromage de chèvre puis mélanger très délicatement.\nVerser la pâte dans un moule à cake, beurré et fariné ou chemisé de papier sulfurisé s’il n’est pas en silicone. Enfourner pour 1 heure à 180°c.",
+  "createdAt": "2026-04-12T10:19:46.528Z",
+  "updatedAt": "2026-04-12T10:19:46.528Z"
 }

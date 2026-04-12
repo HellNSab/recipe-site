@@ -9,8 +9,21 @@
     "chèvre",
     "saumon-fumé"
   ],
-  "ingredients": [],
-  "instructions": "Râpez les carottes, céleri, oignon après les avoir épluchées. Mélangez les avec les oeufs, la farine et la crème. Salez. Dans une poêle huilée et chaude, déposez des tas de préparation et aplatissez les avec les dos de la cuillère. Faites les dorer de chaque côté en les retournant délicatement. Fouettez la ricotta avec le chèvre. Dressage : \"tartinez\" les röstis de crème ricottée et ajoutez des lamelles de saumon fumé.",
-  "createdAt": "2026-04-11T07:25:41.831Z",
-  "updatedAt": "2026-04-11T07:25:41.831Z"
+  "category": "salé",
+  "ingredients": [
+    "5 à 6 grosses carottes",
+    "Céleri rave",
+    "1 oignon",
+    "2 oeufs",
+    "50 g de farine",
+    "70 g de crème épaisse",
+    "sel",
+    "1 pot de ricotta",
+    "150 g de chèvre frais",
+    "sel",
+    "4 tranches de saumon fumé (ou truite fumée)"
+  ],
+  "instructions": "Râpez les carottes, céleri, oignon après les avoir épluchées. Mélangez les avec les oeufs, la farine et la crème. Salez. Dans une poêle huilée et chaude, déposez des tas de préparation et aplatissez les avec les dos de la cuillère. Faites les dorer de chaque côté en les retournant délicatement. Fouettez la ricotta avec le chèvre.\n\nDressage : \"tartinez\" les röstis de crème ricottée et ajoutez des lamelles de saumon fumé.",
+  "createdAt": "2026-04-12T10:19:46.582Z",
+  "updatedAt": "2026-04-12T10:19:46.582Z"
 }

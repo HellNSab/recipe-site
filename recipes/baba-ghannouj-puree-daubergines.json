@@ -6,8 +6,15 @@
     "aubergine",
     "Tahiné"
   ],
-  "ingredients": [],
-  "instructions": "Laver, inciser et mettre au four (grill) les aubergines jusqu’à ce qu’elles soient molles Les fendre en deux, prélever la chair Mettre dans un mixer avec le sel, l’ail, le citron, la sauce de tahina et réduire en purée. Servir arrosé d’un filet d’huile d’olive et une pincée de piment rouge, avec des graines de grenade en saison.",
-  "createdAt": "2026-04-11T07:25:41.781Z",
-  "updatedAt": "2026-04-11T07:25:41.781Z"
+  "category": "salé",
+  "ingredients": [
+    "-2 aubergines",
+    "-sel",
+    "-1 gousse d’ail",
+    "-jus de citron",
+    "-Sauce tahina (huile de sésame) environ 2 c.à café"
+  ],
+  "instructions": "Laver, inciser et mettre au four (grill) les aubergines jusqu’à ce qu’elles soient molles\nLes fendre en deux, prélever la chair\nMettre dans un mixer avec le sel, l’ail, le citron, la sauce de tahina et réduire en purée.\nServir arrosé d’un filet d’huile d’olive et une pincée de piment rouge, avec des graines de grenade en saison.",
+  "createdAt": "2026-04-12T10:19:46.514Z",
+  "updatedAt": "2026-04-12T10:19:46.514Z"
 }

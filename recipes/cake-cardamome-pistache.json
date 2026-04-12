@@ -7,19 +7,22 @@
     "cardamome",
     "pistache"
   ],
+  "category": "sucré",
   "ingredients": [
-    "1/2 cuillère à café de cardamome moulue",
-    "100 g de beurre",
+    "100 g de pistaches mondées non salées",
+    "1/2 cuillère à café de cardamome moulue",
+    "100 g de beurre",
     "150 g de farine",
     "1/3 de sachet de levure chimique",
-    "150 g de sucre",
-    "2 oeufs",
+    "150 g de sucre",
+    "2 oeufs",
     "125 g de yaourt nature",
+    "-Pour le sirop :",
     "zeste d'1/2 citron",
     "5 cl d'eau",
     "50 g de sucre"
   ],
-  "instructions": "Préchauffer le four à 180°C (Th 6). Mixer grossièrement les pistaches et les graines extraites des gousses de cardamome. Ajouter le beurre, la farine et le sucre en poudre. Mixer 20 secondes en plusieurs fois de façon à obtenir une semoule grossière. Incorporer les oeufs et le yaourt à la pâte. Mixer 10 secondes. Verser dans le moule et lisser la surface. Cuire 30-40 mn à 180°C (Th 6). Laisser refroidir et préparer le sirop pendant ce temps. Peler le zeste d'1/2 citron avec un économe. Dans une casserole, dissoudre le sucre dans l'eau à feu doux. Porter ensuite le sirop à ébullition et ajouter le zeste de citron. Garder sur le feu 5 mn. Piquer le gâteau tiède et verser le sirop chaud dessus.",
-  "createdAt": "2026-04-11T07:25:41.890Z",
-  "updatedAt": "2026-04-11T07:25:41.890Z"
+  "instructions": "Préchauffer le four à 180°C (Th 6).\nMixer grossièrement les pistaches et les graines extraites des gousses de cardamome.\nAjouter le beurre, la farine et le sucre en poudre.\nMixer 20 secondes en plusieurs fois de façon à obtenir une semoule grossière.\nIncorporer les oeufs et le yaourt à la pâte. Mixer 10 secondes.\nVerser dans le moule et lisser la surface.\nCuire 30-40 mn à 180°C (Th 6).\nLaisser refroidir et préparer le sirop pendant ce temps.\nPeler le zeste d'1/2 citron avec un économe.\nDans une casserole, dissoudre le sucre dans l'eau à feu doux. Porter ensuite le sirop à ébullition et ajouter le zeste de citron. Garder sur le feu 5 mn.\nPiquer le gâteau tiède et verser le sirop chaud dessus.",
+  "createdAt": "2026-04-12T10:19:50.273Z",
+  "updatedAt": "2026-04-12T10:19:50.273Z"
 }

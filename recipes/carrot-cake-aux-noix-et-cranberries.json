@@ -8,8 +8,21 @@
     "cranberrie",
     "noix"
   ],
-  "ingredients": [],
-  "instructions": "Râpez les carottes. Dans un saladier, battez les oeufs et le sucre. Ajoutez la farine, la levure et les épices, battez à nouveau, puis ajoutez l’huile d’olive. Ajoutez alors les carottes râpées, les noix concassées et les cranberries. Versez dans un moule à cake en silicone ou beurrez et farinez un moule à cake classique et versez la préparation. Faites cuire à four chaud à 180 °C (th. 6) pendant 40 à 45 min env. A la sortie du four, démoulez et laissez refroidir. Dans un bol, mélangez le sucre glace avec quelques gouttes de jus de citron et versez le glaçage sur le carrot cake. Vous pouvez le décorer avec des fruits secs.",
-  "createdAt": "2026-04-11T07:25:41.891Z",
-  "updatedAt": "2026-04-11T07:25:41.891Z"
+  "category": "sucré",
+  "ingredients": [
+    "300 g de carottes",
+    "4 œufs",
+    "150 g de sucre",
+    "250 g de farine",
+    "150 g d’huile d’olive",
+    "1 sachet de levure chimique",
+    "100 g de noix",
+    "80 g de cranberries",
+    "1 cuil. à café de quatre-épices",
+    "5 cuil. à soupe de sucre glace",
+    "un filet de jus de citron"
+  ],
+  "instructions": "Râpez les carottes.\nDans un saladier, battez les oeufs et le sucre. Ajoutez la farine, la levure et les épices, battez à nouveau, puis ajoutez l’huile d’olive.\nAjoutez alors les carottes râpées, les noix concassées et les cranberries.\nVersez dans un moule à cake en silicone ou beurrez et farinez un moule à cake classique et versez la préparation.\nFaites cuire à four chaud à 180 °C (th. 6) pendant 40 à 45 min env.\nA la sortie du four, démoulez et laissez refroidir. Dans un bol, mélangez le sucre glace avec quelques gouttes de jus de citron et versez le glaçage sur le carrot cake. Vous pouvez le décorer avec des fruits secs.",
+  "createdAt": "2026-04-12T10:19:50.273Z",
+  "updatedAt": "2026-04-12T10:19:50.273Z"
 }

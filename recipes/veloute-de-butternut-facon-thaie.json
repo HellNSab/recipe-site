@@ -7,8 +7,19 @@
     "lait-de-coco",
     "soupe"
   ],
-  "ingredients": [],
-  "instructions": "Rincez, épépinez la courge et détaillez la en cubes. Epluchez l’oignon et l’ail, puis émincez les. Dans un grand faitout, faites revenir l’huile d’olive. Ajoutez la courge, l’oignon et l’ail. Laissez réduire 15 min en remuant régulièrement, puis couvrez d’eau. Ajoutez le gingembre et le coeur de la tige de citronnelle hachée, salez et poivrez. Laissez cuire à nouveau 30 minutes. Ajoutez la coriandre et le lait de coco. Mixez le tout, versez dans des bocaux et poivrez bien",
-  "createdAt": "2026-04-11T07:25:41.849Z",
-  "updatedAt": "2026-04-11T07:25:41.849Z"
+  "category": "salé",
+  "ingredients": [
+    "1 courge **butternut** de 800 g non traitée",
+    "1 **oignon** blanc",
+    "2 gousses d’ail",
+    "3 cuil. à soupe d’huile d’olive",
+    "20 cl de **lait de coco**",
+    "2 cuil. à café de racine de gingembre haché",
+    "2 tiges de citronnelle",
+    "1 poignée de coriandre hachée",
+    "sel, poivre"
+  ],
+  "instructions": "Rincez, épépinez la courge et détaillez la en cubes.\nEpluchez l’oignon et l’ail, puis émincez les.\nDans un grand faitout, faites revenir l’huile d’olive. Ajoutez la courge, l’oignon et l’ail. Laissez réduire 15 min en remuant régulièrement, puis couvrez d’eau.\nAjoutez le gingembre et le coeur de la tige de citronnelle hachée, salez et poivrez. Laissez cuire à nouveau 30 minutes.\nAjoutez la coriandre et le lait de coco. Mixez le tout, versez dans des bocaux et poivrez bien",
+  "createdAt": "2026-04-12T10:19:46.617Z",
+  "updatedAt": "2026-04-12T10:19:46.617Z"
 }

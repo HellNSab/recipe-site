@@ -9,8 +9,21 @@
     "noisette",
     "menthe"
   ],
-  "ingredients": [],
+  "category": "salé",
+  "ingredients": [
+    "5 carottes",
+    "2 poignées de roquette",
+    "2 biscottes",
+    "2 cuillères à soupe de poudre d'amandes",
+    "2 cuillères à soupe de poudre de noisettes",
+    "jus d'une 1/2 orange",
+    "1 grosse poignée de menthe",
+    "1 cuillère à café de cumin en poudre",
+    "huile d'olive",
+    "vinaigre balsamique",
+    "sel, poivre"
+  ],
   "instructions": "Mixer ensemble les carottes, la roquette, les biscottes, les amandes, les noisettes, le jus d'orange, la menthe, le cumin et sel, poivre. Puis assaisonner avec l'huile d'olive et le vinaigre balsamique.",
-  "createdAt": "2026-04-11T07:25:41.833Z",
-  "updatedAt": "2026-04-11T07:25:41.833Z"
+  "createdAt": "2026-04-12T10:19:46.584Z",
+  "updatedAt": "2026-04-12T10:19:46.584Z"
 }

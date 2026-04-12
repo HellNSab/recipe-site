@@ -9,8 +9,20 @@
     "lait-de-coco",
     "Inde"
   ],
-  "ingredients": [],
-  "instructions": "Epluchez les carottes et coupez les en rondelles. Faites les précuire avec les petits pois à la vapeur 8min. Décortiquez les crevettes. Pelez et hachez finement l'oignon et l'ail. Faites rissoler 2 min les crevettes avec l'huile chaude dans une grande poêle sauteuse. Retirez les et, à la place, faites fondre le hachis d'oignon et d'ail. Ajoutez le curry, versez le quinoa, mélangez bien pour répartir les saveurs. Arrosez avec 350cl d'eau bouillante et le lait de coco. Ajoutez les petits pois et les carottes, salez et poivrez. Baissez le feu et laisser mijoter 12min. Remettez les crevettes et cuisez encore 2 ou 3min. Saupoudrez de piment et de noix de coco râpée. Décorez d'un brin de persil.",
-  "createdAt": "2026-04-11T07:25:41.827Z",
-  "updatedAt": "2026-04-11T07:25:41.827Z"
+  "category": "salé",
+  "ingredients": [
+    "-100g de petits pois frais ou surgelés",
+    "-2 carottes",
+    "-600g de crevettes crues fraîches ou surgelées",
+    "-1 gros oignon",
+    "-2 gousses d'ail",
+    "-2 cuillères à soupe d'huile",
+    "-1 cuillère à soupe de curry",
+    "-200g de quinoa",
+    "-10cl de lait de coco",
+    "-1 cuillère à café de noix de coco en poudre."
+  ],
+  "instructions": "Epluchez les carottes et coupez les en rondelles.\nFaites les précuire avec les petits pois à la vapeur 8min.\nDécortiquez les crevettes.\nPelez et hachez finement l'oignon et l'ail.\nFaites rissoler 2 min les crevettes avec l'huile chaude dans une grande poêle sauteuse. Retirez les et, à la place, faites fondre le hachis d'oignon et d'ail.\nAjoutez le curry, versez le quinoa, mélangez bien pour répartir les saveurs.\nArrosez avec 350cl d'eau bouillante et le lait de coco.\nAjoutez les petits pois et les carottes, salez et poivrez.\nBaissez le feu et laisser mijoter 12min.\nRemettez les crevettes et cuisez encore 2 ou 3min.\nSaupoudrez de piment et de noix de coco râpée. Décorez d'un brin de persil.",
+  "createdAt": "2026-04-12T10:19:46.575Z",
+  "updatedAt": "2026-04-12T10:19:46.575Z"
 }

@@ -1,17 +1,15 @@
 {
+  "slug": "zaalouk",
   "title": "Zaalouk",
-  "description": "",
   "image": "zaalouk-on-plate-2-1200w-opt.jpg",
   "tags": [
     "aubergine",
     "tomate",
     "persil",
     "coriandre",
-    "maroc"
+    "Maroc"
   ],
-  "prepTime": "",
-  "cookTime": "",
-  "servings": "",
+  "category": "salé",
   "ingredients": [
     "Aubergine",
     "Ail",
@@ -24,9 +22,7 @@
     "citron",
     "1/2 bouquet de persil et coriandre"
   ],
-  "instructions": "Cuire à la vapeur 1 grosse **aubergine** coupée en cube avec 2 gousses d'ail non épluchées environ 10 mn. faire revenir un gros **oignon** coupé en petits morceaux avec de l'huile d'olive, sel poivre, paprika, cumin, piment. Quand l'oignon a fondu, ajouter l'aubergine cuite, l'ail (sans la peau), une grosse **tomate** pelée coupée en morceau, une grosse poignée de **persil** coupé fin+**coriandre** si possible, cuire à feu doux en mélangeant pour faire réduire, ajouter à la fin un peu d'huile d'olive et de citron",
-  "notes": "",
-  "slug": "zaalouk",
-  "updatedAt": "2026-04-11T09:12:48.893Z",
-  "createdAt": "2026-04-11T09:12:48.893Z"
+  "instructions": "cuire à la vapeur 1 grosse **aubergine** coupée en cube avec 2 gousses d'ail non épluchées environ 10 mn.\nfaire revenir un gros **oignon** coupé en petits morceaux avec de l'huile d'olive, sel poivre, paprika, cumin, piment. Quand l'oignon a fondu, ajouter l'aubergine cuite, l'ail (sans la peau), une grosse **tomate** pelée coupée en morceau, une grosse poignée de **persil** coupé fin+**coriandre** si possible, cuire à feu doux en mélangeant pour faire réduire, ajouter à la fin un peu d'huile d'olive et de citron",
+  "createdAt": "2026-04-12T10:19:46.622Z",
+  "updatedAt": "2026-04-12T10:19:46.622Z"
 }

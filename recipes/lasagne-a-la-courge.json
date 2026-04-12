@@ -8,8 +8,22 @@
     "lasagne",
     "végétarien"
   ],
-  "ingredients": [],
-  "instructions": "Peler et couper en rondelles la courge. Retirer les pépins Faire précuire à la vapeur les rondelles à la vapeur 5 min. Hacher l'ail et l'oignon. Rincer et égoutter les lentilles. Farce : dans une poêle faire revenir huile d'olive oignon ail concentré de tomates et piment 5 min. Sauce : Ecraser la ricotta avec le lait la crème, la moitié du parmesan, thym sel et poivre Préchauffer le four Monter les lasagnes par couches en commençant par le butternut et en terminant par une couche de sauce. saupoudrer de parmesan Au four, 30 à 35 min.",
-  "createdAt": "2026-04-11T07:25:41.815Z",
-  "updatedAt": "2026-04-11T07:25:41.815Z"
+  "category": "salé",
+  "ingredients": [
+    "1 courge butternut",
+    "1 oignon et 2 gousses d'ail",
+    "400 g de ricotta",
+    "150 g de parmesan râpé",
+    "10 cl de lait",
+    "10 cl de crème fraîche",
+    "450 g de lentilles cuites ou en conserve",
+    "15 cl de bouillon",
+    "2 cuil. à soupe d'huile d'olive",
+    "thym",
+    "concentré de tomates",
+    "piment sel et poivre"
+  ],
+  "instructions": "Peler et couper en rondelles la courge. Retirer les pépins\nFaire précuire à la vapeur les rondelles à la vapeur 5 min.\nHacher l'ail et l'oignon.\nRincer et égoutter les lentilles.\nFarce : dans une poêle faire revenir huile d'olive oignon ail concentré de tomates et piment 5 min.\nSauce : Ecraser la ricotta avec le lait la crème, la moitié du parmesan, thym sel et poivre\nPréchauffer le four\nMonter les lasagnes par couches en commençant par le butternut et en terminant par une couche de sauce. saupoudrer de parmesan\nAu four, 30 à 35 min.",
+  "createdAt": "2026-04-12T10:19:46.553Z",
+  "updatedAt": "2026-04-12T10:19:46.553Z"
 }

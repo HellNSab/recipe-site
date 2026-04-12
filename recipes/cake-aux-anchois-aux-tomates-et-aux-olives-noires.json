@@ -8,8 +8,21 @@
     "olive",
     "tomate"
   ],
-  "ingredients": [],
-  "instructions": "Préchauffez votre four à 180° Épluchez les tomates, épépinez les, taillez les en dés et faites revenir dans une poêle avec un peu d'huile pendant 15 min. Ajoutez les filets d'anchois, les olives coupées en deux et le poivre. Dans un saladier, fouettez les oeufs, la farine et la levure. Incorporez petit à petit l'huile et le lait chaud. Ajoutez le gruyère râpé. Mélangez. Incorporez le mélange aux anchois à la base. Versez le tout dans un moule non graissé et faites cuire au four pendant 45 min.",
-  "createdAt": "2026-04-11T07:25:41.798Z",
-  "updatedAt": "2026-04-11T07:25:41.798Z"
+  "category": "salé",
+  "ingredients": [
+    "-3 oeufs",
+    "-150g de farine",
+    "-1 sachet de levure",
+    "-10 cl d'huile de tournesol",
+    "-12.5 cl de lait entier",
+    "-100 g de gruyère râpé",
+    "-100 g de filets d'anchois en boîte",
+    "-2 belles tomates",
+    "-50 g d'olives noires",
+    "-1 cuillerée à soupe d'huile de tournesol",
+    "-2 pincées de poivre"
+  ],
+  "instructions": "Préchauffez votre four à 180°\nÉpluchez les tomates, épépinez les, taillez les en dés et faites revenir dans une poêle avec un peu d'huile pendant 15 min. Ajoutez les filets d'anchois, les olives coupées en deux et le poivre.\nDans un saladier, fouettez les oeufs, la farine et la levure. Incorporez petit à petit l'huile et le lait chaud. Ajoutez le gruyère râpé. Mélangez. Incorporez le mélange aux anchois à la base.\nVersez le tout dans un moule non graissé et faites cuire au four pendant 45 min.",
+  "createdAt": "2026-04-12T10:19:46.529Z",
+  "updatedAt": "2026-04-12T10:19:46.529Z"
 }

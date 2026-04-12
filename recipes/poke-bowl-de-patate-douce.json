@@ -13,8 +13,14 @@
     "persil",
     "fromage-frais"
   ],
-  "ingredients": [],
-  "instructions": "Préchauffez le four à 180 °C (th. 6). Epluchez et découpez les patates douces en cubes. Déposez les dans un plat allant au four. Arrosez d’huile d’olive. Ajoutez du sel et du cumin en poudre. Enfournez pour 25 min de cuisson. Pendant ce temps, préparez le crémeux de persil Hachez la botte et mélangez avec le fromage frais, le jus de citron, du sel et du poivre. Réservez au frais. Faites cuire le quinoa dans une casserole d’eau bouillante salée pendant le temps indiqué sur l’emballage. Egouttez et réservez. Faites cuire les fleurettes de brocoli à la vapeur ou dans une casserole d’eau bouillante salée 8 min env. selon la taille. Egouttez et réservez. Détaillez en rondelles les radis préalablement nettoyés. Epluchez et détaillez en lamelles les avocats. Quand les dés de patate douce sont cuits, laissez les tiédir, puis servez à l’assiette les divers ingrédients et les pois chiches. Ajoutez une belle cuillerée de crémeux de persil, quelques noisettes torréfiées, quelques brins de persil plat et un filet d’huile d’olive.",
-  "createdAt": "2026-04-11T07:25:41.823Z",
-  "updatedAt": "2026-04-11T07:25:41.823Z"
+  "category": "salé",
+  "ingredients": [
+    "400 g de patates douces 200 g de quinoa sel",
+    "200 g de brocolis 8 radis 2 avocats 200 g de pois chiches cuits persil plat noisettes entières torréfiées huile d’olive cumin en poudre",
+    "Pour le crémeux de persil :",
+    "1 botte de persil 100 g de fromage frais (de type Philadelphia) le jus de 1/2 citron sel, poivre"
+  ],
+  "instructions": "Préchauffez le four à 180 °C (th. 6).\nEpluchez et découpez les patates douces en cubes.\nDéposez les dans un plat allant au four.\nArrosez d’huile d’olive.\nAjoutez du sel et du cumin en poudre.\nEnfournez pour 25 min de cuisson.\nPendant ce temps, préparez le crémeux de persil\nHachez la botte et mélangez avec le fromage frais, le jus de citron, du sel et du poivre.\nRéservez au frais.\nFaites cuire le quinoa dans une casserole d’eau bouillante salée pendant le temps indiqué sur l’emballage.\nEgouttez et réservez.\nFaites cuire les fleurettes de brocoli à la vapeur ou dans une casserole d’eau bouillante salée 8 min env. selon la taille.\nEgouttez et réservez.\nDétaillez en rondelles les radis préalablement nettoyés.\nEpluchez et détaillez en lamelles les avocats.\nQuand les dés de patate douce sont cuits, laissez les tiédir, puis servez à l’assiette les divers ingrédients et les pois chiches.\nAjoutez une belle cuillerée de crémeux de persil, quelques noisettes torréfiées, quelques brins de persil plat et un filet d’huile d’olive.",
+  "createdAt": "2026-04-12T10:19:46.569Z",
+  "updatedAt": "2026-04-12T10:19:46.569Z"
 }

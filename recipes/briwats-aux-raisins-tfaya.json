@@ -8,8 +8,20 @@
     "raisin-sec",
     "Maroc"
   ],
-  "ingredients": [],
-  "instructions": "Faire tremper les raisins secs 10 minutes Emincer les oignons en lamelles Les faire revenir dans l'huile d'olive puis ajouter les raisins secs égouttés avec un fond d'eau, cannelle, sel et poivre. Laisser revenir 10 minutes, ajouter le miel, poursuivre la cuisson à couvert 10 minutes. Dans un bol, mélanger la fécule avec de 2 cuillères à soupe d'eau, ajouter ce mélange à la préparation. Laisser la préparation refroidir. Farcir les demi-feuilles de brick en forme de triangle, les sceller avec du blanc d'oeuf. Badigeonner chaque briwat avec le jaune d'oeuf battu. Cuire au four ou à l'air fryer. Les badigonner de miel et d'amandes concassées",
-  "createdAt": "2026-04-11T07:25:41.794Z",
-  "updatedAt": "2026-04-11T07:25:41.794Z"
+  "category": "salé",
+  "ingredients": [
+    "50 g de raisins secs",
+    "4 oignons",
+    "1 filet d'huile d'olive",
+    "1 cuillère à café de cannelle",
+    "2 cuillères à soupe de miel",
+    "1 cuillère à café de fécule de maïs",
+    "Sel, poivre",
+    "6 feuilles de brick",
+    "1 oeuf",
+    "amandes concassées"
+  ],
+  "instructions": "Faire tremper les raisins secs 10 minutes\nEmincer les oignons en lamelles\nLes faire revenir dans l'huile d'olive puis ajouter les raisins secs égouttés avec un fond d'eau, cannelle, sel et poivre. Laisser revenir 10 minutes, ajouter le miel, poursuivre la cuisson à couvert 10 minutes. Dans un bol, mélanger la fécule avec de 2 cuillères à soupe d'eau, ajouter ce mélange à la préparation. Laisser la préparation refroidir.\nFarcir les demi-feuilles de brick en forme de triangle, les sceller avec du blanc d'oeuf. Badigeonner chaque briwat avec le jaune d'oeuf battu.\nCuire au four ou à l'air fryer.\nLes badigonner de miel et d'amandes concassées",
+  "createdAt": "2026-04-12T10:19:46.525Z",
+  "updatedAt": "2026-04-12T10:19:46.525Z"
 }

@@ -7,8 +7,15 @@
     "chèvre",
     "romarin"
   ],
-  "ingredients": [],
-  "instructions": "Équeutez le chou-fleur et détaillez le en petits bouquets. Faites bouillir dans de l’eau salée pendant 10 minutes, égouttez. Coupez le fromage de chèvre en morceaux (réservez en une partie au frais) et le mettre dans un mixeur avec le chou-fleur, la crème, les œufs et quelques brins de romarin. Versez dans un moule la préparation puis incorporer les morceaux de chèvre restants. Mettez au four th. 6 (180 °C) pendant 20 minutes. Servez chaud, tiède ou froid. Le truc en plus : pour aller plus vite, dans un bol mixer, hachez le chou-fleur avant de le faire cuire… Il cuira en 5 minutes. Egouttez le après cuisson.",
-  "createdAt": "2026-04-11T07:25:41.806Z",
-  "updatedAt": "2026-04-11T07:25:41.806Z"
+  "category": "salé",
+  "ingredients": [
+    "1/2 chou-fleur",
+    "3 œufs",
+    "25 cl de crème fraîche",
+    "1 fromage de chèvre",
+    "1 bouquet de romarin"
+  ],
+  "instructions": "Équeutez le chou-fleur et détaillez le en petits bouquets. Faites bouillir dans de l’eau salée pendant 10 minutes, égouttez.\nCoupez le fromage de chèvre en morceaux (réservez en une partie au frais) et le mettre dans un mixeur avec le chou-fleur, la crème, les œufs et quelques brins de romarin.\nVersez dans un moule la préparation puis incorporer les morceaux de chèvre restants.\nMettez au four th. 6 (180 °C) pendant 20 minutes.\nServez chaud, tiède ou froid.\nLe truc en plus : pour aller plus vite, dans un bol mixer, hachez le chou-fleur avant de le faire cuire… Il cuira en 5 minutes. Egouttez le après cuisson.",
+  "createdAt": "2026-04-12T10:19:46.538Z",
+  "updatedAt": "2026-04-12T10:19:46.538Z"
 }
