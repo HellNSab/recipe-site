@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+import PlaceholderImage from "../components/PlaceholderImage";
 import { fetchRecipe, deleteRecipe } from "../lib/github";
 import { isAuthenticated, logout, getToken } from "../lib/auth";
 import AdminLoginModal from "../components/AdminLoginModal";
@@ -167,15 +168,17 @@ export default function Recipe() {
       {/* Recipe Content */}
       <main className="max-w-4xl mx-auto px-4 py-8">
         {/* Hero Image */}
-        {image && (
-          <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden mb-8 shadow-lg">
+        <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden mb-8 shadow-lg">
+          {image ? (
             <img
               src={`${import.meta.env.BASE_URL}images/${encodeURIComponent(image)}`}
               alt={title}
               className="w-full h-full object-cover"
             />
-          </div>
-        )}
+          ) : (
+            <PlaceholderImage className="w-full h-full" />
+          )}
+        </div>
 
         {/* Title */}
         <h1 className="font-serif text-4xl md:text-5xl font-bold text-gray-800 mb-4">
