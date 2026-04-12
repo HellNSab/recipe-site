@@ -17,7 +17,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
-  const [activeTag, setActiveTag] = useState("all");
+  const [activeTags, setActiveTags] = useState([]);
   const [isAdmin, setIsAdmin] = useState(isAuthenticated);
   const [showLoginModal, setShowLoginModal] = useState(false);
 
@@ -42,22 +42,30 @@ export default function Home() {
     loadRecipes();
   }, []);
 
-  // Get all unique tags from recipes
-  const allTags = useMemo(() => getAllTags(recipes), [recipes]);
-
   // Filter and search recipes
   const filteredRecipes = useMemo(() => {
-    return searchAndFilter(recipes, searchQuery, activeTag);
-  }, [recipes, searchQuery, activeTag]);
+    return searchAndFilter(recipes, searchQuery, activeTags);
+  }, [recipes, searchQuery, activeTags]);
 
-  // Handle search
-  const handleSearch = (query) => {
-    setSearchQuery(query);
+  // Dynamic tag list: only tags present in currently filtered recipes, excluding already-selected ones
+  const dynamicTags = useMemo(
+    () => getAllTags(filteredRecipes).filter((t) => !activeTags.includes(t)),
+    [filteredRecipes, activeTags]
+  );
+
+  const handleSearch = (query) => setSearchQuery(query);
+
+  const handleTagSelect = (tag) => {
+    setActiveTags((prev) => (prev.includes(tag) ? prev : [...prev, tag]));
   };
 
-  // Handle tag selection
-  const handleTagSelect = (tag) => {
-    setActiveTag(tag);
+  const handleTagRemove = (tag) => {
+    setActiveTags((prev) => prev.filter((t) => t !== tag));
+  };
+
+  const handleReset = () => {
+    setActiveTags([]);
+    setSearchQuery("");
   };
 
   return (
@@ -120,15 +128,19 @@ export default function Home() {
             <SearchBar
               onSearch={handleSearch}
               placeholder="Rechercher par nom, ingrédient ou tag..."
+              value={searchQuery}
+              activeTags={activeTags}
+              onTagRemove={handleTagRemove}
             />
           </div>
 
           {/* Tag Filter */}
           <div className="flex justify-center">
             <TagFilter
-              tags={allTags}
-              activeTag={activeTag}
+              tags={dynamicTags}
+              activeTags={activeTags}
               onTagSelect={handleTagSelect}
+              onReset={handleReset}
             />
           </div>
         </div>
@@ -190,10 +202,7 @@ export default function Home() {
               Essayez de modifier votre recherche ou vos filtres
             </p>
             <button
-              onClick={() => {
-                setSearchQuery("");
-                setActiveTag("all");
-              }}
+              onClick={handleReset}
               className="btn-outline"
             >
               Effacer les filtres
@@ -208,7 +217,7 @@ export default function Home() {
             <div className="mb-6 text-sage-600">
               {filteredRecipes.length} recette
               {filteredRecipes.length !== 1 ? "s" : ""}
-              {activeTag !== "all" && ` · tag « ${activeTag} »`}
+              {activeTags.length > 0 && ` · ${activeTags.map((t) => `« ${t} »`).join(" + ")}`}
               {searchQuery && ` · « ${searchQuery} »`}
             </div>
 

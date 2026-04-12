@@ -3,16 +3,15 @@ import { useState } from "react";
 /**
  * TagFilter component for filtering recipes by tags
  * @param {Object} props
- * @param {Array<string>} props.tags - Array of available tags
- * @param {string} props.activeTag - Currently selected tag
- * @param {Function} props.onTagSelect - Callback when tag is selected
+ * @param {Array<string>} props.tags - Available tags (already filtered to match current results)
+ * @param {Array<string>} props.activeTags - Currently selected tags (shown as chips in search bar)
+ * @param {Function} props.onTagSelect - Called with a tag string when clicked
+ * @param {Function} props.onReset - Called when "Toutes" is clicked
  */
-export default function TagFilter({ tags, activeTag, onTagSelect }) {
+export default function TagFilter({ tags, activeTags = [], onTagSelect, onReset }) {
   const [showAll, setShowAll] = useState(false);
 
-  // Number of tags to show before "Show more" button
   const VISIBLE_COUNT = 8;
-
   const displayedTags = showAll ? tags : tags.slice(0, VISIBLE_COUNT);
   const hasMore = tags.length > VISIBLE_COUNT;
 
@@ -20,15 +19,15 @@ export default function TagFilter({ tags, activeTag, onTagSelect }) {
     return null;
   }
 
+  const isReset = activeTags.length === 0;
+
   return (
     <div className="flex flex-wrap gap-2 items-center">
       {/* "All" button */}
       <button
-        onClick={() => onTagSelect("all")}
-        className={`tag-pill ${
-          !activeTag || activeTag === "all" ? "active" : ""
-        }`}
-        aria-pressed={!activeTag || activeTag === "all"}
+        onClick={onReset}
+        className={`tag-pill ${isReset ? "active" : ""}`}
+        aria-pressed={isReset}
       >
         Toutes
       </button>
@@ -38,16 +37,14 @@ export default function TagFilter({ tags, activeTag, onTagSelect }) {
         <button
           key={tag}
           onClick={() => onTagSelect(tag)}
-          className={`tag-pill capitalize ${
-            activeTag === tag ? "active" : ""
-          }`}
-          aria-pressed={activeTag === tag}
+          className="tag-pill capitalize"
+          aria-pressed={false}
         >
           {tag}
         </button>
       ))}
 
-      {/* Show more/less button */}
+      {/* Show more/less */}
       {hasMore && (
         <button
           onClick={() => setShowAll(!showAll)}
