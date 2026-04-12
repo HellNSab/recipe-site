@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { fetchRecipe, deleteRecipe } from "../lib/github";
 import { isAuthenticated, logout, getToken } from "../lib/auth";
@@ -21,9 +21,9 @@ const markdownComponents = {
 /**
  * Recipe detail page component
  * Displays full recipe with image, ingredients, and instructions
+ * @param {string} props.slug - Recipe slug (passed from App via ?recipe= query param)
  */
-export default function Recipe() {
-  const { slug } = useParams();
+export default function Recipe({ slug }) {
   const navigate = useNavigate();
   const [recipe, setRecipe] = useState(null);
   const [loading, setLoading] = useState(true);

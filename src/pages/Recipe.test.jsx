@@ -20,9 +20,9 @@ import { fetchRecipe } from "../lib/github";
 
 function renderRecipe(slug = "test-recipe") {
   return render(
-    <MemoryRouter initialEntries={[`/recipe/${slug}`]}>
+    <MemoryRouter initialEntries={[`/?recipe=${slug}`]}>
       <Routes>
-        <Route path="/recipe/:slug" element={<Recipe />} />
+        <Route path="/" element={<Recipe slug={slug} />} />
       </Routes>
     </MemoryRouter>
   );

@@ -25,7 +25,7 @@ function RecipeCard({ recipe }) {
 
   return (
     <Link
-      to={`/recipe/${slug}`}
+      to={`/?recipe=${slug}`}
       className="recipe-card block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl"
     >
       {/* Image */}
