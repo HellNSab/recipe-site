@@ -18,6 +18,8 @@ export default function Home() {
   const [error, setError] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeTags, setActiveTags] = useState([]);
+  const [tagPrefix, setTagPrefix] = useState(null); // non-null when in #-autocomplete mode
+  const [inputClear, setInputClear] = useState(0); // increment to clear search bar input
   const [isAdmin, setIsAdmin] = useState(isAuthenticated);
   const [showLoginModal, setShowLoginModal] = useState(false);
 
@@ -42,10 +44,14 @@ export default function Home() {
     loadRecipes();
   }, []);
 
-  // Filter and search recipes
+  // Filter and search recipes — ignore #... queries (those are tag autocomplete, not text search)
   const filteredRecipes = useMemo(() => {
-    return searchAndFilter(recipes, searchQuery, activeTags);
+    const textQuery = searchQuery.startsWith("#") ? "" : searchQuery;
+    return searchAndFilter(recipes, textQuery, activeTags);
   }, [recipes, searchQuery, activeTags]);
+
+  // All tags across all recipes (for autocomplete)
+  const allTags = useMemo(() => getAllTags(recipes), [recipes]);
 
   // Dynamic tag list: only tags present in currently filtered recipes, excluding already-selected ones
   const dynamicTags = useMemo(
@@ -53,10 +59,25 @@ export default function Home() {
     [filteredRecipes, activeTags]
   );
 
+  // Autocomplete tag list: all tags matching the #-prefix, excluding already-selected ones
+  const autocompleteTags = useMemo(() => {
+    if (tagPrefix === null) return null;
+    return allTags.filter(
+      (t) => t.startsWith(tagPrefix.toLowerCase()) && !activeTags.includes(t)
+    );
+  }, [allTags, tagPrefix, activeTags]);
+
   const handleSearch = (query) => setSearchQuery(query);
+
+  const handleTagPrefix = (prefix) => setTagPrefix(prefix);
 
   const handleTagSelect = (tag) => {
     setActiveTags((prev) => (prev.includes(tag) ? prev : [...prev, tag]));
+    // If selected from autocomplete, clear the #... text via the clear trigger
+    if (tagPrefix !== null) {
+      setTagPrefix(null);
+      setInputClear((n) => n + 1);
+    }
   };
 
   const handleTagRemove = (tag) => {
@@ -66,6 +87,8 @@ export default function Home() {
   const handleReset = () => {
     setActiveTags([]);
     setSearchQuery("");
+    setTagPrefix(null);
+    setInputClear((n) => n + 1);
   };
 
   return (
@@ -131,16 +154,20 @@ export default function Home() {
               value={searchQuery}
               activeTags={activeTags}
               onTagRemove={handleTagRemove}
+              onTagPrefix={handleTagPrefix}
+              clearTrigger={inputClear}
             />
           </div>
 
           {/* Tag Filter */}
           <div className="flex justify-center">
             <TagFilter
-              tags={dynamicTags}
+              tags={autocompleteTags ?? dynamicTags}
               activeTags={activeTags}
               onTagSelect={handleTagSelect}
               onReset={handleReset}
+              autocompleteMode={tagPrefix !== null}
+              tagPrefix={tagPrefix ?? ""}
             />
           </div>
         </div>
