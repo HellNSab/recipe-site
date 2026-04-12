@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+import remarkBreaks from "remark-breaks";
 import {
   fetchRecipe,
   writeRecipe,
@@ -600,6 +601,7 @@ export default function Admin() {
                 <div className="form-textarea min-h-[18rem] bg-gray-50 overflow-auto">
                   {formData.instructions ? (
                     <ReactMarkdown
+                      remarkPlugins={[remarkBreaks]}
                       components={{
                         h1: ({ children }) => <h1 className="font-serif text-xl font-bold text-gray-800 mt-4 mb-2">{children}</h1>,
                         h2: ({ children }) => <h2 className="font-serif text-lg font-bold text-gray-800 mt-3 mb-2">{children}</h2>,

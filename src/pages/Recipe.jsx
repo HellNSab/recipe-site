@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+import remarkBreaks from "remark-breaks";
 import PlaceholderImage from "../components/PlaceholderImage";
 import { fetchRecipe, deleteRecipe } from "../lib/github";
 import { isAuthenticated, logout, getToken } from "../lib/auth";
@@ -223,7 +224,7 @@ export default function Recipe() {
             <h2 className="font-serif text-2xl font-bold text-gray-800 mb-4">
               Préparation
             </h2>
-            <ReactMarkdown components={markdownComponents}>
+            <ReactMarkdown remarkPlugins={[remarkBreaks]} components={markdownComponents}>
               {instructions}
             </ReactMarkdown>
           </div>
