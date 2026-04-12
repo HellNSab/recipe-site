@@ -123,4 +123,23 @@ describe("Recipe page — rendu Markdown", () => {
       expect(screen.getByText("fromage")).toBeInTheDocument();
     });
   });
+
+  it("affiche le placeholder SVG quand la recette n'a pas d'image", async () => {
+    fetchRecipe.mockResolvedValue({
+      slug: "sans-image",
+      title: "Soupe du jour",
+      image: "",
+      tags: [],
+      ingredients: ["eau"],
+      instructions: "Faire bouillir.",
+    });
+
+    const { container } = renderRecipe("sans-image");
+
+    await waitFor(() => {
+      expect(screen.getByText("Soupe du jour")).toBeInTheDocument();
+    });
+
+    expect(container.querySelector("svg")).not.toBeNull();
+  });
 });

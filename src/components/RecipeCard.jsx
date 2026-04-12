@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PlaceholderImage from "./PlaceholderImage";
 
 /**
  * RecipeCard component for displaying recipe previews in a grid
@@ -18,10 +19,10 @@ function RecipeCard({ recipe }) {
   // Calculate total time if both prep and cook times are available
   const totalTime = prepTime && cookTime ? `${parseInt(prepTime) + parseInt(cookTime)} min` : prepTime || cookTime;
 
-  // Build image URL from public/images folder, with fallback
+  // Build image URL from public/images folder
   const imageUrl = image
     ? `${import.meta.env.BASE_URL}images/${encodeURIComponent(image)}`
-    : "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&q=80";
+    : null;
 
   return (
     <Link
@@ -30,12 +31,16 @@ function RecipeCard({ recipe }) {
     >
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
-        <img
-          src={imageUrl}
-          alt={title}
-          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-          loading="lazy"
-        />
+        {imageUrl ? (
+          <img
+            src={imageUrl}
+            alt={title}
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+          />
+        ) : (
+          <PlaceholderImage className="w-full h-full" />
+        )}
         {/* Time badge */}
         {totalTime && (
           <div className="absolute bottom-2 right-2 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-sm font-medium text-sage-700 flex items-center gap-1">
