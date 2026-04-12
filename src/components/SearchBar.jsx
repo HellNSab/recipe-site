@@ -87,7 +87,7 @@ export default function SearchBar({
               <button
                 type="button"
                 onClick={(e) => { e.stopPropagation(); onTagRemove?.(tag); }}
-                className="text-sage-500 hover:text-sage-800 transition-colors leading-none"
+                className="cursor-pointer text-sage-500 hover:text-sage-800 transition-colors leading-none"
                 aria-label={`Retirer le tag ${tag}`}
               >
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
