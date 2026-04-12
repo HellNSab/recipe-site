@@ -1,13 +1,16 @@
 import { useState, useEffect, useRef } from "react";
 
 /**
- * SearchBar component with inline tag chips
+ * SearchBar component with inline tag chips and #-prefix tag autocomplete.
  * @param {Object} props
  * @param {Function} props.onSearch - Callback with the current text query
  * @param {string} [props.placeholder]
  * @param {string} [props.value] - Controlled text value (for external resets)
  * @param {Array<string>} [props.activeTags] - Tags displayed as chips inside the bar
  * @param {Function} [props.onTagRemove] - Called with a tag string when its chip × is clicked
+ * @param {Function} [props.onTagPrefix] - Called with the prefix string when query starts with #,
+ *   or null when not in autocomplete mode
+ * @param {number} [props.clearTrigger] - Increment to imperatively clear the input (e.g. after autocomplete select)
  */
 export default function SearchBar({
   onSearch,
@@ -15,17 +18,38 @@ export default function SearchBar({
   value = "",
   activeTags = [],
   onTagRemove,
+  onTagPrefix,
+  clearTrigger = 0,
 }) {
   const [query, setQuery] = useState(value);
   const timeoutRef = useRef(null);
   const inputRef = useRef(null);
+  const prevClearTrigger = useRef(clearTrigger);
 
   // Sync internal state when external value changes (e.g. reset)
   useEffect(() => {
     setQuery(value);
+    if (!value.startsWith("#")) {
+      onTagPrefix?.(null);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [value]);
 
-  // Debounced search
+  // Imperatively clear input when clearTrigger increments (e.g. autocomplete select)
+  useEffect(() => {
+    if (clearTrigger > prevClearTrigger.current) {
+      prevClearTrigger.current = clearTrigger;
+      // Cancel any pending debounced onSearch to prevent it from re-setting the query
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      setQuery("");
+      onSearch?.("");
+      onTagPrefix?.(null);
+      inputRef.current?.focus();
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [clearTrigger]);
+
+  // Debounced search — passes raw value; Home filters out #... queries
   useEffect(() => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     timeoutRef.current = setTimeout(() => {
@@ -34,11 +58,20 @@ export default function SearchBar({
     return () => clearTimeout(timeoutRef.current);
   }, [query, onSearch]);
 
-  const handleChange = (e) => setQuery(e.target.value);
+  const handleChange = (e) => {
+    const val = e.target.value;
+    setQuery(val);
+    if (val.startsWith("#")) {
+      onTagPrefix?.(val.slice(1)); // pass "che" for "#che", "" for "#"
+    } else {
+      onTagPrefix?.(null);
+    }
+  };
 
   const handleClearText = () => {
     setQuery("");
     onSearch("");
+    onTagPrefix?.(null);
     inputRef.current?.focus();
   };
 
@@ -48,6 +81,7 @@ export default function SearchBar({
   };
 
   const hasText = query.length > 0;
+  const isAutocompleteMode = query.startsWith("#");
 
   return (
     <form onSubmit={handleSubmit} className="relative w-full max-w-xl">
@@ -103,8 +137,11 @@ export default function SearchBar({
             value={query}
             onChange={handleChange}
             placeholder={activeTags.length === 0 ? placeholder : ""}
-            className="flex-1 min-w-[80px] bg-transparent outline-none placeholder-sage-400 text-gray-800 py-0.5"
+            className={`flex-1 min-w-[80px] bg-transparent outline-none placeholder-sage-400 py-0.5 ${
+              isAutocompleteMode ? "text-sage-600 font-medium" : "text-gray-800"
+            }`}
             aria-label="Rechercher des recettes"
+            aria-autocomplete={isAutocompleteMode ? "list" : "none"}
           />
         </div>
 
