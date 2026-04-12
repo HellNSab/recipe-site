@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import Admin from "./Admin";
 
@@ -30,6 +30,35 @@ function renderAdmin(path = "/admin") {
     </MemoryRouter>
   );
 }
+
+describe("Admin — aperçu image en mode édition", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
+  it("affiche l'image avec l'URL correcte (BASE_URL + images/) lors du chargement d'une recette existante", async () => {
+    const { fetchRecipe } = await import("../lib/github");
+    fetchRecipe.mockResolvedValue({
+      title: "Arancinis",
+      image: "arancinis.jpg",
+      tags: [],
+      ingredients: [],
+      instructions: "",
+      slug: "arancinis",
+    });
+
+    render(
+      <MemoryRouter initialEntries={["/admin?edit=arancinis"]}>
+        <Routes>
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
+      </MemoryRouter>
+    );
+
+    const img = await waitFor(() => screen.getByAltText("Recipe preview"));
+    expect(img.getAttribute("src")).toBe("/images/arancinis.jpg");
+  });
+});
 
 describe("Admin — barre d'outils Markdown", () => {
   beforeEach(() => {

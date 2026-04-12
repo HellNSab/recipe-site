@@ -70,7 +70,7 @@ export default function Admin() {
             ingredients: recipe.ingredients?.join("\n") || "",
             instructions: recipe.instructions || "",
           });
-          setImagePreview(recipe.image || "");
+          setImagePreview(recipe.image ? `${import.meta.env.BASE_URL}images/${encodeURIComponent(recipe.image)}` : "");
         } else {
           setError("Recette introuvable");
         }
