@@ -8,6 +8,7 @@
     "artichaud",
     "menthe"
   ],
+  "category": "salé",
   "ingredients": [
     "150 g de quinoa blanc",
     "150 g de quinoa rouge",
@@ -20,7 +21,7 @@
     "le jus de 2 citrons",
     "sel, poivre"
   ],
-  "instructions": "Dans un plat allant au four, mélangez le quinoa avec deux fois son volume d'eau (soit 60 cl) et le curcuma. Recouvrez le plat d'un papier d'aluminium et enfournez 40 min à 160 °C (th. 5-6). Sortez du four et laissez refroidir. Pendant ce temps, découpez les courgettes crues en quatre dans la longueur puis en petits tronçons. Coupez les artichauts finement. Hachez la menthe grossièrement. Mélangez l'ensemble en ajoutant la feta, l'huile d'olive et le jus des citrons. Salez, poivrez.",
-  "createdAt": "2026-04-11T07:25:41.839Z",
-  "updatedAt": "2026-04-11T07:25:41.839Z"
+  "instructions": "Dans un plat allant au four, mélangez le quinoa avec deux fois son volume d'eau (soit 60 cl) et le curcuma.\nRecouvrez le plat d'un papier d'aluminium et enfournez 40 min à 160 °C (th. 5-6).\nSortez du four et laissez refroidir.\nPendant ce temps, découpez les courgettes crues en quatre dans la longueur puis en petits tronçons.\nCoupez les artichauts finement.\nHachez la menthe grossièrement.\nMélangez l'ensemble en ajoutant la feta, l'huile d'olive et le jus des citrons.\nSalez, poivrez.",
+  "createdAt": "2026-04-12T10:19:46.592Z",
+  "updatedAt": "2026-04-12T10:19:46.592Z"
 }

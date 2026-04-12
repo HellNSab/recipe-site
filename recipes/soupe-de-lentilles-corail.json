@@ -7,6 +7,7 @@
     "lentilles",
     "carotte"
   ],
+  "category": "salé",
   "ingredients": [
     "1 oignon de taille moyenne,",
     "2 carottes,",
@@ -18,7 +19,7 @@
     "2 grosses cuillères à soupe de yaourt grec,",
     "sel, poivre."
   ],
-  "instructions": "Peler et ciseler l’oignon, peler et tailler les carottes en dés. Dans une casserole, faire suer les dés d’oignon et de carottes dans le beurre. Après 5 minutes, ajouter les lentilles, 1 litre d’eau et le bouillon cube (ou 1 litre de bouillon maison). Porter à petite ébullition, puis baisser le feu et laisser mijoter 10 minutes, le temps que les lentilles soient cuites. Assaisonner de sel, poivre et paprika, puis passer au mixeur plongeur. Au moment de servir, intégrer le yaourt et une généreuse dose de jus de citron. On peut ajouter plus ou moins de paprika, de yaourt et de citron, selon que l’on aime sa soupe acide ou bien relevée.",
-  "createdAt": "2026-04-11T07:25:41.840Z",
-  "updatedAt": "2026-04-11T07:25:41.840Z"
+  "instructions": "Peler et ciseler l’oignon, peler et tailler les carottes en dés. Dans une casserole, faire suer les dés d’oignon et de carottes dans le beurre. Après 5 minutes, ajouter les lentilles, 1 litre d’eau et le bouillon cube (ou 1 litre de bouillon maison).\nPorter à petite ébullition, puis baisser le feu et laisser mijoter 10 minutes, le temps que les lentilles soient cuites. Assaisonner de sel, poivre et paprika, puis passer au mixeur plongeur. Au moment de servir, intégrer le yaourt et une généreuse dose de jus de citron. On peut ajouter plus ou moins de paprika, de yaourt et de citron, selon que l’on aime sa soupe acide ou bien relevée.",
+  "createdAt": "2026-04-12T10:19:46.595Z",
+  "updatedAt": "2026-04-12T10:19:46.595Z"
 }

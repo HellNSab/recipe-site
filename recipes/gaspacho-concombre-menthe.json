@@ -7,16 +7,17 @@
     "menthe",
     "citron"
   ],
+  "category": "salé",
   "ingredients": [
-    "1 concombre",
-    "10 feuilles de menthe fraîche",
+    "1 concombre",
+    "10 feuilles de menthe fraîche",
     "½ gousse d’ail",
     "½ citron vert",
-    "1 goutte de Tabasco",
-    "1 cuillère à soupe d’huile d’olive",
+    "1 goutte de Tabasco",
+    "1 cuillère à soupe d’huile d’olive",
     "sel, poivre"
   ],
-  "instructions": "Epluchez le concombre, épépinez-le et découpez-le en morceaux. Rincez les feuilles de menthe et déposez-les dans le bol de votre blender. Epluchez et émincez la demi-gousse d’ail, puis versez-la dans le bol. Ajoutez les morceaux de concombre et commencez à mixer. Ajoutez le jus de citron vert, le Tabasco et l’huile d’olive. Salez et poivrez à votre convenance, puis mixez à nouveau afin d’obtenir une consistance assez lisse",
-  "createdAt": "2026-04-11T07:25:41.809Z",
-  "updatedAt": "2026-04-11T07:25:41.809Z"
+  "instructions": "Epluchez le concombre, épépinez-le et découpez-le en morceaux.\nRincez les feuilles de menthe et déposez-les dans le bol de votre blender.\nEpluchez et émincez la demi-gousse d’ail, puis versez-la dans le bol.\nAjoutez les morceaux de concombre et commencez à mixer.\nAjoutez le jus de citron vert, le Tabasco et l’huile d’olive.\nSalez et poivrez à votre convenance, puis mixez à nouveau afin d’obtenir une consistance assez lisse",
+  "createdAt": "2026-04-12T10:19:46.544Z",
+  "updatedAt": "2026-04-12T10:19:46.544Z"
 }

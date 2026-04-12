@@ -18,8 +18,10 @@ function RecipeCard({ recipe }) {
   // Calculate total time if both prep and cook times are available
   const totalTime = prepTime && cookTime ? `${parseInt(prepTime) + parseInt(cookTime)} min` : prepTime || cookTime;
 
-  // Placeholder image if none provided
-  const imageUrl = image || "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&q=80";
+  // Build image URL from public/images folder, with fallback
+  const imageUrl = image
+    ? `${import.meta.env.BASE_URL}images/${encodeURIComponent(image)}`
+    : "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&q=80";
 
   return (
     <Link

@@ -7,8 +7,20 @@
     "câpre",
     "feta"
   ],
-  "ingredients": [],
-  "instructions": "Enlevez le bout touffu des poireaux et leurs premières feuilles puis ciselez les poireaux finement. Lavez les puis faites les suer dans un peu d’huile d’olive. Ajoutez la crème fraîche, couvrez et laissez cuire 10 minutes à feu doux. Enfin ajoutez les câpres égouttées, le persil plat lavé et ciselé et le fromage écrasé. Poivrez et réservez. Mélangez la farine, les œufs entiers et le sel. Formez une grosse boule de pâte bien compacte. Avec la machine à pâte faites des plaques d’1 à 2 mm d’épaisseur. Puis découpez 24 ravioles avec votre emporte-pièce. Garnissez chaque raviole d’une cuillère de la préparation aux poireaux, refermez la bien. Puis plongez toutes les ravioles dans de l’eau bouillante. Laissez cuire 12 à 15 minutes. Servez les avec une noisette de beurre ou de crème fraîche et du parmesan.",
-  "createdAt": "2026-04-11T07:25:41.827Z",
-  "updatedAt": "2026-04-11T07:25:41.827Z"
+  "category": "salé",
+  "ingredients": [
+    "200 g de farine bio type 80",
+    "2 œufs",
+    "5 g de sel",
+    "huile d’olive",
+    "2 poireaux",
+    "25 g de crème fraîche",
+    "1 bouquet de persil plat",
+    "2 cuillères à soupe de câpres égouttées",
+    "100 g de fromage féta",
+    "poivre"
+  ],
+  "instructions": "Enlevez le bout touffu des poireaux et leurs premières feuilles puis ciselez les poireaux finement. Lavez les puis faites les suer dans un peu d’huile d’olive. Ajoutez la crème fraîche, couvrez et laissez cuire 10 minutes à feu doux. Enfin ajoutez les câpres égouttées, le persil plat lavé et ciselé et le fromage écrasé. Poivrez et réservez.\nMélangez la farine, les œufs entiers et le sel. Formez une grosse boule de pâte bien compacte. Avec la machine à pâte faites des plaques d’1 à 2 mm d’épaisseur. Puis découpez 24 ravioles avec votre emporte-pièce. Garnissez chaque raviole d’une cuillère de la préparation aux poireaux, refermez la bien. Puis plongez toutes les ravioles dans de l’eau bouillante. Laissez cuire 12 à 15 minutes. Servez les avec une noisette de beurre ou de crème fraîche et du parmesan.",
+  "createdAt": "2026-04-12T10:19:46.576Z",
+  "updatedAt": "2026-04-12T10:19:46.576Z"
 }

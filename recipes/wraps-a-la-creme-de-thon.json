@@ -11,19 +11,20 @@
     "galette",
     "salade"
   ],
+  "category": "salé",
   "ingredients": [
-    "1 citron jaune non traité",
-    "100 g de fromage blanc",
-    "140 g de thon au naturel",
-    "1 carotte",
+    "1 citron jaune non traité",
+    "100 g de fromage blanc",
+    "140 g de thon au naturel",
+    "1 carotte",
     "½ chou blanc",
     "½ poivron rouge",
-    "2 grosses feuilles de laitue",
-    "2 cuillères à soupe d’huile d’olive",
-    "2 galettes de blé",
+    "2 grosses feuilles de laitue",
+    "2 cuillères à soupe d’huile d’olive",
+    "2 galettes de blé",
     "sel, poivre"
   ],
-  "instructions": "Récupérez le jus et le zeste du citron, puis versez le tout dans un petit bol. Ajoutez le fromage blanc et le thon, puis écrasez l’ensemble à la fourchette. Salez et poivrez à votre convenance. Epluchez et râpez la carotte. Rincez et râpez le chou blanc. Rincez et épépinez le demi poivron, puis détaillez le en lamelles très fines. Rincez les feuilles de salade et détaillez les en fines lamelles également. Mélangez toutes les crudités et ajoutez l’huile d’olive. Tartinez la crème de thon sur les galettes de blé. Recouvrez toute la surface des galettes avec le mélange de crudités. Roulez les galettes sur elles-mêmes, très serrées, puis coupez les rouleaux en deux.",
-  "createdAt": "2026-04-11T07:25:41.852Z",
-  "updatedAt": "2026-04-11T07:25:41.852Z"
+  "instructions": "Récupérez le jus et le zeste du citron, puis versez le tout dans un petit bol.\nAjoutez le fromage blanc et le thon, puis écrasez l’ensemble à la fourchette.\nSalez et poivrez à votre convenance.\nEpluchez et râpez la carotte.\nRincez et râpez le chou blanc.\nRincez et épépinez le demi poivron, puis détaillez le en lamelles très fines.\nRincez les feuilles de salade et détaillez les en fines lamelles également.\nMélangez toutes les crudités et ajoutez l’huile d’olive.\nTartinez la crème de thon sur les galettes de blé. Recouvrez toute la surface des galettes avec le mélange de crudités.\nRoulez les galettes sur elles-mêmes, très serrées, puis coupez les rouleaux en deux.",
+  "createdAt": "2026-04-12T10:19:46.621Z",
+  "updatedAt": "2026-04-12T10:19:46.621Z"
 }

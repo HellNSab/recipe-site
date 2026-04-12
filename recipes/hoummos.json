@@ -6,15 +6,16 @@
     "Pois-chiche",
     "Tahiné"
   ],
+  "category": "salé",
   "ingredients": [
     "1 grosse boîte de pois chiches cuits",
-    "4 cuillères à soupe de pâte de sésame (t'hiné)",
+    "4 cuillères à soupe de pâte de sésame (t'hiné)",
     "1/2 verre de jus de citron",
     "4 gousses d'ail",
-    "1/2 cuillère à café de sel",
+    "1/2 cuillère à café de sel",
     "2 cuillères à soupe d'huile d'olive"
   ],
-  "instructions": "Passer les pois chiches au moulin à légumes, à deux reprises (grille fine de préférence). La purée obtenue ne doit pas être liquide mais assez épaisse ! Délayer le sésame avec le jus de citron (on peut couper le citron avec un peu d'eau). Ecraser l'ail avec le sel (en purée) et l'ajouter au mélange sésame citron; bien émulsionner le tout. Mélanger la purée de pois chiches avec cette sauce. Déguster froid, et arroser d'huile d'olive avant de servir.",
-  "createdAt": "2026-04-11T07:25:41.813Z",
-  "updatedAt": "2026-04-11T07:25:41.813Z"
+  "instructions": "Passer les pois chiches au moulin à légumes, à deux reprises (grille fine de préférence).\nLa purée obtenue ne doit pas être liquide mais assez épaisse !\nDélayer le sésame avec le jus de citron (on peut couper le citron avec un peu d'eau).\nEcraser l'ail avec le sel (en purée) et l'ajouter au mélange sésame citron; bien émulsionner le tout.\nMélanger la purée de pois chiches avec cette sauce.\nDéguster froid, et arroser d'huile d'olive avant de servir.",
+  "createdAt": "2026-04-12T10:19:46.549Z",
+  "updatedAt": "2026-04-12T10:19:46.549Z"
 }

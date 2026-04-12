@@ -5,14 +5,15 @@
   "tags": [
     "amande"
   ],
+  "category": "sucré",
   "ingredients": [
-    "5 oeufs",
+    "5 oeufs",
     "200 g d'amandes en poudre",
-    "200 g de sucre",
-    "1 sachet de sucre vanillé",
-    "1 cuillère à soupe de farine"
+    "200 g de sucre",
+    "1 sachet de sucre vanillé",
+    "1 cuillère à soupe de farine"
   ],
-  "instructions": "Préchauffez votre four 10 minutes à 200°C. Mélangez les ingrédients afin d'obtenir une pâte lisse. Beurrez le moule et farinez afin que le gâteau se démoule facilement en fin de cuisson. Versez la préparation dans le moule et mettez à cuire 40 minutes à 200°C. On peut faire un glaçage (sucre glace + citron)",
-  "createdAt": "2026-04-11T07:25:41.903Z",
-  "updatedAt": "2026-04-11T07:25:41.903Z"
+  "instructions": "Préchauffez votre four 10 minutes à 200°C.\nMélangez les ingrédients afin d'obtenir une pâte lisse.\nBeurrez le moule et farinez afin que le gâteau se démoule facilement en fin de cuisson.\nVersez la préparation dans le moule et mettez à cuire 40 minutes à 200°C.\n\nOn peut faire un glaçage (sucre glace + citron)",
+  "createdAt": "2026-04-12T10:19:50.336Z",
+  "updatedAt": "2026-04-12T10:19:50.336Z"
 }

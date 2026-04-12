@@ -3,8 +3,9 @@
   "title": "Smoothies",
   "image": "Sans titre 15.jpg",
   "tags": [],
+  "category": "sucré",
   "ingredients": [],
-  "instructions": "-banane-coco : lait + cacao+ sucre roux + bananes + lait de coco + chicorée liquide -melon : melon + orange + citron + miel + fleur d’oranger -ultra-vert : concombres + pommes granny-smith + citron vert + feuilles de menthe + glaçons -tomate piquante : tomates + céleri branche + citron + glaçons + sel + tabasco + piment",
-  "createdAt": "2026-04-11T07:25:41.906Z",
-  "updatedAt": "2026-04-11T07:25:41.906Z"
+  "instructions": "-banane-coco : lait + cacao+ sucre roux + bananes + lait de coco + chicorée liquide\n\n-melon : melon + orange + citron + miel + fleur d’oranger\n\n-ultra-vert : concombres + pommes granny-smith + citron vert + feuilles de menthe + glaçons\n\n-tomate piquante : tomates + céleri branche + citron + glaçons + sel + tabasco + piment",
+  "createdAt": "2026-04-12T10:19:50.347Z",
+  "updatedAt": "2026-04-12T10:19:50.347Z"
 }

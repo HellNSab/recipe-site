@@ -6,16 +6,17 @@
     "soupe",
     "céleri"
   ],
+  "category": "salé",
   "ingredients": [
-    "1 céleri-rave",
-    "1 petit oignon",
+    "1 céleri-rave",
+    "1 petit oignon",
     "le zeste d'un demi-citron râpé",
     "250 ml de crème fraîche",
     "2 jaunes d'oeufs",
     "1 cube de bouillon de poule",
     "1 litre d'eau"
   ],
-  "instructions": "Faites bouillir 1 litre d'eau dans une grande casserole avec le cube de bouillon de poule. Pendant ce temps, prélevez 500 g de votre céleri-rave, épluchez le et coupez le en petits morceaux. Hachez l'oignon et râpez le reste de citron. Lorsque l'eau est à point, ajoutez le céleri, l'oignon, le zeste de citron. Laissez mijoter pendant une petite heure. Battez la crème fraîche avec les jaunes d'oeufs. Mixez votre potage, et ajouter la préparation crème fraîche/oeufs (hors de la source de chaleur).",
-  "createdAt": "2026-04-11T07:25:41.803Z",
-  "updatedAt": "2026-04-11T07:25:41.803Z"
+  "instructions": "Faites bouillir 1 litre d'eau dans une grande casserole avec le cube de bouillon de poule.\nPendant ce temps, prélevez 500 g de votre céleri-rave, épluchez le et coupez le en petits morceaux. Hachez l'oignon et râpez le reste de citron. Lorsque l'eau est à point, ajoutez le céleri, l'oignon, le zeste de citron. Laissez mijoter pendant une petite heure.\nBattez la crème fraîche avec les jaunes d'oeufs.\nMixez votre potage, et ajouter la préparation crème fraîche/oeufs (hors de la source de chaleur).",
+  "createdAt": "2026-04-12T10:19:46.533Z",
+  "updatedAt": "2026-04-12T10:19:46.533Z"
 }

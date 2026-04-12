@@ -9,8 +9,21 @@
     "ricotta",
     "végétarien"
   ],
-  "ingredients": [],
-  "instructions": "Lavez les courges choisies, pelez les en laissant un peu de peau. Coupez les en petits cubes. Faites chauffer un peu de matière grasse dans une poêle et faites rissoler quelques instants, ajoutez poivrons en cubes, origan, graines de courge et gomasio. Laissez mijoter 5 à 8 minutes. Arrêtez le feu et ajoutez le fromage et l’œuf battu. Mélangez bien. Superposez 2 feuilles de brick, déposez le mélange de légumes au centre de ces feuilles de brick, rabattez les côtés vers le centre et formez une enveloppe bien serrée. Faites les 10 autres de la sorte. Déposez ces enveloppes sur du papier-cuisson sur une plaque à pâtisserie et passez les au four préchauffé à 180°C pendant 15 à 20 minutes.",
-  "createdAt": "2026-04-11T07:25:41.791Z",
-  "updatedAt": "2026-04-11T07:25:41.791Z"
+  "category": "salé",
+  "ingredients": [
+    "12 feuilles de brick",
+    "600 g de courge bio (courgette verte et/ou courge-trompette…)",
+    "1 poivron rouge",
+    "1 poivron jaune",
+    "matière grasse",
+    "1 cuillère à soupe de gomasio (ou à défaut sel et sésame)",
+    "piment en poudre (facultatif)",
+    "1 càs de graines de courge",
+    "1 càc d’origan",
+    "1 œuf",
+    "150 g de ricotta fraîche ou fromage frais."
+  ],
+  "instructions": "Lavez les courges choisies, pelez les en laissant un peu de peau. Coupez les en petits cubes. Faites chauffer un peu de matière grasse dans une poêle et faites rissoler quelques instants, ajoutez poivrons en cubes, origan, graines de courge et gomasio. Laissez mijoter 5 à 8 minutes. Arrêtez le feu et ajoutez le fromage et l’œuf battu. Mélangez bien.\nSuperposez 2 feuilles de brick, déposez le mélange de légumes au centre de ces feuilles de brick, rabattez les côtés vers le centre et formez une enveloppe bien serrée. Faites les 10 autres de la sorte. Déposez ces enveloppes sur du papier-cuisson sur une plaque à pâtisserie et passez les au four préchauffé à 180°C pendant 15 à 20 minutes.",
+  "createdAt": "2026-04-12T10:19:46.522Z",
+  "updatedAt": "2026-04-12T10:19:46.522Z"
 }

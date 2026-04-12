@@ -8,23 +8,24 @@
     "roquefort",
     "parmesan"
   ],
+  "category": "salé",
   "ingredients": [
     "Pour la pâte :",
-    "4 feuilles de pâte filo",
-    "15 g d’huile d’olive",
+    "4 feuilles de pâte filo",
+    "15 g d’huile d’olive",
     "Pour l’appareil :",
-    "25 cl de crème fraîche liquide entière",
-    "1 oeuf entier",
-    "1 jaune d’oeuf",
-    "1 gousse d’ail",
+    "25 cl de crème fraîche liquide entière",
+    "1 oeuf entier",
+    "1 jaune d’oeuf",
+    "1 gousse d’ail",
     "muscade râpée",
     "fleur de sel, poivre",
-    "Pour la garniture :",
-    "400 g de tomates allongées",
-    "100 g de roquefort",
-    "50 g de parmesan fraîchement râpé"
+    "Pour la garniture :",
+    "400 g de tomates allongées",
+    "100 g de roquefort",
+    "50 g de parmesan fraîchement râpé"
   ],
-  "instructions": "Préchauffez le four à 150 °C (th. 5). Pelez, dégermez et hachez l’ail. Rincez les tomates, retirez leur pédoncule et émincez les dans la longueur. **L’appareil** Dans un saladier, fouettez la crème, l’oeuf entier, le jaune d’oeuf, l’ail, le sel, le poivre et la muscade. **La pâte** Badigeonnez d’huile les feuilles de pâte filo avec un pinceau. Chemisez un moule à tarte en superposant les feuilles et découpez l’excédent. **La garniture** Disposez les tranches de tomates en formant une rosace, parsemez le roquefort émietté et versez l’appareil par-dessus. Saupoudrez de parmesan et enfournez 45 min, ou jusqu’à ce que l’appareil ait pris et que le dessus de la tarte soit doré. Servez chaud avec un mesclun assaisonné.",
-  "createdAt": "2026-04-11T07:25:41.844Z",
-  "updatedAt": "2026-04-11T07:25:41.844Z"
+  "instructions": "Préchauffez le four à 150 °C (th. 5).\nPelez, dégermez et hachez l’ail.\nRincez les tomates, retirez leur pédoncule et émincez les dans la longueur.\n**L’appareil**\nDans un saladier, fouettez la crème, l’oeuf entier, le jaune d’oeuf, l’ail, le sel, le poivre et la muscade.\n**La pâte**\nBadigeonnez d’huile les feuilles de pâte filo avec un pinceau.\nChemisez un moule à tarte en superposant les feuilles et découpez l’excédent.\n**La garniture**\nDisposez les tranches de tomates en formant une rosace, parsemez le roquefort émietté et versez l’appareil par-dessus.\nSaupoudrez de parmesan et enfournez 45 min, ou jusqu’à ce que l’appareil ait pris et que le dessus de la tarte soit doré.\nServez chaud avec un mesclun assaisonné.",
+  "createdAt": "2026-04-12T10:19:46.605Z",
+  "updatedAt": "2026-04-12T10:19:46.605Z"
 }

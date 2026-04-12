@@ -9,8 +9,17 @@
     "raisin-sec",
     "pistache"
   ],
-  "ingredients": [],
+  "category": "sucré",
+  "ingredients": [
+    "125 g de semoule de blé dur extra-fine",
+    "40 cl d’eau",
+    "1 boule de mozzarella",
+    "40 g de sucre en poudre",
+    "6 clémentines",
+    "30 g de raisins secs",
+    "quelques pistaches non salées"
+  ],
   "instructions": "Coupez les clémentines en deux et pressez-les. Ajoutez les raisins secs dans le jus et laissez-les gonfler quelques instants. Egouttez la mozzarella et coupez-la en petits morceaux. Faites chauffer l’eau dans une casserole, sans la faire bouillir. Versez le sucre et mélangez. Versez la semoule en pluie, mélangez et baissez la température. Ajoutez la mozzarella à la semoule et mélangez constamment jusqu’à obtenir des fils de fromage. En moins de 5 minutes, c’est prêt. Ajoutez le jus de clémentines et les raisins. Répartissez dans de jolies verrines. Décortiquez les pistaches et coupez-les grossièrement. Décorez les verrines de petits morceaux de pistaches et de quartiers de clémentines. Mangez tiède ou froid.",
-  "createdAt": "2026-04-11T07:25:41.906Z",
-  "updatedAt": "2026-04-11T07:25:41.906Z"
+  "createdAt": "2026-04-12T10:19:50.344Z",
+  "updatedAt": "2026-04-12T10:19:50.344Z"
 }

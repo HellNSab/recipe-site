@@ -8,6 +8,7 @@
     "chou-fleur",
     "coriandre"
   ],
+  "category": "salé",
   "ingredients": [
     "3 oranges",
     "100 gr de lentilles belouga",
@@ -15,7 +16,7 @@
     "1 petit bouquet de coriandre fraîche",
     "Sel, Poivre"
   ],
-  "instructions": "Rincer les lentilles et les faire cuire dans 3 volumes d'eau pendant 20 minutes. Les égoutter et laisser refroidir. Laver le chou-fleur et le mixer finement au robot. Éplucher les oranges à vif et les détailler en suprêmes (c'est-à-dire en quartiers, sans la petite peau fine). Ciseler la coriandre. Mélanger tous les ingrédients dans un grand saladier. Saler _&_ poivrer à convenance. Réserver au frais. Avant de servir, assaisonner avec une vinaigrette maison (huile d'olive + vinaigre de vin rouge + moutarde).",
-  "createdAt": "2026-04-11T07:25:41.839Z",
-  "updatedAt": "2026-04-11T07:25:41.839Z"
+  "instructions": "Rincer les lentilles et les faire cuire dans 3 volumes d'eau pendant 20 minutes. Les égoutter et laisser refroidir.\nLaver le chou-fleur et le mixer finement au robot.\nÉplucher les oranges à vif et les détailler en suprêmes (c'est-à-dire en quartiers, sans la petite peau fine).\nCiseler la coriandre.\nMélanger tous les ingrédients dans un grand saladier. Saler _&_ poivrer à convenance. Réserver au frais.\nAvant de servir, assaisonner avec une vinaigrette maison (huile d'olive + vinaigre de vin rouge + moutarde).",
+  "createdAt": "2026-04-12T10:19:46.593Z",
+  "updatedAt": "2026-04-12T10:19:46.593Z"
 }

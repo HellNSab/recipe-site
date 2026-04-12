@@ -9,6 +9,7 @@
     "tomate",
     "végétarien"
   ],
+  "category": "salé",
   "ingredients": [
     "150 g de blé précuit",
     "2 oignons",
@@ -19,7 +20,7 @@
     "50 cl de bouillon de volaille",
     "chapelure, sel poivre"
   ],
-  "instructions": "Faire cuire le blé à l’eau, égoutter Faire revenir à la poêle oignons ail, tomates herbes + le blé émincer les courgettes dans la longueur mettre dans un plat en alternant couches de courgettes et mélange blé tomates Recouvrir du bouillon saupoudrer de chapelure Mettre au four 45 mn ####Variantes : - insérer des plaques de lasagne - remplacer les courgettes par des aubergines ou un mixte des deux",
-  "createdAt": "2026-04-11T07:25:41.814Z",
-  "updatedAt": "2026-04-11T07:25:41.814Z"
+  "instructions": "Faire cuire le blé à l’eau, égoutter\nFaire revenir à la poêle oignons ail, tomates herbes + le blé\némincer les courgettes dans la longueur\nmettre dans un plat en alternant couches de courgettes et mélange blé tomates\nRecouvrir du bouillon\nsaupoudrer de chapelure\nMettre au four 45 mn\n\n\t####Variantes :\n- insérer des plaques de lasagne\n- remplacer les courgettes par des aubergines ou un mixte des deux",
+  "createdAt": "2026-04-12T10:19:46.552Z",
+  "updatedAt": "2026-04-12T10:19:46.552Z"
 }

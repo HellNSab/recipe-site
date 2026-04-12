@@ -13,21 +13,24 @@
     "poivron",
     "pomme"
   ],
+  "category": "salé",
   "ingredients": [
-    "3 filets de poulet",
-    "20 cl crème de coco",
-    "1 citron vert",
+    "-Poulet coco",
+    "3 filets de poulet",
+    "20 cl crème de coco",
+    "1 citron vert",
     "1 cuillère à soupe de cacahuètes nature",
-    "1 botte de coriandre",
+    "1 botte de coriandre",
     "sel, poivre",
-    "6 petites tranches de gigot d’agneau",
-    "1 botte de basilic",
-    "2 gousses d’ail",
-    "50 g de parmesan",
-    "3 cuillères à soupe d’huile d’olive",
+    "-Agneau basilic",
+    "6 petites tranches de gigot d’agneau",
+    "1 botte de basilic",
+    "2 gousses d’ail",
+    "50 g de parmesan",
+    "3 cuillères à soupe d’huile d’olive",
     "sel, poivre"
   ],
-  "instructions": "-Poulet coco Mixez ensemble la crème de coco, les cacahuètes et la coriandre. Ajoutez le zeste du citron vert, salez et poivrez. Coupez les filets de poulet en trois dans la longueur, disposez les sur des brochettes, nappez avec la marinade au coco.  Gardez 2 h au frais avant de faire cuire pendant 5 min. -Agneau basilic Mixez ensemble le basilic, le parmesan, les gousses d’ail et l’huile d’olive. Salez et poivrez. Nappez les tranches de gigot avec ce mélange, puis enveloppez chacune d’elles de film alimentaire.  Gardez au frais 2 h avant de faire cuire pendant 5 min.",
-  "createdAt": "2026-04-11T07:25:41.783Z",
-  "updatedAt": "2026-04-11T07:25:41.783Z"
+  "instructions": "-Poulet coco\nMixez ensemble la crème de coco, les cacahuètes et la coriandre. Ajoutez le zeste du citron vert, salez et poivrez. Coupez les filets de poulet en trois dans la longueur, disposez les sur des brochettes, nappez avec la marinade au coco.  Gardez 2 h au frais avant de faire cuire pendant 5 min.\n\n-Agneau basilic\nMixez ensemble le basilic, le parmesan, les gousses d’ail et l’huile d’olive. Salez et poivrez. Nappez les tranches de gigot avec ce mélange, puis enveloppez chacune d’elles de film alimentaire.  Gardez au frais 2 h avant de faire cuire pendant 5 min.",
+  "createdAt": "2026-04-12T10:19:46.515Z",
+  "updatedAt": "2026-04-12T10:19:46.515Z"
 }

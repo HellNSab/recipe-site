@@ -3,8 +3,18 @@
   "title": "Gaufres de Anne Berrada",
   "image": null,
   "tags": [],
-  "ingredients": [],
+  "category": "sucré",
+  "ingredients": [
+    "750 g de farine",
+    "1,25 litre de crème fraiche",
+    "37,5 l de lait",
+    "450 gr de beurre fondu",
+    "2 jaunes d’œufs",
+    "6 blancs d’œufs",
+    "3 sachets de sucre vanillé",
+    "Levure de boulanger"
+  ],
   "instructions": "",
-  "createdAt": "2026-04-11T07:25:41.894Z",
-  "updatedAt": "2026-04-11T07:25:41.894Z"
+  "createdAt": "2026-04-12T10:19:50.293Z",
+  "updatedAt": "2026-04-12T10:19:50.293Z"
 }

@@ -8,6 +8,7 @@
     "tomate",
     "basilic"
   ],
+  "category": "salé",
   "ingredients": [
     "6 œufs",
     "400 g d’épinards cuits et égouttés",
@@ -17,7 +18,7 @@
     "On peut ajouter une cuillère à soupe de farine si on veut la terrine plus ferme.",
     "sel poivre"
   ],
-  "instructions": "Mélanger le tout beurrer une terrine verser la préparation cuire au bain-marie th. 6 pendant 50 mn On peut faire une sauce tomate + basilic pour servir la terrine nappée.",
-  "createdAt": "2026-04-11T07:25:41.847Z",
-  "updatedAt": "2026-04-11T07:25:41.847Z"
+  "instructions": "Mélanger le tout\nbeurrer une terrine\nverser la préparation\ncuire au bain-marie th. 6 pendant 50 mn\n\nOn peut faire une sauce tomate + basilic pour servir la terrine nappée.",
+  "createdAt": "2026-04-12T10:19:46.611Z",
+  "updatedAt": "2026-04-12T10:19:46.611Z"
 }

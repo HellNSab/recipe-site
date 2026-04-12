@@ -9,8 +9,21 @@
     "flocon-d-avoine",
     "noix"
   ],
-  "ingredients": [],
-  "instructions": "Mélangez la farine, le beurre, la poudre d’amande, l’œuf entier, les graines de pavot et les flocons d’avoine. Formez des petits tas de pâte sur une plaque de cuisson. Ajoutez sur chaque tas un dé de tomme de Savoie, une pincée de paprika et une de piment d’Espelette. Faites cuire 8 min au four préchauffé à 170 °C (th. 5-6). A la sortie du four, parsemez de graines de tournesol et de quelques éclats de noix.",
-  "createdAt": "2026-04-11T07:25:41.831Z",
-  "updatedAt": "2026-04-11T07:25:41.831Z"
+  "category": "salé",
+  "ingredients": [
+    "100 g de tomme de Savoie",
+    "80 g de farine",
+    "80 g de beurre",
+    "20 g de poudre d’amande",
+    "1 œuf entier",
+    "2 cuil. à café de graines de pavot",
+    "1 cuil. à soupe de flocons d’avoine",
+    "paprika",
+    "piment d’Espelette",
+    "graines de tournesol",
+    "noix"
+  ],
+  "instructions": "Mélangez la farine, le beurre, la poudre d’amande, l’œuf entier, les graines de pavot et les flocons d’avoine.\nFormez des petits tas de pâte sur une plaque de cuisson.\nAjoutez sur chaque tas un dé de tomme de Savoie, une pincée de paprika et une de piment d’Espelette.\nFaites cuire 8 min au four préchauffé à 170 °C (th. 5-6).\nA la sortie du four, parsemez de graines de tournesol et de quelques éclats de noix.",
+  "createdAt": "2026-04-12T10:19:46.582Z",
+  "updatedAt": "2026-04-12T10:19:46.582Z"
 }

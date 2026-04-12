@@ -8,15 +8,16 @@
     "amande",
     "parmesan"
   ],
+  "category": "salé",
   "ingredients": [
     "50 g d'amandes (ou pignons de pin)",
     "100 g de roquette",
     "70 g de parmesan",
     "1 gousse d'ail",
     "15 cl d'huile d'olive",
-    "sel et poivre"
+    "sel et poivre"
   ],
-  "instructions": "Disposez les amandes dans un plat et passez les au four pendant 10 min à 170°C (thermostat 5-6). Retournez les de temps en temps. Laissez refroidir. Concassez les et mixez les avec la roquette, le parmesan, la gousse d'ail et l'huile d'olive. Salez et poivrez. Servez le pesto avec des pâtes ou sur une salade de tomates.",
-  "createdAt": "2026-04-11T07:25:41.822Z",
-  "updatedAt": "2026-04-11T07:25:41.822Z"
+  "instructions": "Disposez les amandes dans un plat et passez les au four pendant 10 min à 170°C (thermostat 5-6).\nRetournez les de temps en temps. Laissez refroidir. Concassez les et mixez les avec la roquette, le parmesan, la gousse d'ail et l'huile d'olive.\nSalez et poivrez.\nServez le pesto avec des pâtes ou sur une salade de tomates.",
+  "createdAt": "2026-04-12T10:19:46.565Z",
+  "updatedAt": "2026-04-12T10:19:46.565Z"
 }

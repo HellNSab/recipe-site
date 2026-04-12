@@ -6,8 +6,18 @@
     "courge",
     "farine-de-chataigne"
   ],
-  "ingredients": [],
-  "instructions": "Faites préchauffer le four à 175°C. Versez 3 cm d’eau dans le plat qui va au four et enfournez le plat. Pelez le demi oignon. Lavez et ciselez le persil. Pelez la courge et coupez-la en petits morceaux. Déposez-les dans le blender. Continuez avec les œufs, la farine, le yaourt-nature, le lait, le demi oignon pelé, le persil, le sel et le poivre. Mixez longtemps pour avoir une crème bien lisse. Répartissez cette crème dans les ramequins, posez-les dans le plat au four et remettez le plat au four pour 30 minutes. Laissez les petits flans refroidir quelques dizaines de minutes. Dégustez les tièdes ou froids avec une salade.",
-  "createdAt": "2026-04-11T07:25:41.806Z",
-  "updatedAt": "2026-04-11T07:25:41.806Z"
+  "category": "salé",
+  "ingredients": [
+    "500 g de courge (potiron, potimarron, butternut…)",
+    "2 œufs",
+    "50 g de farine de châtaigne",
+    "1 yaourt nature",
+    "100 ml de lait",
+    "½ oignon",
+    "½ bouquet de persil plat",
+    "sel et poivre"
+  ],
+  "instructions": "Faites préchauffer le four à 175°C. Versez 3 cm d’eau dans le plat qui va au four et enfournez le plat.\nPelez le demi oignon. Lavez et ciselez le persil. Pelez la courge et coupez-la en petits morceaux. Déposez-les dans le blender. Continuez avec les œufs, la farine, le yaourt-nature, le lait, le demi oignon pelé, le persil, le sel et le poivre.\nMixez longtemps pour avoir une crème bien lisse. Répartissez cette crème dans les ramequins, posez-les dans le plat au four et remettez le plat au four pour 30 minutes.\nLaissez les petits flans refroidir quelques dizaines de minutes. Dégustez les tièdes ou froids avec une salade.",
+  "createdAt": "2026-04-12T10:19:46.539Z",
+  "updatedAt": "2026-04-12T10:19:46.539Z"
 }

@@ -8,15 +8,16 @@
     "aubergine",
     "olive"
   ],
+  "category": "salé",
   "ingredients": [
     "1 poulet moyen",
     "huile d'olive",
     "mélange d'herbes de Provence",
-    "ail moulu, laurier",
-    "sel et poivre",
-    "4 tomates + aubergines + olives"
+    "ail moulu, laurier",
+    "sel et poivre",
+    "4 tomates + aubergines + olives"
   ],
-  "instructions": "Faire préchauffer son four thermostat 6 Mettre le poulet dans un plat allant au four Dans un ramequin verser l'huile d'olive y ajouter l'ail, les herbes de Provence, le sel et le poivre A l'aide d'un pinceau badigeonner le poulet du mélange d'herbe Découper les tomates, aubergines en rondelles et les disposer au fond du plat autour du poulet Enfourner et badigeonner environ toutes les 10 minutes ou quand le poulet s'assèche.",
-  "createdAt": "2026-04-11T07:25:41.827Z",
-  "updatedAt": "2026-04-11T07:25:41.827Z"
+  "instructions": "Faire préchauffer son four thermostat 6\nMettre le poulet dans un plat allant au four\nDans un ramequin verser l'huile d'olive y ajouter l'ail, les herbes de Provence, le sel et le poivre\nA l'aide d'un pinceau badigeonner le poulet du mélange d'herbe\nDécouper les tomates, aubergines en rondelles et les disposer au fond du plat autour du poulet\nEnfourner et badigeonner environ toutes les 10 minutes ou quand le poulet s'assèche.",
+  "createdAt": "2026-04-12T10:19:46.575Z",
+  "updatedAt": "2026-04-12T10:19:46.575Z"
 }

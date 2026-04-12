@@ -7,6 +7,7 @@
     "tomate",
     "piment"
   ],
+  "category": "salé",
   "ingredients": [
     "1kg de tomates",
     "2 gousses d'ail",
@@ -17,6 +18,6 @@
     "½ l d'eau glacée"
   ],
   "instructions": "mixer et mettre au frais",
-  "createdAt": "2026-04-11T07:25:41.808Z",
-  "updatedAt": "2026-04-11T07:25:41.808Z"
+  "createdAt": "2026-04-12T10:19:46.543Z",
+  "updatedAt": "2026-04-12T10:19:46.543Z"
 }

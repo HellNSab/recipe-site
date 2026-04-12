@@ -9,8 +9,18 @@
     "noix",
     "raisin-sec"
   ],
-  "ingredients": [],
-  "instructions": "Coupez les endives dans le sens de la longueur en 2 ou 4 selon leur taille. Lavez, zestez puis presser le jus d'une orange. Faites fondre le beurre dans une sauteuse. Déposez les endives, saupoudrez de sucre roux, laissez fondre et caraméliser légèrement à feu vif. Ajoutez le jus d'orange, puis le zeste et le sel et poivre>. Laissez cuire à couvert sur feu doux, une vingtaine de minutes. Coupez l'autre orange en rondelles puis en quatre. Servez les endives avec du roquefort émietté, des noix concassées, les tranches d'orange et les raisins secs.",
-  "createdAt": "2026-04-11T07:25:41.833Z",
-  "updatedAt": "2026-04-11T07:25:41.833Z"
+  "category": "salé",
+  "ingredients": [
+    "Endives",
+    "2 oranges",
+    "25 g de beurre",
+    "1 cuillère à soupe de cassonade",
+    "sel et poivre",
+    "100 g de roquefort",
+    "40 g de noix",
+    "40 g de raisins secs"
+  ],
+  "instructions": "Coupez les endives dans le sens de la longueur en 2 ou 4 selon leur taille.\nLavez, zestez puis presser le jus d'une orange.\nFaites fondre le beurre dans une sauteuse. Déposez les endives, saupoudrez de sucre roux, laissez fondre et caraméliser légèrement à feu vif.\nAjoutez le jus d'orange, puis le zeste et le sel et poivre>.\nLaissez cuire à couvert sur feu doux, une vingtaine de minutes.\nCoupez l'autre orange en rondelles puis en quatre.\nServez les endives avec du roquefort émietté, des noix concassées, les tranches d'orange et les raisins secs.",
+  "createdAt": "2026-04-12T10:19:46.585Z",
+  "updatedAt": "2026-04-12T10:19:46.585Z"
 }

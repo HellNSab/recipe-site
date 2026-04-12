@@ -8,8 +8,22 @@
     "oignon",
     "Inde"
   ],
-  "ingredients": [],
-  "instructions": "Parer les morceaux de poulet : Retirer la peau qui dépasse ou toute la peau si vous préférez, puis entailler la chair avec une lame de couteau. Préparer la marinade au yaourt : Bien mélanger le yaourt avec le jus de citron, 2 c. à coupe d’huile végétale, le curcuma, les gousses d’ail dégermées et pressées, le gingembre rappé. Imprégnez le poulet parfaitement et laisser reposer 2 à 3h. Après 2h, dans une sauteuse, frire avec les 2 cuillères à soupe d’huile restants, les gousses de cardamome et les clous de girofle, ajouter les oignons émincés et le sel, puis laisser colorer 10 minutes en remuant puis ajouter le poulet et le yaourt de la marinade. Couvrir et laisser frémir à feu doux pendant 25/30 minutes. A servir dans la sauteuse avec une belle poignée de coriandre.",
-  "createdAt": "2026-04-11T07:25:41.826Z",
-  "updatedAt": "2026-04-11T07:25:41.826Z"
+  "category": "salé",
+  "ingredients": [
+    "Morceaux de poulet type cuisses, hauts de cuisse, pilons…",
+    "2 yaourts natures (brassé ou velouté)",
+    "3 oignons rouges de préférence",
+    "6 gousses d’ail",
+    "1 morceau de gingembre de 2/3 cm",
+    "1/2 c. à café de curcuma",
+    "6 gousses de cardamomes",
+    "4 clous de girofle",
+    "coriandre fraîche à votre convenance",
+    "1 citron vert",
+    "4 c. à coupe d’huile végétale",
+    "1/2 c à café de sel fin"
+  ],
+  "instructions": "Parer les morceaux de poulet : Retirer la peau qui dépasse ou toute la peau si vous préférez, puis entailler la chair avec une lame de couteau.\nPréparer la marinade au yaourt : Bien mélanger le yaourt avec le jus de citron, 2 c. à coupe d’huile végétale, le curcuma, les gousses d’ail dégermées et pressées, le gingembre rappé. Imprégnez le poulet parfaitement et laisser reposer 2 à 3h.\nAprès 2h, dans une sauteuse, frire avec les 2 cuillères à soupe d’huile restants, les gousses de cardamome et les clous de girofle, ajouter les oignons émincés et le sel, puis laisser colorer 10 minutes en remuant puis ajouter le poulet et le yaourt de la marinade.\nCouvrir et laisser frémir à feu doux pendant 25/30 minutes.\nA servir dans la sauteuse avec une belle poignée de coriandre.",
+  "createdAt": "2026-04-12T10:19:46.574Z",
+  "updatedAt": "2026-04-12T10:19:46.574Z"
 }

@@ -12,8 +12,10 @@
     "tomate-séchée",
     "parmesan"
   ],
+  "category": "salé",
   "ingredients": [
-    "2 oranges",
+    "1 salade de mâche très fraîche",
+    "2 oranges",
     "1 bûche de chèvre",
     "25 g de pignons de pin",
     "3 cuillères à soupe d'huile d'olive",
@@ -21,7 +23,7 @@
     "1 cuillère à café de moutarde forte",
     "sel et poivre"
   ],
-  "instructions": "Laver la mâche et bien l'essorer. Peler les oranges, les couper en rondelles au-dessus d'une assiette creuse pour récupérer le jus. Couper ces rondelles en quartiers. Couper le chèvre de la même façon. Verser les morceaux d'oranges et de chèvre ainsi que les pignons sur la mâche. Confectionner une vinaigrette avec l'huile d'olive, le vinaigre, 1 cuillère de moutarde, sel et poivre, et y ajouter le jus des oranges. Verser le tout sur la salade, puis mélanger juste au moment de servir.",
-  "createdAt": "2026-04-11T07:25:41.837Z",
-  "updatedAt": "2026-04-11T07:25:41.837Z"
+  "instructions": "Laver la mâche et bien l'essorer.\nPeler les oranges, les couper en rondelles au-dessus d'une assiette creuse pour récupérer le jus. Couper ces rondelles en quartiers.\nCouper le chèvre de la même façon.\nVerser les morceaux d'oranges et de chèvre ainsi que les pignons sur la mâche.\nConfectionner une vinaigrette avec l'huile d'olive, le vinaigre, 1 cuillère de moutarde, sel et poivre, et y ajouter le jus des oranges.\nVerser le tout sur la salade, puis mélanger juste au moment de servir.",
+  "createdAt": "2026-04-12T10:19:46.589Z",
+  "updatedAt": "2026-04-12T10:19:46.589Z"
 }

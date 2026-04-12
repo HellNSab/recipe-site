@@ -7,15 +7,16 @@
     "noix",
     "flocon-d-avoine"
   ],
+  "category": "sucré",
   "ingredients": [
-    "100 g de beurre doux (à température ambiante)",
-    "100 g d’un mélange de fruits secs et de noix",
-    "100 g de flocons d’avoine",
-    "100 g de farine",
+    "100 g de beurre doux (à température ambiante)",
+    "100 g d’un mélange de fruits secs et de noix",
+    "100 g de flocons d’avoine",
+    "100 g de farine",
     "levure",
-    "100 g de sirop de canne roux"
+    "100 g de sirop de canne roux"
   ],
-  "instructions": "Préchauffez le four à 180 °C (th. 6). Recouvrez un moule profond carré de 20 cm de papier cuisson et enduisez-le d’huile d’olive. Mixez le beurre, les fruits secs et les noix, les flocons d’avoine et la farine dans un robot multifonction jusqu’à l’obtention d’une pâte qui ne colle plus aux flancs du bol, puis incorporez le sirop et mixez jusqu’à ce que tout soit bien mélangé. Transférez cette pâte dans le moule en l’aplatissant jusqu’aux bords. Faites cuire de 15 à 20 min ou jusqu’à ce que ce soit doré. Retirez du four, tranchez en 16 carrés prêts à découper et laissez refroidir dans le moule 5 min. Tirez sur le papier pour le démouler et glissez le sur une grille pour le laisser refroidir complètement",
-  "createdAt": "2026-04-11T07:25:41.886Z",
-  "updatedAt": "2026-04-11T07:25:41.886Z"
+  "instructions": "Préchauffez le four à 180 °C (th. 6). Recouvrez un moule profond carré de 20 cm de papier cuisson et enduisez-le d’huile d’olive. Mixez le beurre, les fruits secs et les noix, les flocons d’avoine et la farine dans un robot multifonction jusqu’à l’obtention d’une pâte qui ne colle plus aux flancs du bol, puis incorporez le sirop et mixez jusqu’à ce que tout soit bien mélangé.\nTransférez cette pâte dans le moule en l’aplatissant jusqu’aux bords. Faites cuire de 15 à 20 min ou jusqu’à ce que ce soit doré. Retirez du four, tranchez en 16 carrés prêts à découper et laissez refroidir dans le moule 5 min. Tirez sur le papier pour le démouler et glissez le sur une grille pour le laisser refroidir complètement",
+  "createdAt": "2026-04-12T10:19:50.260Z",
+  "updatedAt": "2026-04-12T10:19:50.260Z"
 }

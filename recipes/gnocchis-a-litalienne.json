@@ -8,19 +8,21 @@
     "parmesan",
     "basilic"
   ],
+  "category": "salé",
   "ingredients": [
     "1 kg de pommes de terre (Bintje)",
     "400 g farine",
     "1 œuf",
     "1 cuillère à soupe d'huile",
-    "50 g de beurre ou margarine",
+    "50 g de beurre ou margarine",
     "noix de muscade",
     "sel et poivre",
+    "Pour la sauce",
     "150 g beurre (ou margarine)",
     "100 g parmesan râpé",
     "basilic frais ou surgelé"
   ],
-  "instructions": "Épluchez les pommes de terre et faites les cuire. Ecrasez les et incorporez le beurre ou margarine en petits morceaux. Mélangez l'œuf, la muscade, l'huile et le sel. Ajoutez les pommes de terre écrasées et la farine. Travaillez l'ensemble de façon à obtenir une pâte bien lisse. Divisez la pâte en 4 morceaux. Formez 4 rouleaux longs et fins. Farinez les et coupez les en tronçons de 1 cm. Donnez leur une forme de gnocchis en les écrasant à la fourchette dans la main. Pochez les gnocchis dans une grande quantité d'eau frémissante salée. Lorsqu'ils remontent en surface, ils sont cuits. Égouttez les. Faites fondre tout le beurre ou margarine dans une casserole. Mettez les gnocchis dans un grand plat. Arrosez les avec le beurre ou margarine fondu. Ajoutez le parmesan et le basilic haché. Poivrez. Mélangez et servez les gnocchis aussitôt.",
-  "createdAt": "2026-04-11T07:25:41.811Z",
-  "updatedAt": "2026-04-11T07:25:41.811Z"
+  "instructions": "Épluchez les pommes de terre et faites les cuire. Ecrasez les et incorporez le beurre ou margarine en petits morceaux. Mélangez l'œuf, la muscade, l'huile et le sel. Ajoutez les pommes de terre écrasées et la farine. Travaillez l'ensemble de façon à obtenir une pâte bien lisse.\nDivisez la pâte en 4 morceaux.\nFormez 4 rouleaux longs et fins.\nFarinez les et coupez les en tronçons de 1 cm.\nDonnez leur une forme de gnocchis en les écrasant à la fourchette dans la main. Pochez les gnocchis dans une grande quantité d'eau frémissante salée. Lorsqu'ils remontent en surface, ils sont cuits. Égouttez les.\nFaites fondre tout le beurre ou margarine dans une casserole. Mettez les gnocchis dans un grand plat.\nArrosez les avec le beurre ou margarine fondu. Ajoutez le parmesan et le basilic haché. Poivrez.\nMélangez et servez les gnocchis aussitôt.",
+  "createdAt": "2026-04-12T10:19:46.546Z",
+  "updatedAt": "2026-04-12T10:19:46.546Z"
 }

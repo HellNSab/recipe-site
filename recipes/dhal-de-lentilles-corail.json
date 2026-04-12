@@ -11,13 +11,14 @@
     "végétarien",
     "Inde"
   ],
+  "category": "salé",
   "ingredients": [
     "2 oignons,",
     "2 carottes,",
     "1 courgette,",
-    "300 g de lentilles corail,",
-    "250 g de pulpe de tomates bio,",
-    "200 ml de lait de coco bio,",
+    "300 g de lentilles corail,",
+    "250 g de pulpe de tomates bio,",
+    "200 ml de lait de coco bio,",
     "1,5 c. à c. de curry en poudre,",
     "1 c. à c. de graines de moutarde,",
     "1 c. à c. de cumin,",
@@ -27,7 +28,7 @@
     "gingembre,",
     "coriandre."
   ],
-  "instructions": "Eplucher et émincer les oignons ainsi qu’un petit morceau de gingembre. Couper les carottes en petits dés. Dans une grande sauteuse, faire revenir carottes, oignons et gingembre dans de l’huile d’olive à feu moyen. Ajouter un peu d’eau, couvrir et laisser dorer. Couper la courgette, l’ajouter à la préparation, mélanger et verser un peu d’eau. Couvrir et laisser cuire 5 minutes pour que les légumes dorent légèrement. Ajouter dans la sauteuse lentilles corail, pulpe de tomates et 2 verres d’eau. Couvrir en remuant régulièrement. Ajouter les graines de moutarde, le cumin. Si toute l’eau a été absorbée et que les lentilles ne sont pas assez cuites, ajouter un peu d’eau. Les lentilles doivent être al dente pour finir la cuisson dans le lait de coco. Verser le lait de coco, ajouter le curry, le sel et laisser cuire 5-10 minutes. Servir et terminer le plat avec des feuilles de coriandre fraîche.",
-  "createdAt": "2026-04-11T07:25:41.804Z",
-  "updatedAt": "2026-04-11T07:25:41.804Z"
+  "instructions": "Eplucher et émincer les oignons ainsi qu’un petit morceau de gingembre. Couper les carottes en petits dés. Dans une grande sauteuse, faire revenir carottes, oignons et gingembre dans de l’huile d’olive à feu moyen. Ajouter un peu d’eau, couvrir et laisser dorer.\nCouper la courgette, l’ajouter à la préparation, mélanger et verser un peu d’eau. Couvrir et laisser cuire 5 minutes pour que les légumes dorent légèrement.\nAjouter dans la sauteuse lentilles corail, pulpe de tomates et 2 verres d’eau. Couvrir en remuant régulièrement. Ajouter les graines de moutarde, le cumin.\nSi toute l’eau a été absorbée et que les lentilles ne sont pas assez cuites, ajouter un peu d’eau. Les lentilles doivent être al dente pour finir la cuisson dans le lait de coco.\nVerser le lait de coco, ajouter le curry, le sel et laisser cuire 5-10 minutes.\nServir et terminer le plat avec des feuilles de coriandre fraîche.",
+  "createdAt": "2026-04-12T10:19:46.535Z",
+  "updatedAt": "2026-04-12T10:19:46.535Z"
 }

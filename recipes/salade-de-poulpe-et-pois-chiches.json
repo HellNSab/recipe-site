@@ -7,8 +7,16 @@
     "Pois-chiche",
     "salade"
   ],
-  "ingredients": [],
-  "instructions": "Faites cuire le poulpe dans une casserole d'eau bouillante pendant 1 heure. Vérifiez la cuisson au bout de ce temps. Si le poulpe se découpe facilement, c'est qu'il est cuit sinon prolongez la cuisson. Une fois cuit, découpez le poulpe en tronçons assez larges et disposez les dans un grand plat de service. Salez, poivrez. Dans un saladier, mélangez les pois chiches, le persil ciselé, la botte (entière) de ciboulette ciselée et les échalotes émincées. Salez, poivrez. Pressez les citrons et ajoutez le jus dans le saladier ainsi que l'huile d'olive. Répartissez autour ou au-dessus des morceaux de poulpe, le mélange pois chiche/aromates. Servez frais mais pas trop froid.",
-  "createdAt": "2026-04-11T07:25:41.838Z",
-  "updatedAt": "2026-04-11T07:25:41.838Z"
+  "category": "salé",
+  "ingredients": [
+    "Poulpe",
+    "Pois chiches cuits ou en boite",
+    "Persil",
+    "Ciboulette",
+    "Citron",
+    "Huile d'olive"
+  ],
+  "instructions": "Faites cuire le poulpe dans une casserole d'eau bouillante pendant 1 heure. Vérifiez la cuisson au bout de ce temps. Si le poulpe se découpe facilement, c'est qu'il est cuit sinon prolongez la cuisson.\nUne fois cuit, découpez le poulpe en tronçons assez larges et disposez les dans un grand plat de service. Salez, poivrez.\nDans un saladier, mélangez les pois chiches, le persil ciselé, la botte (entière) de ciboulette ciselée et les échalotes émincées. Salez, poivrez. Pressez les citrons et ajoutez le jus dans le saladier ainsi que l'huile d'olive.\nRépartissez autour ou au-dessus des morceaux de poulpe, le mélange pois chiche/aromates.\nServez frais mais pas trop froid.",
+  "createdAt": "2026-04-12T10:19:46.591Z",
+  "updatedAt": "2026-04-12T10:19:46.591Z"
 }

@@ -7,8 +7,32 @@
     "haricot-blanc",
     "carotte"
   ],
-  "ingredients": [],
-  "instructions": "Préchauffez le four à 140 °C (th. 4-5). Faites revenir les épaules d’agneau et les échalotes dans une grande cocotte avec la graisse de canard, salez. Une fois les épaules d’agneau colorées, ajoutez le romarin, le thym et l’ail rose. Versez le bouillon de volaille, fermez la cocotte et enfournez-la. Laissez confire 2 h env. Préparez les haricots. Ecossez- les, triez-les, puis rincez-les. Dans une cocotte, faites dorer dans la graisse de canard les carottes, les échalotes et l’ail. Ajoutez les haricots et mélangez. Versez le bouillon de volaille, ajoutez le bouquet garni, puis laissez cuire 20 min. 10 min avant la fin de la cuisson, ajoutez la tomate. Assaisonnez de sel et de piment d’Espelette. Quand les épaules sont confites, retirez-les de la cocotte. Déglacez-les avec un peu d’eau, détachez les sucs à l’aide d’une spatule, puis laissez réduire quelques instants. Filtrez alors le jus, puis versez-le dans la cocotte des haricots. Mélangez bien. Ajoutez les piments de piquillo et le persil. Mélangez délicatement. Déposez les épaules d’agneau sur les haricots et servez.",
-  "createdAt": "2026-04-11T07:25:41.805Z",
-  "updatedAt": "2026-04-11T07:25:41.805Z"
+  "category": "salé",
+  "ingredients": [
+    "2 épaules d’agneau de lait",
+    "3 échalotes émincées",
+    "2 branches de romarin",
+    "2 branches de thym",
+    "6 gousses d’ail rose",
+    "50 cl de bouillon de volaille",
+    "50 g de graisse de canard",
+    "sel",
+    "piment d’Espelette",
+    "Pour les haricots :",
+    "1,2 kg de haricots maïs du Béarn en cosses",
+    "2 carottes taillées en brunoise",
+    "6 échalotes",
+    "1 grosse tomate coupée en quatre",
+    "8 piments de piquillo taillés en lanières",
+    "1 gousse d’ail",
+    "1 bouquet garni",
+    "2 branches de persil plat",
+    "1 litre de bouillon de volaille",
+    "20 g de graisse de canard",
+    "sel",
+    "piment d’Espelette"
+  ],
+  "instructions": "Préchauffez le four à 140 °C (th. 4-5).\nFaites revenir les épaules d’agneau et les échalotes dans une grande cocotte avec la graisse de canard, salez.\nUne fois les épaules d’agneau colorées, ajoutez le romarin, le thym et l’ail rose. Versez le bouillon de volaille, fermez la cocotte et enfournez-la.\nLaissez confire 2 h env.\nPréparez les haricots. Ecossez- les, triez-les, puis rincez-les.\nDans une cocotte, faites dorer dans la graisse de canard les carottes, les échalotes et l’ail. Ajoutez les haricots et mélangez. Versez le bouillon de volaille, ajoutez le bouquet garni, puis laissez cuire 20 min. 10 min avant la fin de la cuisson, ajoutez la tomate. Assaisonnez de sel et de piment d’Espelette.\nQuand les épaules sont confites, retirez-les de la cocotte. Déglacez-les avec un peu d’eau, détachez les sucs à l’aide d’une spatule, puis laissez réduire quelques instants. Filtrez alors le jus, puis versez-le dans la cocotte des haricots. Mélangez bien. Ajoutez les piments de piquillo et le persil. Mélangez délicatement.\nDéposez les épaules d’agneau sur les haricots et servez.",
+  "createdAt": "2026-04-12T10:19:46.537Z",
+  "updatedAt": "2026-04-12T10:19:46.537Z"
 }

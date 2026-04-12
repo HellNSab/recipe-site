@@ -8,6 +8,7 @@
     "mozarella",
     "végétarien"
   ],
+  "category": "salé",
   "ingredients": [
     "120 g de boulghour",
     "4 grosses tomates",
@@ -17,7 +18,7 @@
     "30 g de parmesan",
     "huile d’olive, origan séché sel poivre"
   ],
-  "instructions": "Cuire le boulghour dans l’eau salée 10 mn Evider les tomates, les saler les retourner Mélanger tous les ingrédients, garnir les tomates saupoudrer de parmesan et mettre au four 30 mn",
-  "createdAt": "2026-04-11T07:25:41.848Z",
-  "updatedAt": "2026-04-11T07:25:41.848Z"
+  "instructions": "Cuire le boulghour dans l’eau salée 10 mn\nEvider les tomates, les saler les retourner\nMélanger tous les ingrédients, garnir les tomates saupoudrer de parmesan et mettre au four 30 mn",
+  "createdAt": "2026-04-12T10:19:46.614Z",
+  "updatedAt": "2026-04-12T10:19:46.614Z"
 }

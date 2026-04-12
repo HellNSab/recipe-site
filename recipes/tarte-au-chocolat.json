@@ -7,14 +7,15 @@
     "crème-fraîche",
     "pâte-sablée"
   ],
+  "category": "sucré",
   "ingredients": [
-    "70 g de sucre",
-    "4 oeufs entiers",
+    "70 g de sucre",
+    "4 oeufs entiers",
     "120 g de chocolat noir à cuire",
     "50 cl de crème fraîche épaisse",
     "pâte sablée"
   ],
-  "instructions": "Préchauffer le four. Précuire la pâte sablée 1 quart d'heure à 180°C Dans une casserole, faire fondre à feu doux le chocolat cassé en morceaux dans 2 cuillères à soupe d'eau, jusqu'à obtenir un ensemble lisse. Ajouter tout le sucre, continuer de mélanger au fouet. Ajouter les quatre oeufs un à un, mélanger toujours au fouet. Ajouter la crème fraîche épaisse, et mélanger. Ajouter la préparation à la pâte et remettre à cuire 1/4 d'heure.",
-  "createdAt": "2026-04-11T07:25:41.907Z",
-  "updatedAt": "2026-04-11T07:25:41.907Z"
+  "instructions": "Préchauffer le four.\nPrécuire la pâte sablée 1 quart d'heure à 180°C\nDans une casserole, faire fondre à feu doux le chocolat cassé en morceaux dans 2 cuillères à soupe d'eau, jusqu'à obtenir un ensemble lisse.\nAjouter tout le sucre, continuer de mélanger au fouet.\nAjouter les quatre oeufs un à un, mélanger toujours au fouet.\nAjouter la crème fraîche épaisse, et mélanger.\nAjouter la préparation à la pâte et remettre à cuire 1/4 d'heure.",
+  "createdAt": "2026-04-12T10:19:50.350Z",
+  "updatedAt": "2026-04-12T10:19:50.350Z"
 }
