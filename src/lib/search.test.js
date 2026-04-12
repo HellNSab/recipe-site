@@ -3,6 +3,7 @@ import {
   initializeSearch,
   searchRecipes,
   filterByTag,
+  filterByTags,
   getAllTags,
   searchAndFilter,
 } from "./search.js";
@@ -113,20 +114,53 @@ describe("searchRecipes", () => {
   });
 });
 
+describe("filterByTags (AND logic)", () => {
+  it("retourne toutes les recettes pour un tableau vide", () => {
+    expect(filterByTags(recipes, [])).toHaveLength(3);
+  });
+
+  it("filtre par un seul tag", () => {
+    const result = filterByTags(recipes, ["dessert"]);
+    expect(result).toHaveLength(2);
+    expect(result.map((r) => r.slug)).toContain("tarte-aux-pommes");
+    expect(result.map((r) => r.slug)).toContain("mousse-chocolat");
+  });
+
+  it("applique la logique AND pour plusieurs tags", () => {
+    const result = filterByTags(recipes, ["dessert", "chocolat"]);
+    expect(result).toHaveLength(1);
+    expect(result[0].slug).toBe("mousse-chocolat");
+  });
+
+  it("retourne un tableau vide si aucune recette ne correspond à tous les tags", () => {
+    expect(filterByTags(recipes, ["dessert", "viande"])).toHaveLength(0);
+  });
+
+  it("est insensible à la casse", () => {
+    expect(filterByTags(recipes, ["DESSERT", "Chocolat"])).toHaveLength(1);
+  });
+});
+
 describe("searchAndFilter", () => {
-  it("combine recherche et filtre par tag", () => {
-    const results = searchAndFilter(recipes, "pommes", "dessert");
+  it("combine recherche et filtre par tags", () => {
+    const results = searchAndFilter(recipes, "pommes", ["dessert"]);
     expect(results.some((r) => r.slug === "tarte-aux-pommes")).toBe(true);
     expect(results.every((r) => r.tags.includes("dessert"))).toBe(true);
   });
 
-  it("retourne toutes les recettes sans query ni tag", () => {
-    expect(searchAndFilter(recipes, "", "all")).toHaveLength(3);
+  it("retourne toutes les recettes sans query ni tags", () => {
+    expect(searchAndFilter(recipes, "", [])).toHaveLength(3);
   });
 
   it("filtre par tag sans query", () => {
-    const results = searchAndFilter(recipes, "", "viande");
+    const results = searchAndFilter(recipes, "", ["viande"]);
     expect(results).toHaveLength(1);
     expect(results[0].slug).toBe("poulet-roti");
+  });
+
+  it("applique la logique AND sur plusieurs tags", () => {
+    const results = searchAndFilter(recipes, "", ["dessert", "chocolat"]);
+    expect(results).toHaveLength(1);
+    expect(results[0].slug).toBe("mousse-chocolat");
   });
 });

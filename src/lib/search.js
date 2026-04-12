@@ -82,6 +82,26 @@ export function filterByTag(recipes, tag) {
 }
 
 /**
+ * Filter recipes by multiple tags (AND logic — recipe must have all tags)
+ * @param {Array} recipes - Array of recipe objects
+ * @param {Array<string>} tags - Tags to filter by
+ * @returns {Array} Filtered recipes
+ */
+export function filterByTags(recipes, tags) {
+  if (!tags || tags.length === 0) {
+    return recipes;
+  }
+
+  return recipes.filter(
+    (recipe) =>
+      recipe.tags &&
+      tags.every((tag) =>
+        recipe.tags.some((recipeTag) => recipeTag.toLowerCase() === tag.toLowerCase())
+      )
+  );
+}
+
+/**
  * Get all unique tags from recipes, sorted by frequency descending.
  * @param {Array} recipes - Array of recipe objects
  * @returns {Array} Array of unique tag strings, most used first
@@ -107,15 +127,15 @@ export function getAllTags(recipes) {
  * Combined search and filter function
  * @param {Array} recipes - Array of recipe objects
  * @param {string} query - Search query
- * @param {string} tag - Tag to filter by
+ * @param {Array<string>} tags - Tags to filter by (AND logic)
  * @returns {Array} Filtered and searched recipes
  */
-export function searchAndFilter(recipes, query, tag) {
+export function searchAndFilter(recipes, query, tags) {
   let results = recipes;
 
-  // First, filter by tag if specified
-  if (tag && tag !== "all") {
-    results = filterByTag(results, tag);
+  // First, filter by tags if specified
+  if (tags && tags.length > 0) {
+    results = filterByTags(results, tags);
   }
 
   // Then, search within filtered results if query specified
