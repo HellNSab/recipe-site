@@ -1,8 +1,22 @@
 import { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 import { fetchRecipe, deleteRecipe } from "../lib/github";
 import { isAuthenticated, logout, getToken } from "../lib/auth";
 import AdminLoginModal from "../components/AdminLoginModal";
+
+// Tailwind-styled components for ReactMarkdown
+const markdownComponents = {
+  h1: ({ children }) => <h1 className="font-serif text-2xl font-bold text-gray-800 mt-6 mb-3">{children}</h1>,
+  h2: ({ children }) => <h2 className="font-serif text-xl font-bold text-gray-800 mt-5 mb-2">{children}</h2>,
+  h3: ({ children }) => <h3 className="font-serif text-lg font-semibold text-gray-800 mt-4 mb-2">{children}</h3>,
+  p: ({ children }) => <p className="text-gray-700 leading-relaxed mb-3">{children}</p>,
+  strong: ({ children }) => <strong className="font-semibold text-gray-800">{children}</strong>,
+  em: ({ children }) => <em className="italic">{children}</em>,
+  ul: ({ children }) => <ul className="list-disc list-inside space-y-1 mb-3 text-gray-700">{children}</ul>,
+  ol: ({ children }) => <ol className="list-decimal list-inside space-y-1 mb-3 text-gray-700">{children}</ol>,
+  li: ({ children }) => <li className="leading-relaxed">{children}</li>,
+};
 
 /**
  * Recipe detail page component
@@ -25,13 +39,13 @@ export default function Recipe() {
         setError(null);
         const data = await fetchRecipe(slug);
         if (!data) {
-          setError("Recipe not found");
+          setError("Recette introuvable");
         } else {
           setRecipe(data);
         }
       } catch (err) {
         console.error("Failed to load recipe:", err);
-        setError("Failed to load recipe. Please try again later.");
+        setError("Impossible de charger la recette. Veuillez réessayer.");
       } finally {
         setLoading(false);
       }
@@ -206,7 +220,9 @@ export default function Recipe() {
             <h2 className="font-serif text-2xl font-bold text-gray-800 mb-4">
               Préparation
             </h2>
-            <p className="text-gray-700 leading-relaxed whitespace-pre-line">{instructions}</p>
+            <ReactMarkdown components={markdownComponents}>
+              {instructions}
+            </ReactMarkdown>
           </div>
         </div>
       </main>

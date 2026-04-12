@@ -1,5 +1,6 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 import {
   fetchRecipe,
   writeRecipe,
@@ -45,6 +46,10 @@ export default function Admin() {
   const [imagePreview, setImagePreview] = useState("");
   const [uploadingImage, setUploadingImage] = useState(false);
   const [dragOver, setDragOver] = useState(false);
+
+  // Markdown editor state
+  const [showPreview, setShowPreview] = useState(false);
+  const instructionsRef = useRef(null);
 
   // Load existing recipe if editing
   useEffect(() => {
@@ -146,6 +151,44 @@ export default function Admin() {
       handleImageSelect(file);
     }
   }, []);
+
+  // Insert markdown syntax around selection in the instructions textarea
+  const insertMarkdown = useCallback((prefix, suffix = "") => {
+    const textarea = instructionsRef.current;
+    if (!textarea) return;
+
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    const selected = formData.instructions.slice(start, end);
+    const before = formData.instructions.slice(0, start);
+    const after = formData.instructions.slice(end);
+
+    let newText;
+    let newCursorStart;
+    let newCursorEnd;
+
+    if (suffix) {
+      // Inline format: wrap selection
+      newText = before + prefix + selected + suffix + after;
+      newCursorStart = start + prefix.length;
+      newCursorEnd = end + prefix.length;
+    } else {
+      // Block format (list): prefix each line
+      const lines = (selected || "élément").split("\n");
+      const prefixed = lines.map((l) => prefix + l).join("\n");
+      newText = before + prefixed + after;
+      newCursorStart = start + prefix.length;
+      newCursorEnd = start + prefixed.length;
+    }
+
+    setFormData((prev) => ({ ...prev, instructions: newText }));
+
+    // Restore focus and selection after state update
+    requestAnimationFrame(() => {
+      textarea.focus();
+      textarea.setSelectionRange(newCursorStart, newCursorEnd);
+    });
+  }, [formData.instructions]);
 
   // Handle form submission
   const handleSubmit = async (e) => {
@@ -495,26 +538,109 @@ export default function Admin() {
               </p>
             </div>
 
-            {/* Instructions */}
+            {/* Instructions with Markdown toolbar */}
             <div>
-              <label
-                htmlFor="instructions"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
-                Préparation <span className="text-red-500">*</span>
-              </label>
-              <textarea
-                id="instructions"
-                name="instructions"
-                value={formData.instructions}
-                onChange={handleChange}
-                placeholder="Préchauffez le four à 190 °C. Mélangez la farine et le sel dans un grand bol. Incorporez le beurre froid jusqu'à obtenir une texture sablée..."
-                className="form-textarea"
-                rows={12}
-                required
-              />
+              <div className="flex items-center justify-between mb-1">
+                <label
+                  htmlFor="instructions"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Préparation <span className="text-red-500">*</span>
+                </label>
+                <button
+                  type="button"
+                  onClick={() => setShowPreview((v) => !v)}
+                  className="text-xs text-sage-600 hover:text-sage-800 border border-sage-300 rounded px-2 py-0.5 transition-colors"
+                >
+                  {showPreview ? "✏️ Éditer" : "👁 Aperçu"}
+                </button>
+              </div>
+
+              {/* Formatting toolbar */}
+              {!showPreview && (
+                <div className="flex gap-1 mb-1 p-1 bg-gray-50 border border-gray-200 rounded-t-lg border-b-0">
+                  <button
+                    type="button"
+                    onClick={() => insertMarkdown("**", "**")}
+                    className="px-2 py-1 text-sm font-bold text-gray-700 hover:bg-gray-200 rounded transition-colors"
+                    title="Gras"
+                  >
+                    B
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => insertMarkdown("*", "*")}
+                    className="px-2 py-1 text-sm italic text-gray-700 hover:bg-gray-200 rounded transition-colors"
+                    title="Italique"
+                  >
+                    I
+                  </button>
+                  <div className="w-px bg-gray-300 mx-1" />
+                  <button
+                    type="button"
+                    onClick={() => insertMarkdown("- ")}
+                    className="px-2 py-1 text-sm text-gray-700 hover:bg-gray-200 rounded transition-colors"
+                    title="Liste à puces"
+                  >
+                    • Liste
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => insertMarkdown("1. ")}
+                    className="px-2 py-1 text-sm text-gray-700 hover:bg-gray-200 rounded transition-colors"
+                    title="Liste numérotée"
+                  >
+                    1. Liste
+                  </button>
+                  <div className="w-px bg-gray-300 mx-1" />
+                  <button
+                    type="button"
+                    onClick={() => insertMarkdown("## ")}
+                    className="px-2 py-1 text-sm text-gray-700 hover:bg-gray-200 rounded transition-colors"
+                    title="Titre"
+                  >
+                    Titre
+                  </button>
+                </div>
+              )}
+
+              {showPreview ? (
+                <div className="form-textarea min-h-[18rem] bg-gray-50 overflow-auto">
+                  {formData.instructions ? (
+                    <ReactMarkdown
+                      components={{
+                        h1: ({ children }) => <h1 className="font-serif text-xl font-bold text-gray-800 mt-4 mb-2">{children}</h1>,
+                        h2: ({ children }) => <h2 className="font-serif text-lg font-bold text-gray-800 mt-3 mb-2">{children}</h2>,
+                        h3: ({ children }) => <h3 className="font-serif font-semibold text-gray-800 mt-2 mb-1">{children}</h3>,
+                        p: ({ children }) => <p className="text-gray-700 leading-relaxed mb-3">{children}</p>,
+                        strong: ({ children }) => <strong className="font-semibold text-gray-800">{children}</strong>,
+                        em: ({ children }) => <em className="italic">{children}</em>,
+                        ul: ({ children }) => <ul className="list-disc list-inside space-y-1 mb-3 text-gray-700">{children}</ul>,
+                        ol: ({ children }) => <ol className="list-decimal list-inside space-y-1 mb-3 text-gray-700">{children}</ol>,
+                        li: ({ children }) => <li className="leading-relaxed">{children}</li>,
+                      }}
+                    >
+                      {formData.instructions}
+                    </ReactMarkdown>
+                  ) : (
+                    <p className="text-gray-400 italic">Rien à afficher…</p>
+                  )}
+                </div>
+              ) : (
+                <textarea
+                  ref={instructionsRef}
+                  id="instructions"
+                  name="instructions"
+                  value={formData.instructions}
+                  onChange={handleChange}
+                  placeholder="Supporte le Markdown : **gras**, *italique*, - listes, ## titres…"
+                  className="form-textarea rounded-t-none"
+                  rows={12}
+                  required
+                />
+              )}
               <p className="text-xs text-gray-500 mt-1">
-                Rédigez la préparation en texte libre
+                Markdown supporté — utilisez la barre ci-dessus ou écrivez directement
               </p>
             </div>
 
