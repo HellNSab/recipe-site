@@ -188,7 +188,7 @@ export default function Recipe({ slug }) {
             {tags.map((tag) => (
               <Link
                 key={tag}
-                to={`/?tag=${encodeURIComponent(tag)}`}
+                to={{ search: `?tag=${encodeURIComponent(tag)}` }}
                 className="tag-pill"
               >
                 {tag}
