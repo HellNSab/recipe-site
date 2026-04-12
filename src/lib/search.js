@@ -4,11 +4,10 @@ import Fuse from "fuse.js";
 const fuseOptions = {
   // Keys to search in recipe objects
   keys: [
-    { name: "title", weight: 0.4 },
-    { name: "description", weight: 0.2 },
+    { name: "title", weight: 0.5 },
     { name: "tags", weight: 0.2 },
-    { name: "ingredients", weight: 0.15 },
-    { name: "instructions", weight: 0.05 },
+    { name: "ingredients", weight: 0.2 },
+    { name: "instructions", weight: 0.1 },
   ],
   // Search configuration
   threshold: 0.3, // Lower = more strict matching

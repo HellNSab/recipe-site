@@ -29,15 +29,10 @@ export default function Admin() {
   // Form state
   const [formData, setFormData] = useState({
     title: "",
-    description: "",
     image: "",
     tags: "",
-    prepTime: "",
-    cookTime: "",
-    servings: "",
     ingredients: "",
     instructions: "",
-    notes: "",
   });
   const [existingRecipe, setExistingRecipe] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -65,15 +60,10 @@ export default function Admin() {
           setExistingRecipe(recipe);
           setFormData({
             title: recipe.title || "",
-            description: recipe.description || "",
             image: recipe.image || "",
             tags: recipe.tags?.join(", ") || "",
-            prepTime: recipe.prepTime || "",
-            cookTime: recipe.cookTime || "",
-            servings: recipe.servings || "",
             ingredients: recipe.ingredients?.join("\n") || "",
             instructions: recipe.instructions || "",
-            notes: recipe.notes || "",
           });
           setImagePreview(recipe.image || "");
         } else {
@@ -207,21 +197,16 @@ export default function Admin() {
       // Prepare recipe data
       const recipeData = {
         title: formData.title.trim(),
-        description: formData.description.trim(),
         image: imageUrl,
         tags: formData.tags
           .split(",")
           .map((t) => t.trim().toLowerCase())
           .filter((t) => t),
-        prepTime: formData.prepTime.trim(),
-        cookTime: formData.cookTime.trim(),
-        servings: formData.servings.trim(),
         ingredients: formData.ingredients
           .split("\n")
           .map((i) => i.trim())
           .filter((i) => i),
         instructions: formData.instructions.trim(),
-        notes: formData.notes.trim(),
       };
 
       // Generate slug
@@ -387,25 +372,6 @@ export default function Admin() {
               />
             </div>
 
-            {/* Description */}
-            <div>
-              <label
-                htmlFor="description"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
-                Description
-              </label>
-              <textarea
-                id="description"
-                name="description"
-                value={formData.description}
-                onChange={handleChange}
-                placeholder="Une courte description de la recette..."
-                className="form-textarea"
-                rows={3}
-              />
-            </div>
-
             {/* Image Upload */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -503,63 +469,6 @@ export default function Admin() {
               </p>
             </div>
 
-            {/* Time and Servings Row */}
-            <div className="grid grid-cols-3 gap-4">
-              <div>
-                <label
-                  htmlFor="prepTime"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  Préparation (min)
-                </label>
-                <input
-                  type="number"
-                  id="prepTime"
-                  name="prepTime"
-                  value={formData.prepTime}
-                  onChange={handleChange}
-                  placeholder="15"
-                  className="form-input"
-                  min="0"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="cookTime"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  Cuisson (min)
-                </label>
-                <input
-                  type="number"
-                  id="cookTime"
-                  name="cookTime"
-                  value={formData.cookTime}
-                  onChange={handleChange}
-                  placeholder="45"
-                  className="form-input"
-                  min="0"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="servings"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  Portions
-                </label>
-                <input
-                  type="text"
-                  id="servings"
-                  name="servings"
-                  value={formData.servings}
-                  onChange={handleChange}
-                  placeholder="8"
-                  className="form-input"
-                />
-              </div>
-            </div>
-
             {/* Ingredients */}
             <div>
               <label
@@ -607,25 +516,6 @@ export default function Admin() {
               <p className="text-xs text-gray-500 mt-1">
                 Rédigez la préparation en texte libre
               </p>
-            </div>
-
-            {/* Notes */}
-            <div>
-              <label
-                htmlFor="notes"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
-                Notes
-              </label>
-              <textarea
-                id="notes"
-                name="notes"
-                value={formData.notes}
-                onChange={handleChange}
-                placeholder="Conseils, variantes, astuces..."
-                className="form-textarea"
-                rows={3}
-              />
             </div>
 
             {/* Action Buttons */}
