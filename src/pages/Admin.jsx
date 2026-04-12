@@ -584,14 +584,6 @@ export default function Admin() {
                   >
                     • Liste
                   </button>
-                  <button
-                    type="button"
-                    onClick={() => insertMarkdown("1. ")}
-                    className="px-2 py-1 text-sm text-gray-700 hover:bg-gray-200 rounded transition-colors"
-                    title="Liste numérotée"
-                  >
-                    1. Liste
-                  </button>
                   <div className="w-px bg-gray-300 mx-1" />
                   <button
                     type="button"

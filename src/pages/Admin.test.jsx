@@ -41,7 +41,6 @@ describe("Admin — barre d'outils Markdown", () => {
     expect(screen.getByTitle("Gras")).toBeInTheDocument();
     expect(screen.getByTitle("Italique")).toBeInTheDocument();
     expect(screen.getByTitle("Liste à puces")).toBeInTheDocument();
-    expect(screen.getByTitle("Liste numérotée")).toBeInTheDocument();
     expect(screen.getByTitle("Titre")).toBeInTheDocument();
   });
 
