@@ -49,7 +49,7 @@ export default function SearchBar({
     <form onSubmit={handleSubmit} className="relative w-full max-w-xl">
       <div className="relative">
         {/* Search Icon */}
-        <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+        <div className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none">
           <svg
             className="w-5 h-5 text-sage-400"
             fill="none"
@@ -86,7 +86,7 @@ export default function SearchBar({
           <button
             type="button"
             onClick={handleClear}
-            className="absolute inset-y-0 right-0 pr-4 flex items-center
+            className="absolute right-4 top-1/2 -translate-y-1/2
                        text-sage-400 hover:text-sage-600 transition-colors"
             aria-label="Effacer la recherche"
           >
