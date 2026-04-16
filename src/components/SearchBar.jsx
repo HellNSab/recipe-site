@@ -92,8 +92,8 @@ export default function SearchBar({
                    cursor-text"
         onClick={() => inputRef.current?.focus()}
       >
-        {/* Search icon — fixed top-left */}
-        <div className="absolute left-3 top-3 pointer-events-none">
+        {/* Search icon — vertically centered left */}
+        <div className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">
           <svg
             className="w-5 h-5 text-sage-400"
             fill="none"
@@ -150,7 +150,7 @@ export default function SearchBar({
           <button
             type="button"
             onClick={handleClearText}
-            className="absolute right-3 top-3 text-sage-400 hover:text-sage-600 transition-colors"
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-sage-400 hover:text-sage-600 transition-colors"
             aria-label="Effacer la recherche"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
