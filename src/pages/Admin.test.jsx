@@ -36,11 +36,12 @@ describe("Admin — aperçu image en mode édition", () => {
     vi.clearAllMocks();
   });
 
-  it("affiche l'image avec l'URL correcte (BASE_URL + images/) lors du chargement d'une recette existante", async () => {
+  it("affiche l'image avec l'URL CDN directement lors du chargement d'une recette existante", async () => {
     const { fetchRecipe } = await import("../lib/github");
+    const cdnUrl = "https://cdn.jsdelivr.net/gh/HellNSab/recipe-site@main/images/1234567890-arancinis.jpg";
     fetchRecipe.mockResolvedValue({
       title: "Arancinis",
-      image: "arancinis.jpg",
+      image: cdnUrl,
       tags: [],
       ingredients: [],
       instructions: "",
@@ -56,7 +57,7 @@ describe("Admin — aperçu image en mode édition", () => {
     );
 
     const img = await waitFor(() => screen.getByAltText("Recipe preview"));
-    expect(img.getAttribute("src")).toBe("/images/arancinis.jpg");
+    expect(img.getAttribute("src")).toBe(cdnUrl);
   });
 });
 

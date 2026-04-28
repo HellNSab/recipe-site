@@ -71,7 +71,7 @@ export default function Admin() {
             ingredients: recipe.ingredients?.join("\n") || "",
             instructions: recipe.instructions || "",
           });
-          setImagePreview(recipe.image ? `${import.meta.env.BASE_URL}images/${encodeURIComponent(recipe.image)}` : "");
+          setImagePreview(recipe.image || "");
         } else {
           setError("Recette introuvable");
         }
