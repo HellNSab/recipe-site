@@ -1,6 +1,6 @@
 {
   "title": "Test",
-  "image": "https://cdn.jsdelivr.net/gh/HellNSab/recipe-site@main/images/1777544213569-Screenshot 2025-12-16 at 11.00.03.png",
+  "image": "https://cdn.jsdelivr.net/gh/HellNSab/recipe-site@main/images/1777544245775-buddha-bowl.jpg",
   "tags": [
     "test",
     "test",
@@ -11,6 +11,6 @@
   ],
   "instructions": "test, test, test",
   "slug": "test",
-  "updatedAt": "2026-04-30T10:16:55.783Z",
-  "createdAt": "2026-04-30T10:16:55.783Z"
+  "updatedAt": "2026-04-30T10:17:27.117Z",
+  "createdAt": "2026-04-30T10:17:27.117Z"
 }
