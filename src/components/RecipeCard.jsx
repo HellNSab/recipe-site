@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PlaceholderImage from "./PlaceholderImage";
+import { resolveImageUrl } from "../lib/github";
 
 /**
  * RecipeCard component for displaying recipe previews in a grid
@@ -19,7 +20,7 @@ function RecipeCard({ recipe }) {
   // Calculate total time if both prep and cook times are available
   const totalTime = prepTime && cookTime ? `${parseInt(prepTime) + parseInt(cookTime)} min` : prepTime || cookTime;
 
-  const imageUrl = image || null;
+  const imageUrl = resolveImageUrl(image, import.meta.env.BASE_URL);
 
   return (
     <Link

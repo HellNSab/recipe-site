@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkBreaks from "remark-breaks";
 import PlaceholderImage from "../components/PlaceholderImage";
-import { fetchRecipe, deleteRecipe } from "../lib/github";
+import { fetchRecipe, deleteRecipe, resolveImageUrl } from "../lib/github";
 import { isAuthenticated, logout, getToken } from "../lib/auth";
 import AdminLoginModal from "../components/AdminLoginModal";
 
@@ -101,6 +101,7 @@ export default function Recipe() {
   }
 
   const { title, image, tags = [], ingredients = [], instructions = "" } = recipe;
+  const imageUrl = resolveImageUrl(image, import.meta.env.BASE_URL);
 
   return (
     <div className="min-h-screen bg-cream">
@@ -170,9 +171,9 @@ export default function Recipe() {
       <main className="max-w-4xl mx-auto px-4 py-8">
         {/* Hero Image */}
         <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden mb-8 shadow-lg">
-          {image ? (
+          {imageUrl ? (
             <img
-              src={image}
+              src={imageUrl}
               alt={title}
               className="w-full h-full object-cover"
             />

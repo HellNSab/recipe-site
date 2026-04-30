@@ -275,6 +275,20 @@ export async function uploadImage(filename, base64Data, token) {
 }
 
 /**
+ * Resolve a recipe image field to a usable URL.
+ * Old recipes store just a filename (served from public/images/).
+ * New recipes store a full CDN URL returned by uploadImage().
+ * @param {string|null} image - The image field from a recipe
+ * @param {string} baseUrl - import.meta.env.BASE_URL
+ * @returns {string|null}
+ */
+export function resolveImageUrl(image, baseUrl) {
+  if (!image) return null;
+  if (image.startsWith("http://") || image.startsWith("https://")) return image;
+  return `${baseUrl}images/${encodeURIComponent(image)}`;
+}
+
+/**
  * Convert a File object to base64
  * @param {File} file - The file to convert
  * @returns {Promise<string>} Base64 encoded string

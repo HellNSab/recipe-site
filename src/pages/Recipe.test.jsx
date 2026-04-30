@@ -7,6 +7,7 @@ import Recipe from "./Recipe";
 vi.mock("../lib/github", () => ({
   fetchRecipe: vi.fn(),
   deleteRecipe: vi.fn(),
+  resolveImageUrl: (image) => image || null,
 }));
 
 // Mock auth module
