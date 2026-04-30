@@ -19,10 +19,7 @@ function RecipeCard({ recipe }) {
   // Calculate total time if both prep and cook times are available
   const totalTime = prepTime && cookTime ? `${parseInt(prepTime) + parseInt(cookTime)} min` : prepTime || cookTime;
 
-  // Build image URL from public/images folder
-  const imageUrl = image
-    ? `${import.meta.env.BASE_URL}images/${encodeURIComponent(image)}`
-    : null;
+  const imageUrl = image || null;
 
   return (
     <Link
