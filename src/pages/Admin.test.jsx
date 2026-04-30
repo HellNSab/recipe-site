@@ -11,6 +11,11 @@ vi.mock("../lib/github", () => ({
   fileToBase64: vi.fn(),
   generateSlug: vi.fn((title) => title.toLowerCase().replace(/\s+/g, "-")),
   deleteRecipe: vi.fn(),
+  resolveImageUrl: (image, baseUrl) => {
+    if (!image) return null;
+    if (image.startsWith("http://") || image.startsWith("https://")) return image;
+    return `${baseUrl}images/${encodeURIComponent(image)}`;
+  },
 }));
 
 // Mock auth — authenticated by default
@@ -58,6 +63,148 @@ describe("Admin — aperçu image en mode édition", () => {
 
     const img = await waitFor(() => screen.getByAltText("Recipe preview"));
     expect(img.getAttribute("src")).toBe(cdnUrl);
+  });
+
+  it("résout un nom de fichier nu (recette ancienne) en chemin local pour l'aperçu", async () => {
+    const { fetchRecipe } = await import("../lib/github");
+    fetchRecipe.mockResolvedValue({
+      title: "Vieille recette",
+      image: "kabsa.jpg",
+      tags: [],
+      ingredients: [],
+      instructions: "",
+      slug: "vieille-recette",
+    });
+
+    render(
+      <MemoryRouter initialEntries={["/admin?edit=vieille-recette"]}>
+        <Routes>
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
+      </MemoryRouter>
+    );
+
+    const img = await waitFor(() => screen.getByAltText("Recipe preview"));
+    expect(img.getAttribute("src")).toMatch(/images\/kabsa\.jpg$/);
+  });
+});
+
+describe("Admin — flux d'upload lors du submit", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
+  it("upload le fichier sélectionné puis enregistre la recette avec l'URL retournée", async () => {
+    const { uploadImage, fileToBase64, writeRecipe, generateSlug } = await import("../lib/github");
+    const uploadedUrl =
+      "https://raw.githubusercontent.com/HellNSab/recipe-site/main/images/9999-tarte.jpg";
+
+    fileToBase64.mockResolvedValue("data:image/jpeg;base64,SGVsbG8=");
+    uploadImage.mockResolvedValue(uploadedUrl);
+    writeRecipe.mockResolvedValue({});
+    generateSlug.mockReturnValue("tarte-pommes");
+
+    renderAdmin();
+
+    fireEvent.change(screen.getByPlaceholderText(/Tarte aux pommes/), {
+      target: { value: "Tarte aux pommes" },
+    });
+    fireEvent.change(screen.getByPlaceholderText(/2 tasses de farine/), {
+      target: { value: "200g farine\n3 pommes" },
+    });
+    fireEvent.change(screen.getByPlaceholderText(/Supporte le Markdown/), {
+      target: { value: "Mélanger puis cuire." },
+    });
+
+    const file = new File(["fake-bytes"], "tarte.jpg", { type: "image/jpeg" });
+    const fileInput = document.getElementById("image-input");
+    fireEvent.change(fileInput, { target: { files: [file] } });
+
+    await waitFor(() => expect(fileToBase64).toHaveBeenCalledWith(file));
+
+    fireEvent.submit(screen.getByRole("button", { name: /Enregistrer/i }).closest("form"));
+
+    await waitFor(() => {
+      expect(uploadImage).toHaveBeenCalledWith(
+        "tarte.jpg",
+        "data:image/jpeg;base64,SGVsbG8=",
+        "fake-token"
+      );
+    });
+
+    await waitFor(() => {
+      expect(writeRecipe).toHaveBeenCalled();
+    });
+    const [, recipeData] = writeRecipe.mock.calls[0];
+    expect(recipeData.image).toBe(uploadedUrl);
+    expect(recipeData.title).toBe("Tarte aux pommes");
+  });
+
+  it("conserve l'URL existante si aucun nouveau fichier n'est sélectionné lors d'une édition", async () => {
+    const { fetchRecipe, uploadImage, writeRecipe } = await import("../lib/github");
+    const existingUrl =
+      "https://raw.githubusercontent.com/HellNSab/recipe-site/main/images/1-old.jpg";
+
+    fetchRecipe.mockResolvedValue({
+      title: "Recette existante",
+      image: existingUrl,
+      tags: [],
+      ingredients: ["sel"],
+      instructions: "Cuire.",
+      slug: "recette-existante",
+      _sha: "abc123",
+    });
+    writeRecipe.mockResolvedValue({});
+
+    render(
+      <MemoryRouter initialEntries={["/admin?edit=recette-existante"]}>
+        <Routes>
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
+      </MemoryRouter>
+    );
+
+    await waitFor(() => screen.getByAltText("Recipe preview"));
+
+    fireEvent.submit(screen.getByRole("button", { name: /Mettre à jour/i }).closest("form"));
+
+    await waitFor(() => expect(writeRecipe).toHaveBeenCalled());
+
+    expect(uploadImage).not.toHaveBeenCalled();
+    const [, recipeData] = writeRecipe.mock.calls[0];
+    expect(recipeData.image).toBe(existingUrl);
+  });
+
+  it("affiche une erreur et continue sans image si l'upload échoue", async () => {
+    const { uploadImage, fileToBase64, writeRecipe, generateSlug } = await import("../lib/github");
+
+    fileToBase64.mockResolvedValue("data:image/jpeg;base64,SGVsbG8=");
+    uploadImage.mockRejectedValue(new Error("Upload failed: 422"));
+    writeRecipe.mockResolvedValue({});
+    generateSlug.mockReturnValue("nouvelle");
+
+    renderAdmin();
+
+    fireEvent.change(screen.getByPlaceholderText(/Tarte aux pommes/), {
+      target: { value: "Nouvelle" },
+    });
+    fireEvent.change(screen.getByPlaceholderText(/2 tasses de farine/), {
+      target: { value: "ingrédient" },
+    });
+    fireEvent.change(screen.getByPlaceholderText(/Supporte le Markdown/), {
+      target: { value: "Étape." },
+    });
+
+    const file = new File(["fake-bytes"], "photo.jpg", { type: "image/jpeg" });
+    const fileInput = document.getElementById("image-input");
+    fireEvent.change(fileInput, { target: { files: [file] } });
+
+    await waitFor(() => expect(fileToBase64).toHaveBeenCalledWith(file));
+
+    fireEvent.submit(screen.getByRole("button", { name: /Enregistrer/i }).closest("form"));
+
+    await waitFor(() => expect(uploadImage).toHaveBeenCalled());
+    await waitFor(() => expect(screen.getByText(/Échec de l'envoi de la photo/i)).toBeInTheDocument());
   });
 });
 

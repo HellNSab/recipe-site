@@ -9,6 +9,7 @@ import {
   fileToBase64,
   generateSlug,
   deleteRecipe,
+  resolveImageUrl,
 } from "../lib/github";
 import { isAuthenticated, logout, getToken } from "../lib/auth";
 
@@ -71,7 +72,7 @@ export default function Admin() {
             ingredients: recipe.ingredients?.join("\n") || "",
             instructions: recipe.instructions || "",
           });
-          setImagePreview(recipe.image || "");
+          setImagePreview(resolveImageUrl(recipe.image, import.meta.env.BASE_URL) || "");
         } else {
           setError("Recette introuvable");
         }
