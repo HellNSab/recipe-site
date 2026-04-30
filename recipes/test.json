@@ -1,0 +1,16 @@
+{
+  "title": "Test",
+  "image": "https://cdn.jsdelivr.net/gh/HellNSab/recipe-site@main/images/1777544213569-Screenshot 2025-12-16 at 11.00.03.png",
+  "tags": [
+    "test",
+    "test",
+    "test"
+  ],
+  "ingredients": [
+    "test, test, test"
+  ],
+  "instructions": "test, test, test",
+  "slug": "test",
+  "updatedAt": "2026-04-30T10:16:55.783Z",
+  "createdAt": "2026-04-30T10:16:55.783Z"
+}
