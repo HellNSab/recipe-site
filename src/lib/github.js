@@ -267,17 +267,17 @@ export async function uploadImage(filename, base64Data, token) {
     );
   }
 
-  await response.json();
-
-  // Return the raw GitHub URL for the image
-  // Using jsdelivr CDN for better performance
-  return `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@${BRANCH}/${IMAGES_PATH}/${uniqueFilename}`;
+  const data = await response.json();
+  return data.content.download_url;
 }
 
 /**
  * Resolve a recipe image field to a usable URL.
- * Old recipes store just a filename (served from public/images/).
- * New recipes store a full CDN URL returned by uploadImage().
+ * Three formats coexist:
+ *   - bare filename (oldest recipes, served from public/images/)
+ *   - jsDelivr CDN URL (recipes uploaded before the raw.githubusercontent.com switch)
+ *   - raw.githubusercontent.com URL (current uploadImage() output)
+ * Absolute URLs are returned as-is; bare filenames are resolved against baseUrl.
  * @param {string|null} image - The image field from a recipe
  * @param {string} baseUrl - import.meta.env.BASE_URL
  * @returns {string|null}
