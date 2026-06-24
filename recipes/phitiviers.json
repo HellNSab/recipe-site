@@ -1,11 +1,9 @@
 {
-  "slug": "phitiviers",
   "title": "Phitiviers",
   "image": "Pasted image 20241210195440.png",
   "tags": [
     "amande"
   ],
-  "category": "sucré",
   "ingredients": [
     "5 oeufs",
     "200 g d'amandes en poudre",
@@ -13,7 +11,8 @@
     "1 sachet de sucre vanillé",
     "1 cuillère à soupe de farine"
   ],
-  "instructions": "Préchauffez votre four 10 minutes à 200°C.\nMélangez les ingrédients afin d'obtenir une pâte lisse.\nBeurrez le moule et farinez afin que le gâteau se démoule facilement en fin de cuisson.\nVersez la préparation dans le moule et mettez à cuire 40 minutes à 200°C.\n\nOn peut faire un glaçage (sucre glace + citron)",
-  "createdAt": "2026-04-12T10:19:50.336Z",
-  "updatedAt": "2026-04-12T10:19:50.336Z"
+  "instructions": "Préchauffez votre four 10 minutes à 180°C.\nMélangez les ingrédients afin d'obtenir une pâte lisse.\nBeurrez le moule et farinez afin que le gâteau se démoule facilement en fin de cuisson.\nVersez la préparation dans le moule et mettez à cuire 30 minutes à 180°C.\n\nOn peut faire un glaçage (sucre glace + citron)",
+  "slug": "phitiviers",
+  "updatedAt": "2026-06-24T14:58:58.337Z",
+  "createdAt": "2026-06-24T14:58:58.337Z"
 }
