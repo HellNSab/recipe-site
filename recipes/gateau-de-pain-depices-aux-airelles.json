@@ -1,13 +1,11 @@
 {
-  "slug": "gateau-de-pain-depices-aux-airelles",
-  "title": "Gâteau de pain d’épices aux airelles",
+  "title": "Pain d’épices aux airelles",
   "image": "Pasted image 20241102162912.png",
   "tags": [
     "gâteau",
     "fruit-rouge",
     "pain-d-épice"
   ],
-  "category": "sucré",
   "ingredients": [
     "_175 g de beurre",
     "3 œufs",
@@ -30,6 +28,7 @@
     "le jus d'un ½ citron vert (j’ai remplacé les airelles par des myrtilles et fruits rouges)_"
   ],
   "instructions": "Préchauffez le four à 180 °C (th. 6). Faites fondre le beurre dans une casserole et laissez le refroidir. Au batteur électrique, fouettez les oeufs avec le sucre et la cassonade jusqu’à obtenir un mélange pâle et mousseux.\n\nMélangez les ingrédients secs dans un autre saladier.\nTamisez les dans la préparation précédente et mélangez délicatement. Versez le beurre refroidi, l’extrait de vanille et le lait entier, puis mélangez de nouveau. Répartissez cette pâte dans trois moules à gâteau ronds de 18 cm de diamètre préalablement graissés et tapissés de papier cuisson. Enfournez pour 15 min env. jusqu’à ce que les gâteaux soient bien gonflés, dorés et souples.\n\nDémoulez les gâteaux sur une grille et laissez les refroidir. Préparez le glaçage. Au batteur électrique, fouettez le beurre avec le fromage frais et le sucre glace à vitesse élevée. Egouttez les airelles décongelées, réservez en quelques-unes, ainsi qu’un peu de jus, puis ajoutez les fruits et le jus de citron vert au glaçage. Fouettez de nouveau jusqu’à obtenir une préparation pâle et mousseuse. Ajoutez quelques gouttes du jus réservé pour teinter le glaçage de rose.\n\nPour le montage, déposez un gâteau sur un plat de service et étalez un peu de glaçage dessus. Déposez le deuxième gâteau et recouvrez le de glaçage. Faites de même avec le dernier gâteau et parsemez d’airelles.",
-  "createdAt": "2026-04-12T10:19:50.307Z",
-  "updatedAt": "2026-04-12T10:19:50.307Z"
+  "slug": "gateau-de-pain-depices-aux-airelles",
+  "updatedAt": "2026-07-02T08:52:02.372Z",
+  "createdAt": "2026-07-02T08:52:02.372Z"
 }
