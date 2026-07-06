@@ -1,0 +1,20 @@
+{
+  "title": "Aubergines panées",
+  "image": "https://raw.githubusercontent.com/HellNSab/recipe-site/main/images/1783358837876-images.jpg",
+  "tags": [
+    "aubergine",
+    "flocon d'avoine"
+  ],
+  "ingredients": [
+    "1 aubergine",
+    "Sel poivre",
+    "Ail",
+    "1 oeuf",
+    "Flocons d'avoine",
+    "Farine"
+  ],
+  "instructions": "Précuire des tranches d'aubergine (épaisseur d'environ 1 cm) dans l'airfryer 5 minutes.\nBattre un oeuf dans une assiette avec le sel, le poivre, l'ail. On peut ajouter des herbes de Provence ou des épices ou du parmesan.\nDans une autre assiette mettre 1 cuillère à soupe de farine et 1 cuillère à soupe de flocons d'avoine.\nPaner les tranches d'aubergine successivement dans les 2 préparations et les cuire à la poele.",
+  "slug": "aubergines-panes",
+  "updatedAt": "2026-07-06T17:27:19.196Z",
+  "createdAt": "2026-07-06T17:27:19.196Z"
+}
