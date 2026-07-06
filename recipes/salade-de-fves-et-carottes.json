@@ -1,0 +1,25 @@
+{
+  "title": "Salade de fèves et carottes",
+  "image": "https://raw.githubusercontent.com/HellNSab/recipe-site/main/images/1783359921194-Salade de fèves, Lenôtre 001.JPG",
+  "tags": [
+    "fève",
+    "carotte",
+    "olive",
+    "maroc"
+  ],
+  "ingredients": [
+    "Fèves fraîches",
+    "1 ou 2 carottes",
+    "Ail",
+    "Persil, coriandre",
+    "Sel Poivre",
+    "Huile, vinaigre",
+    "Cumin",
+    "Paprika",
+    "Olives"
+  ],
+  "instructions": "Eplucher les fèves sans les peler\nEplucher les carottes et les couper en rondelles\nCuire à la vapeur en cocotte minute les légumes environ 1/4 d'heure\nFaire un assaisonnement avec l'ail, le persil et le coriandre, les épices\nMélanger le tout et ajouter les olives\nManger tiède ou froid\n\nVariante sans cocotte :\nCuire les légumes dans une casserole dans l'huile, les épices, l'ail. Couvrir d'eau et cuire jusqu'à ce que les légumes soient cuits. Ajouter à la fin, persil, coriandre, jus de citron, olives, citron confit. Laisser réduire.",
+  "slug": "salade-de-fves-et-carottes",
+  "updatedAt": "2026-07-06T17:45:22.732Z",
+  "createdAt": "2026-07-06T17:45:22.732Z"
+}
