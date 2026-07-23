@@ -1,5 +1,4 @@
 {
-  "slug": "gateau-aux-noisettes",
   "title": "Gâteau aux noisettes",
   "image": "Sans titre 6.jpg",
   "tags": [
@@ -7,7 +6,6 @@
     "noisette",
     "chocolat"
   ],
-  "category": "sucré",
   "ingredients": [
     "350 g de poudre de noisettes,",
     "200 g de farine type 45,",
@@ -19,7 +17,8 @@
     "150 g de chocolat au lait à pâtisserie,",
     "noisettes broyées"
   ],
-  "instructions": " Préchauffez le four à 180 ºC. Dans un plat creux, mélangez poudre de noisettes et farine. Faites fondre le beurre et ajoutez le. Continuez avec le sucre et les deux œufs battus. Ajoutez enfin le yaourt nature et le sachet de levure chimique. Mélangez vivement. Si c’est trop compact, ajoutez un petit verre d’eau. Tapissez le fond du moule à gâteau de papier cuisson et versez la préparation dans le moule.\n Enfournez pour 35 minutes. Vérifiez la cuisson du gâteau en passant un pique en bois à travers. S’il ressort sec, c’est cuit. Sinon prolongez la cuisson de 4 ou 5 minutes.\n Faites fondre le chocolat et recouvrez en le gâteau bien refroidi.\n Parsemez de noisettes broyées.\n Dressage : Servez ce gâteau avec un peu de chantilly ou de crème anglaise.",
-  "createdAt": "2026-04-12T10:19:50.298Z",
-  "updatedAt": "2026-04-12T10:19:50.298Z"
+  "instructions": "Préchauffez le four à 180 ºC. Dans un plat creux, mélangez poudre de noisettes et farine. Faites fondre le beurre et ajoutez le. Continuez avec le sucre et les deux œufs battus. Ajoutez enfin le yaourt nature et le sachet de levure chimique. Mélangez vivement. Si c’est trop compact, ajoutez un petit verre d’eau. Tapissez le fond du moule à gâteau de papier cuisson et versez la préparation dans le moule.\n Enfournez pour 35 minutes. Vérifiez la cuisson du gâteau en passant un pique en bois à travers. S’il ressort sec, c’est cuit. Sinon prolongez la cuisson de 4 ou 5 minutes.\n Faites fondre le chocolat et recouvrez en le gâteau bien refroidi.\n Parsemez de noisettes broyées.\n Dressage : Servez ce gâteau avec un peu de chantilly ou de crème anglaise.\n\nVariante : le **noisettine**\nHachez 150 g de noisettes grillées. Mélangez 6 blancs d'oeufs non battus, 160 g de sucre, les noisettes,50 g de farine. Cuire au four dans un moule beurré, 35 minutes à 180°. Une fois cuit le saupoudrer de noisettes hachées et du sucre et le passé au grill. Servir avec une crème anglaise faite avec les 6 jaunes d'oeufs, 1 litre de lait, 150 g de sucre et de la vanille",
+  "slug": "gateau-aux-noisettes",
+  "updatedAt": "2026-07-23T17:25:01.732Z",
+  "createdAt": "2026-07-23T17:25:01.732Z"
 }
